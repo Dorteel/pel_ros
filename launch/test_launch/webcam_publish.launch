@@ -1,0 +1,8 @@
+<launch>
+    <node
+      pkg="pel_ros"
+      type="webcam_pub.py"
+      name="webcam_pub"
+      output="screen"
+    />
+  </launch>

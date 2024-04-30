@@ -15,7 +15,7 @@ def publish_message():
  
   # Node is publishing to the video_frames topic using 
   # the message type Image
-  pub = rospy.Publisher('video_frames', Image, queue_size=10)
+  pub = rospy.Publisher('original_camera', Image, queue_size=10)
      
   # Tells rospy the name of the node.
   # Anonymous = True makes sure the node has a unique name. Random
@@ -42,7 +42,7 @@ def publish_message():
          
       if ret == True:
         # Print debugging information to the terminal
-        rospy.loginfo('publishing video frame')
+        # rospy.loginfo('publishing video frame')
              
         # Publish the image.
         # The 'cv2_to_imgmsg' method converts an OpenCV
