@@ -14,13 +14,15 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.28745295102367124 0.29326207831326534 0.9117939209992394 1.6430769708105915
-  position -0.05545883765243767 -2.944042112149078 2.1520770920158365
+  position -0.07552929383216947 -3.9476724157408594 2.854868245171607
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
+  floorSize 3 3
+  wallHeight 0.7
 }
 Robot {
   rotation 0 1 0 0
@@ -329,5 +331,5 @@ Robot {
       -0.035 0 0.03
     ]
   }
-  controller "ros"
+  controller "<extern>"
 }
