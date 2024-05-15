@@ -96,7 +96,7 @@ sensor_dtype = {'ACCELEROMETER' : Float64MultiArray,
                     'LINEAR_MOTOR' : Float64,
                     'POSITION_SENSOR' : Float64,
                     'RADAR' : Float64,
-                    'RANGE_FINDER' : PointCloud2,
+                    'RANGE_FINDER' : Image,
                     'RECEIVER' : Float64,
                     'TOUCH_SENSOR' : Float64,
                     'VACUUM_GRIPPER' : Float64}
@@ -118,26 +118,32 @@ def construct_rgba_image(device, data):
     image_msg.data = data
     return image_msg
 
-# def construct_depth_image(device, data):
+def construct_depth_image(device, data):
+    # Convert the list of floats to a numpy array and reshape it
+    height = device.getHeight()
+    width = device.getWidth()
+    np_data = np.array(data, dtype=np.float32).reshape((height, width))
+    # Debug: Print the min and max values
+    print("Depth Image - min:", np.min(np_data), "max:", np.max(np_data))
 
-#     # Convert the list of floats to a numpy array and then to a byte array
-#     np_data = np.array(data, dtype=np.float32)
-#     byte_data = np_data.tobytes()
+    # Convert numpy array to bytes
+    byte_data = np_data.tobytes()
 
+    # Create Image message
+    image_msg = Image()
+    image_msg.header = Header()
+    image_msg.header.stamp = rospy.Time.now()
+    image_msg.height = height
+    image_msg.width = width
+    image_msg.encoding = "32FC1"  # 32-bit float, 1 channel
+    image_msg.is_bigendian = 0
+    image_msg.step = width * 4  # Each float is 4 bytes
 
-#     image_msg = Image()
-#     image_msg.header = Header()
-#     image_msg.header.stamp = rospy.Time.now()
-#     image_msg.height = device.getHeight()
-#     image_msg.width = device.getWidth()
-#     image_msg.encoding = "32FC1"  # 32-bit float, 1 channel
-#     image_msg.is_bigendian = 0
-#     image_msg.step = image_msg.width * 4  # Each float is 4 bytes
+    # Assign the byte data to the message
+    image_msg.data = byte_data
 
-#     # Convert the list of floats to a byte array
-#     image_msg.data = byte_data
+    return image_msg
 
-#     return image_msg
 
 def construct_depth_pointcloud(device, data):
     range_finder = device
@@ -221,7 +227,7 @@ def pub_allDevices(devices):
         if dev_type == 'CAMERA':
             msg = construct_rgba_image(device, data)        
         elif dev_type == 'RANGE_FINDER':
-            msg = construct_depth_pointcloud(device, data)
+            msg = construct_depth_image(device, data)
         elif isinstance(data, (list, tuple)):
             msg = Float64MultiArray(data=data)
         else:
