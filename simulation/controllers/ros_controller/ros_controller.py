@@ -25,7 +25,7 @@ from std_msgs.msg import Float64
 
 def callback(data):
     global pub
-    rospy.logdebug(rospy.get_caller_id() + 'Received sensor value: %s', data.data)
+    # rospy.logdebug(rospy.get_caller_id() + 'Received sensor value: %s', data.data)
     if data.data > 100:
         pub.publish(0)
     else:

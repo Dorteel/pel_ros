@@ -8,5 +8,5 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: -1
 consoles: Console:All:All
-renderingDevicePerspectives: TIAGo++:Astra depth;1;0.895833;0;0
-renderingDevicePerspectives: TIAGo++:Astra rgb;1;0.895833;0;0
+renderingDevicePerspectives: TIAGo++:Astra depth;1;0.359375;0;0
+renderingDevicePerspectives: TIAGo++:Astra rgb;1;0.359375;0;0
