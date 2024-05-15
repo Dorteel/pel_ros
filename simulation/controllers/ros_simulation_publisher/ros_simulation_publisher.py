@@ -124,7 +124,7 @@ def construct_depth_image(device, data):
     width = device.getWidth()
     np_data = np.array(data, dtype=np.float32).reshape((height, width))
     # Debug: Print the min and max values
-    print("Depth Image - min:", np.min(np_data), "max:", np.max(np_data))
+    # print("Depth Image - min:", np.min(np_data), "max:", np.max(np_data))
 
     # Convert numpy array to bytes
     byte_data = np_data.tobytes()
@@ -244,7 +244,7 @@ def callback(data):
 
 robot = Robot()
 robot_name = robot.getName()
-special_symbols = {'+' : 'plus', '-' : '_'}
+special_symbols = {'+' : 'plus', '-' : '_', ' ' : '_'}
 for k, v in special_symbols.items():
     robot_name = robot_name.replace(k,v)
 rospy.logdebug(f'Robot {robot_name} initialized!')

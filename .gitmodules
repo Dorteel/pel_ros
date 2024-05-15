@@ -1,0 +1,6 @@
+[submodule "ontology/orka"]
+	path = ontology/orka
+	url = https://github.com/Dorteel/orka.git
+[submodule "orka"]
+	path = orka
+	url = https://github.com/Dorteel/orka.git

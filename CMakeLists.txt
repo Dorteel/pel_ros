@@ -165,6 +165,7 @@ include_directories(
 catkin_install_python(PROGRAMS
   sensors/webcam_pub.py
   sensors/webcam_sub.py
+  src/observation_graph_generator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
