@@ -1,0 +1,2539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://www.semanticweb.org/dorte/orka-full#"
+   xmlns:orka-core="http://www.semanticweb.org/dorte/orka-core#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+   xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+>
+  <rdf:Description rdf:nodeID="N23a57672bbbc44b087c558e662842aaf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#detectedObject"/>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69053b54769d43c382cdf763017aa4ab">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5l6"/>
+    <rdf:rest rdf:nodeID="N11f1a81f57f74ba3bb0a5698ae288fb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc2921eaac5e9486cb508df3ae0392a13">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf652a95e6fb54800b0ab4f1085f0f3ac">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N0345385ce3d74a789f4a5ac006b7e4d6"/>
+    <rdf:rest rdf:nodeID="Nc0d2eaa91cab48ea93f8c0c469c637b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#uri">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasSourceObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#sourceObservationOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasWidth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N030ffec6d34e43a39af83760e9ce473e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N21a1c19ccab94a719d6bb629a7326f02"/>
+    <rdf:rest rdf:nodeID="Nd0f50ca17cab4c04940397f8c4023275"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasMaxRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b86c58c7a7d419fb38f868d0f5bce29">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Mouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#MaterialName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MaterialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_yoloV5_object_detector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5n"/>
+    <orka-core:hasInput rdf:resource="http://www.semanticweb.org/dorte/orka-full#obs_camera_01"/>
+    <orka-core:hasOutput rdf:resource="http://www.semanticweb.org/dorte/orka-full#obs_yolo_01"/>
+    <orka-core:implementedOn rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+    <detectedObject rdf:resource="http://www.semanticweb.org/dorte/orka-full#airplane"/>
+    <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ent_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd9923cc5ed3a4f0aaee8a705fcf584d5">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>Yolo Detection Ability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N724e30d2698e4a029a18c2b2bf7dc788"/>
+    <swrl:head rdf:nodeID="N5058bef6f1f14f0481063dbbaf1a6255"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N87b0fdecd551449399f95b2bca180985">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7e1bee92f1ef4000b9e1ddfa63ef1a10"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Umbrella">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc03a1563e8f4e9fa02537d0943b9eee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Pitch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Angle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ThermalCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_encoder_leftwheel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Encoder"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <orka-core:ofEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#ent_l2csnet_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_01_l2csnet_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_02_l2csnet_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_03_l2csnet_01"/>
+    <outputOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_l2csnet_gaze_detector"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf617d8ff50ae47c3aa24349315b4b019">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nc8b5ebe680024c429fd28ce408369a68"/>
+    <rdf:rest rdf:nodeID="N203d4222e9a94c50b3574a40a0accd70"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N85e39053764e413d9b5d324af4720d31">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#TemporalCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#PixelInsentity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#LightIntensityUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e2206ecff2a4eb9b9cb5d4cdc5e5f4d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf16184502c8547f2b2e006d926ae9f55"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8226529e9828479888681305c7d65fed">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeedCPUb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeed"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel"/>
+    <rdfs:comment>The inference speed on a CPU (Central Processing Unit) for a single image (batch size = 1), measured in milliseconds. It indicates how fast the model can process images on a standard computer without GPU acceleration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Slam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#LocalisationProcedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#GeometricCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#VisualCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#CompelxStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Structure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf7fab60af67044fbbfa48f8c0a03c740">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>internalSensorsofEntity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N489ad17eeae341efb33b4681e54a0215"/>
+    <swrl:head rdf:nodeID="N67a954c7543a4d71b90449af9d8b17f1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasMeasurement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#LDS01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#LaserScanner"/>
+    <rdfs:subClassOf rdf:nodeID="Nd5efe109d88145769c07cb31443fd932"/>
+    <rdfs:subClassOf rdf:nodeID="N2340ed70ed424f3a85698230e0d9547b"/>
+    <rdfs:subClassOf rdf:nodeID="N0a46a25a2e784759b55c90623e907a2b"/>
+    <rdfs:subClassOf rdf:nodeID="Nbd525d7c88814339b16e908737719c01"/>
+    <rdfs:subClassOf rdf:nodeID="N3d41f2b68f0649c497f86f8a5f556a29"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Tennis_racket">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N929c5c9294e74d4087aba332dbbdc2d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasLocationValue"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#slocvalue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N00c9a5cc69234342908f29d4e4e602ac">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasScanningFrequency"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57ebfcc831244232b1eb7c86cdc62980">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasOutput"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#y"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Hair_drier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na0ea8175f0414b1a9af0e63fd03a8e30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Nbc1607c1e5d8457f8a46195428ef63d1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasInputSize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:comment>Refers to the size of the image (in pixels) that is used as an input</rdfs:comment>
+    <rdfs:label>has input size</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_Fetch_Object_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Context"/>
+    <hasRequiredEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_wheeldrop_leftwheel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#WheeldropSensor"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Gyroscope">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#OrientationSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nffce3ea3d441478a921c26b55f6d6ed9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurementStandard"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2>Binary</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Length">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_02_obs_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_mes_02_obs_yolo_01"/>
+    <hasBoundingBox>"2, 2, 140, 140</hasBoundingBox>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nef090536f5e8408cb429343d38dfa570">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N98796339d36c4ab991ea628d12fd1181"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N471db70d5dc24379b8509db4c8374da4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#RedChannelIntensity"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#DepthCamera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Yaw">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Angle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff398d3acfc74319b77d548d6b6fec44">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <rdf:rest rdf:nodeID="N85dbe53935f849b1bf3f606e365d7af9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_bumper_left">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Bumper"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+    <hasLocation rdf:resource="http://www.semanticweb.org/dorte/orka-full#loc_lb01_bumper_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Cell_phone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5n">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N067f12d3d594465084201c9cda2ebaeb"/>
+    <rdfs:subClassOf rdf:nodeID="N693206e033c248e9861dd9af073dbc13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbdf9dfc552c04b42b4be944f96a1cc41">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5s"/>
+    <rdf:rest rdf:nodeID="Nd0d903f9006c4ca9aba7def1b32fda88"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#InternalSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Pattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#VisualCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45d334a97538457990f00e5ed2d6d7e4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#BlueChannelIntensity"/>
+    <rdf:rest rdf:nodeID="N1211cb0105fa4108922ad23334937cc6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb4a1131cb98f41df936b4aaa31bede9c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Stop_sign">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SpatialCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+    <rdfs:comment>The spatial characteristics consist of location and orientation. These characteristics are always described related to a frame of reference, which could be another entity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bird">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Dining_table">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb9cea84765c4db6afa76e32f5a7f98b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMinRange"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_03_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_mes_03_l2csnet_01"/>
+    <hasAngle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hasAngle>
+    <hasMeasurementStandard>degree</hasMeasurementStandard>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Nominal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#NonStandardUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfba2ba3cb557476eb8eb5e8d6cb90055">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N80b5ea1032b24522843c37b6540d234f"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasMeasurementStandard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_01_obs_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_mes_01_obs_yolo_01"/>
+    <hasLabel>airplane</hasLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SpatialUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd67c231a95d4bbe8319b1193167eab8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#ClassType"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasOrientation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Motorcycle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Sink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb50c7a30916948e693e8ffebc3e5412c">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object detector type (DUL)</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="Nadc09a8ae0f24468ad505243a420c5f6"/>
+    <swrl:head rdf:nodeID="N4f58cd74ea1c4b6090ec5d22ab4ff250"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Density">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MaterialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Age">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#TemporalCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d65940f524b427e8d04eb28db78c3bf">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#hostedBy"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd507aba802d24aebb8c2ee8897ee73cc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N606d771ef1b249268501220657665655">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#o">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YoloV5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLO"/>
+    <rdfs:comment>See more information at https://pytorch.org/hub/ultralytics_yolov5/</rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1a3df7424a64742b69e526d9b3489f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbda7cdbcc1c74d059026670b2b687a6e">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object detector boundingboxes</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="Nbdb4012ed7094f06b9be09d2ed5c80b0"/>
+    <swrl:head rdf:nodeID="N58697c6675ee44f08ac96ec588341330"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e532c74d4b649b1bdfeab8792d973d9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N43ca67717e24405d96935138618c447a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <rdf:rest rdf:nodeID="N430c137eb40649d08853833f2cd3a8ca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_lidar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#RPLiDARA2"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01c7b1371aae42e68bb332a7c2f51438">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#canDetect"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#alg"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_bumper_center">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Bumper"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_l01b_gyro_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <producedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_gyroscope01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Flexibility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MaterialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ClassType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5m">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="Nf1a3df7424a64742b69e526d9b3489f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5x6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N1279f82848c445bfb782d27c4ac7d15e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5l6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N4bbcf3583d414dd0b5258644677d7ad9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9efc24e01c84b4ca59b0a43cc0e6cf7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc5b8cacc2fe445dda3e04d1923bb2c9c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N069a72e75bfb4cf6bffed586e489afd7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nbf96243ae44143119c3d57bac8c88972"/>
+    <rdf:rest rdf:nodeID="N8330b203e510464cadb67f36b554bd17"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e3135ed4ff44288b6d051a8e554a199">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI"/>
+    <owl:hasValue>https://www.wikidata.org/wiki/Q37017</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Couch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <orka-core:ofEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#ent_yolo_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_01_obs_yolo_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_02_obs_yolo_01"/>
+    <hasSourceObservation rdf:resource="http://www.semanticweb.org/dorte/orka-full#obs_camera_01"/>
+    <hasImageLocation>C:\user\robotobservations\20240102\yoloimg_01.jpg</hasImageLocation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Orientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf97371b08e8e45a9abeb389471d56d13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#RedChannelIntensity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PixelInsentity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd4720e8bd6f47abb611e8108d860566">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c74725cbe4f41deb1d28a02eed3ab32">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fc51a8801724345bce509e9105f5d34">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#sourceObservationOf"/>
+    <rdf:rest rdf:nodeID="N51ad05916727456e9580fe231cdd6712"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc9bc754780cf460d9faacdc90121a46c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <rdf:rest rdf:nodeID="N95f1ec26a01648a0be270b2c2a55b7a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasParams">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:comment>Indicates the number of trainable parameters in the model, measured in millions. This metric gives an idea of the model's complexity and size. Generally, more parameters can increase the model's potential to learn complex patterns but also its computational cost and risk of overfitting.</rdfs:comment>
+    <rdfs:label>number of parameters</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Potted_plant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://www.semanticweb.org/dorte/orka-core"/>
+    <rdfs:comment>This ontology contains the complete version of the Ontology for Robotic Knowledge Acquisition (ORKA).</rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Surfboard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5696ee68207e41a494b023d43006ad98">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#ofEntity">
+    <owl:propertyChainAxiom rdf:nodeID="N7d0a1b45ee3f4b6d9c8dfa7c65f469c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#Procedure">
+    <rdfs:subClassOf rdf:nodeID="Nb2285d7acb514a7a90a8348bfbd46a57"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasmAPval50-95">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment>This is a metric that evaluates the accuracy of an object detector algorithm. The value defines the mean Average Percision for detections that have an overlap with the ground truth value (Intersection over Union) of 50% to 95% with 5% increments.</rdfs:comment>
+    <rdfs:label>has mean Average Precision (mAP) (50-95)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Second">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#TimeUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c7730d9d7fd400f96175e36f40439ca">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasLocation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#sloc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasYaw">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasOrientation"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c289713722046b1b7781211321f9d9c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#HumanFace"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#face"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Broccoli">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_bumper_right">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Bumper"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Accelerometer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InertialSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Toothbrush">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1189a70125bd44b28e0682243d089465">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N360beed77fdc41b7bfada8d4b39b4e18"/>
+    <rdf:rest rdf:nodeID="Nd27c0ffee6da4f72b9dccd05c955dd9c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2a9c23391834110ad7c9b0c7dd8ec7d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasLabel"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#v"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd525d7c88814339b16e908737719c01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurementStandard"/>
+    <owl:hasValue>millimeter</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N693206e033c248e9861dd9af073dbc13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Volume">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf96243ae44143119c3d57bac8c88972">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasLocationValue"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#sloc"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#slocvalue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N22bce38ef2a748fbae7fd8453f80db7a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N8dac315510e8472d810ba7e2b8f47400"/>
+    <rdf:rest rdf:nodeID="N8d179cd31c7349018f035416b66918d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc7958fc4150e4fbcab221c79dc31d5d3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N067f12d3d594465084201c9cda2ebaeb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeedCPUb1"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0d2eaa91cab48ea93f8c0c469c637b3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N61f49eb4b89e48f1ab9cf01f28c9e2c8"/>
+    <rdf:rest rdf:nodeID="Nbe8746dabb61481aa5883f503271706d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93eb93692fd64c03af2b18f504e59860">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMaxRange"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9838e3b8fa764a0485e4d219071e6252">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>If the sensor is a ContactSensor and produces an Observation with a Measurement ofCharacteristic "characteristic", then "characteristic" must be of class Location. It should also be inferred, that since the range is 0, the value of the Location should be equated with the sensor's Location.</rdfs:comment>
+    <rdfs:label>S2</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N22bce38ef2a748fbae7fd8453f80db7a"/>
+    <swrl:head rdf:nodeID="Nfba2ba3cb557476eb8eb5e8d6cb90055"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Characteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e5419949f7f4eec9d9d781115efca7d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bicycle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bench">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Cup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#EnvironmentCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Characteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3bc84927eb24bd9bc6da726820a09e7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#observesCharacteristic"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Microphone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SoundwaveSrnsor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SIFT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#FeatureDescriptor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N726dd3ae4d304173af4861ba071b39b0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nd507aba802d24aebb8c2ee8897ee73cc"/>
+    <rdf:rest rdf:nodeID="Nd26dc26a096e4456843c912353ba766b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N95f1ec26a01648a0be270b2c2a55b7a5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf16184502c8547f2b2e006d926ae9f55">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#thing"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#uri"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Kilogram">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#WeightUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+    <rdfs:comment>All algorithms that detect some type of physical enity with some indication of the location and type characteristics of the entity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N040d6ab665d844a79e9c0c0ac0b18c48">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N034c9a58dfa24e44aa93994db593fd70"/>
+    <rdf:rest rdf:nodeID="N726dd3ae4d304173af4861ba071b39b0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_cliff_sensor_center">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#CliffSensor"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasBoundingBox">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SurfaceArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5x">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N9a43074aa453453f838140a86ef4d9f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasWeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf1a731311c44f76bb8acadd7711e4c8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#v"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasExternalDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8dac315510e8472d810ba7e2b8f47400">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61342c89dd63403395a3985cc10eec52">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe8746dabb61481aa5883f503271706d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N57ebfcc831244232b1eb7c86cdc62980"/>
+    <rdf:rest rdf:nodeID="N706eaaa63b5f4c8db404e79a953193b0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc2f00ae2e7824789a1906827175a96d5">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>WikiData link descriptions</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N9e2206ecff2a4eb9b9cb5d4cdc5e5f4d"/>
+    <swrl:head rdf:nodeID="Ndf8a37960fe6454bba75ef226f5f0848"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbdb4012ed7094f06b9be09d2ed5c80b0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9c248bc8fea24ab89b148205722f5b72"/>
+    <rdf:rest rdf:nodeID="N030ffec6d34e43a39af83760e9ce473e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Scissors">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6328cc150162484bbf7cbbfd2ba991f7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#describedBy"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#thing"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#wikidata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7bbc8c2b5ac24cd8a3b6b623b93e1f83">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ncf1a731311c44f76bb8acadd7711e4c8"/>
+    <rdf:rest rdf:nodeID="Nb85f8ca43e154c65bfae2a09e3d21c75"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_gyro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Gyroscope"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Remote">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Boat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3efdf35271b6415f898819f5da231bf3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI"/>
+    <owl:hasValue>wdt:P462</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#InertialSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#radians">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#MaterialCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45782395db57432d9e0fc9cdbcee15a5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasLocation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33bf23327fed426abdba1f5420b1bea6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nc2921eaac5e9486cb508df3ae0392a13"/>
+    <rdf:rest rdf:nodeID="N7bbc8c2b5ac24cd8a3b6b623b93e1f83"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Skis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadc09a8ae0f24468ad505243a420c5f6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne2a9c23391834110ad7c9b0c7dd8ec7d"/>
+    <rdf:rest rdf:nodeID="Nf652a95e6fb54800b0ab4f1085f0f3ac"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1217c3294c94fd296ae033a6ab4290e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI"/>
+    <owl:hasValue>https://www.wikidata.org/wiki/Q13191</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c248bc8fea24ab89b148205722f5b72">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#y"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0345385ce3d74a789f4a5ac006b7e4d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasImageLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_02_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_mes_02_l2csnet_01"/>
+    <hasAngle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hasAngle>
+    <hasMeasurementStandard>degree</hasMeasurementStandard>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5s">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="Nf5d49d887c7041dc8192b5e230bc9751"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#LocalisationProcedure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Procedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#RadiationSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#FeatureDescriptor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#v">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5642dcf90a354a69b2cb7765f26a0cab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_bumper_left">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <orka-core:ofEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#ent_bumper_01"/>
+    <hasMeasurement rdf:resource="http://www.semanticweb.org/dorte/orka-full#mes_bumper_left"/>
+    <producedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_bumper_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#CliffSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#IRProximitySensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasColor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#WheeldropSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ContactSensor"/>
+    <rdfs:comment>Activates if the robot has been lifted and the wheels lose contact with the ground.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Airplane">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+    <rdfs:subClassOf rdf:nodeID="N2d88f191250641a69ceb167f7ba95d62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e2a29ac92b54380a6d688ffa4c7ff2b">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>If the sensor is a ContactSensor and produces an Observation with a Measurement ofCharacteristic "characteristic", then "characteristic" must be of class Location. It should also be inferred, that since the range is 0, the value of the Location should be equated with the sensor's Location.</rdfs:comment>
+    <rdfs:label>Contact Sensors Measure Location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="Naa8800048b3b4c8fa6d5d8facb01ff25"/>
+    <swrl:head rdf:nodeID="N810503afb12b47ca8c774a43f5cc2cc4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Horse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_01_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_mes_01_l2csnet_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#outputOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7693840bd73240aebae62d003b8afc1a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#ContactSensor"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_mes_02_obs_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Characteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N85dbe53935f849b1bf3f606e365d7af9">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_l2csnet_gaze_detector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#GazeDetector"/>
+    <orka-core:hasInput rdf:resource="http://www.semanticweb.org/dorte/orka-full#obs_camera_01"/>
+    <orka-core:implementedOn rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDBpediaURI">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasExternalDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Snowboard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#canDetect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-core#Procedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d179cd31c7349018f035416b66918d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nfd4720e8bd6f47abb611e8108d860566"/>
+    <rdf:rest rdf:nodeID="Ncfc18bfb887641af9d76e172ce89a0d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-core#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N344ba02ed25e4732a268816e5b2215fa">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf58b7547d4474f739a29a3cb323e1613"/>
+    <rdf:rest rdf:nodeID="N34f639b2aa5e4c5d93ae585298743382"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N540a14549654442ba22800431b2eca45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Skateboard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasExternalDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N504deaf865d5437d8467c2cedbc9cbb3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasOutput"/>
+    <rdf:rest rdf:nodeID="Nc9bc754780cf460d9faacdc90121a46c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8b5ebe680024c429fd28ce408369a68">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N034c9a58dfa24e44aa93994db593fd70">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeedV100b32">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeed"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel"/>
+    <rdfs:comment>The inference speed on an NVIDIA V100 GPU (Graphics Processing Unit) for a single image (batch size = 32), measured in milliseconds. This metric shows the model's performance on high-end GPU hardware, relevant for environments where fast processing times are critical.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasRequiredEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#Context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ImageSegmentationAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Tie">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_accelerometer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Accelerometer"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Height">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Depth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#locobot_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Robot"/>
+    <orka-core:hosts rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_bumper_left"/>
+    <orka-core:hosts rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_cliff_sensor_left"/>
+    <orka-core:hosts rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_gyroscope01"/>
+    <orka-core:hosts rdf:resource="http://www.semanticweb.org/dorte/orka-full#lb01_intel_d435rgbd_camera"/>
+    <orka-core:hasName>Lokobuki</orka-core:hasName>
+    <rdfs:label>Lokobuki</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20c8295007774bb0a466cffa723aaa94">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N5696ee68207e41a494b023d43006ad98"/>
+    <rdf:rest rdf:nodeID="N45c171a14ff749c5933555b87a3bd1ef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#CreationDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#TemporalCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbc1607c1e5d8457f8a46195428ef63d1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5l"/>
+    <rdf:rest rdf:nodeID="N69053b54769d43c382cdf763017aa4ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Sheep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na650189ec44a4798bd2e8fb861272d6d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N3b86c58c7a7d419fb38f868d0f5bce29"/>
+    <rdf:rest rdf:nodeID="N33bf23327fed426abdba1f5420b1bea6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_camera_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <hasImageLocation>C:\user\robotobservations\20240102\cameraimg_01.jpg</hasImageLocation>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80b5ea1032b24522843c37b6540d234f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#produced">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#producedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45c171a14ff749c5933555b87a3bd1ef">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7c74725cbe4f41deb1d28a02eed3ab32"/>
+    <rdf:rest rdf:nodeID="Nf617d8ff50ae47c3aa24349315b4b019"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#airplane">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Carrot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#InfraredCamera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#RadiationSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_Fetch_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Context"/>
+    <hasRequiredEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#eval_MarksOrange"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9925dd680bd84f128605414dee785ae3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N3d65940f524b427e8d04eb28db78c3bf"/>
+    <rdf:rest rdf:nodeID="N0ccb7ce3aff54cd88da37c6fb4bf675b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Orange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+    <rdfs:subClassOf rdf:nodeID="Nd1217c3294c94fd296ae033a6ab4290e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N489ad17eeae341efb33b4681e54a0215">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nd9a0c2a3b9e540f7aea6e9cbd7790beb"/>
+    <rdf:rest rdf:nodeID="N37fc3a43c12745bdae973dcbae11a4c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeedV100b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasDetectionSpeed"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel"/>
+    <rdfs:comment>The inference speed on an NVIDIA V100 GPU (Graphics Processing Unit) for a single image (batch size = 1), measured in milliseconds. This metric shows the model's performance on high-end GPU hardware, relevant for environments where fast processing times are critical.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasAccuracy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Parking_meter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51ad05916727456e9580fe231cdd6712">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <rdf:rest rdf:nodeID="N751bb27a6ff8431fbebd3d9792f9a7db"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7842cbaf2e1149e38ff8fada8a0654cc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nffce3ea3d441478a921c26b55f6d6ed9"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Elephant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#slocvalue">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb85f8ca43e154c65bfae2a09e3d21c75">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nc5b8cacc2fe445dda3e04d1923bb2c9c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3c4f933cf1b4eeeac4161d0e5043dc1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Giraffe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_HRI_Dialogue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Context"/>
+    <hasRequiredEntity rdf:resource="http://www.semanticweb.org/dorte/orka-full#eval_MarksFace"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#KnowledgeRepository">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InformationStorageSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic">
+    <owl:propertyChainAxiom rdf:nodeID="Nff398d3acfc74319b77d548d6b6fec44"/>
+    <owl:propertyChainAxiom rdf:nodeID="N9553b7d0d00d4f9682b2c12a5df59277"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasAngularResolution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#RPLiDARA2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#LaserScanner"/>
+    <rdfs:subClassOf rdf:nodeID="Nac89abf446364d80bff84ef03133d285"/>
+    <rdfs:subClassOf rdf:nodeID="N93eb93692fd64c03af2b18f504e59860"/>
+    <rdfs:subClassOf rdf:nodeID="Nbb9cea84765c4db6afa76e32f5a7f98b"/>
+    <rdfs:subClassOf rdf:nodeID="N00c9a5cc69234342908f29d4e4e602ac"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N810503afb12b47ca8c774a43f5cc2cc4">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N2b63a7d3d1be41378f9122be06fe5fd1"/>
+    <rdf:rest rdf:nodeID="N1aa74814f4374be089519948e087c5ee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_cliff_sensor_right">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#CliffSensor"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#MonochromeCamera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Camera"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ContactSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+    <rdfs:subClassOf rdf:nodeID="N8da628d66d32483089b4e85fa6f8d340"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd27c0ffee6da4f72b9dccd05c955dd9c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N45782395db57432d9e0fc9cdbcee15a5"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N724e30d2698e4a029a18c2b2bf7dc788">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9a239b3ee68d40a29c7c9f8bf1b5dd56"/>
+    <rdf:rest rdf:nodeID="Nef090536f5e8408cb429343d38dfa570"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na28f6d4a6be24583a1e1780ac83a6885">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98796339d36c4ab991ea628d12fd1181">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLO"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#alg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4bbcf3583d414dd0b5258644677d7ad9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e1bee92f1ef4000b9e1ddfa63ef1a10">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#canDetect"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#alg"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#face"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_ent_bumper_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Characteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#thing">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#obs_tb_gyro_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <producedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#tb_01_gyro"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e975cc6a0a040bd88a57dff15809712">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N991b0f889fa24ea3aa6111b2c6d0a45d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ccb7ce3aff54cd88da37c6fb4bf675b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9161ec8b35d645caa4c5beef1062ca3e"/>
+    <rdf:rest rdf:nodeID="N4f7034ec88674d5dba733f119cb02fa6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4c22bd9366548ec85f05c661196f22a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N392dfd2e86f844e6afabd62ac978a117">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N6a15f5e90b0f40d4a7df16f53a79656b"/>
+    <rdf:rest rdf:nodeID="N7e975cc6a0a040bd88a57dff15809712"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Toilet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d247efdcaad4ba9a16c925c55f55130">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne14f0222a88244f3bd4e67698d9adcb6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasOutput"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#y"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_encoder_cam_yaw">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Encoder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Spoon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd7e8e97c1ad4c0798c7e086afb3a5bd">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N5550e1c6f63b4f279c97be84217e2ef5"/>
+    <rdf:rest rdf:nodeID="N24388c56afa740638dc877bc4903de5c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8d57cdb413b462e813d893600f01de5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#NonStandardUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#wikidata">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#KnowledgeRepository"/>
+    <hasSparqlEndpoint>https://query.wikidata.org/sparql</hasSparqlEndpoint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Wine_glass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ExternalSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5d49d887c7041dc8192b5e230bc9751">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#RGBCamera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Camera"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#TemperatureSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a6f6823c209484995d7b7f351961617">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N871a8460c3c34d5b90493538f4a967f8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf9efc24e01c84b4ca59b0a43cc0e6cf7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfc18bfb887641af9d76e172ce89a0d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N85e39053764e413d9b5d324af4720d31"/>
+    <rdf:rest rdf:nodeID="N871a8460c3c34d5b90493538f4a967f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Orientation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SpatialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasAngle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Sandwich">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#hasPrecision">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28a933f21fa54a4883aacc91ada5749c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Refrigerator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14da3f115bdb4f75bf72c37370577fe6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5x"/>
+    <rdf:rest rdf:nodeID="N063c4192fd8b4ed8911e7d21a8262e67"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#observesCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:propertyChainAxiom rdf:nodeID="N504deaf865d5437d8467c2cedbc9cbb3"/>
+    <owl:propertyChainAxiom rdf:nodeID="N43ca67717e24405d96935138618c447a"/>
+    <owl:propertyChainAxiom rdf:nodeID="Nf2547612c5be48c1b419cad586f80e3b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5m6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N540a14549654442ba22800431b2eca45"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N063c4192fd8b4ed8911e7d21a8262e67">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5x6"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#CurrentSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a46a25a2e784759b55c90623e907a2b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMaxRange"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3500</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_slam_localization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Slam"/>
+    <orka-core:implementedOn rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SpatialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0d903f9006c4ca9aba7def1b32fda88">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5s6"/>
+    <rdf:rest rdf:nodeID="N14da3f115bdb4f75bf72c37370577fe6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Humidity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#EnvironmentCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Car">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2340ed70ed424f3a85698230e0d9547b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAngularResolution"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N991b0f889fa24ea3aa6111b2c6d0a45d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#LaserScanner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Apple">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ThermodynamicUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Chair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N751bb27a6ff8431fbebd3d9792f9a7db">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61f49eb4b89e48f1ab9cf01f28c9e2c8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#inputOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67a954c7543a4d71b90449af9d8b17f1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nc4c22bd9366548ec85f05c661196f22a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f43a700ff2f48aba5c35f004a11d0f4">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Cow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasLocationValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2547612c5be48c1b419cad586f80e3b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#produced"/>
+    <rdf:rest rdf:nodeID="N0fc51a8801724345bce509e9105f5d34"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasFLOPsat640">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+    <rdfs:comment>Floating Point Operations per Second at a model input size of 640 pixels, measured in billions. This metric estimates the computational complexity of a single forward pass through the model. Higher FLOPs indicate a more computationally intensive model, which can impact inference speed and power consumption.</rdfs:comment>
+    <rdfs:label>has Floating Point Operations per Second</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#IRProximitySensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Camera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#LightWaveSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Sports_ball">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4240ed4a9fed43989f1e20c43cbc6ade">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N6d247efdcaad4ba9a16c925c55f55130"/>
+    <rdf:rest rdf:nodeID="N344ba02ed25e4732a268816e5b2215fa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e0657ebf85e4dac84a931045b0b726d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5n6"/>
+    <rdf:rest rdf:nodeID="Nbdf9dfc552c04b42b4be944f96a1cc41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d0a1b45ee3f4b6d9c8dfa7c65f469c6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofEntity"/>
+    <rdf:rest rdf:nodeID="Nc7958fc4150e4fbcab221c79dc31d5d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Fire_hydrant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Laptop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d88f191250641a69ceb167f7ba95d62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasWikiDataURI"/>
+    <owl:hasValue>https://www.wikidata.org/wiki/Q197</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Train">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26805d7cda6841e991fd79a60bc80af0">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>If the sensor is a ContactSensor and produces an Observation with a Measurement ofCharacteristic "characteristic", then "characteristic" must be of class Location. It should also be inferred, that since the range is 0, the value of the Location should be equated with the sensor's Location.</rdfs:comment>
+    <rdfs:label>Distance Sensors Measure Location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N040d6ab665d844a79e9c0c0ac0b18c48"/>
+    <swrl:head rdf:nodeID="N1189a70125bd44b28e0682243d089465"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d41f2b68f0649c497f86f8a5f556a29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMinRange"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc36e3bf152454bc1a28887df51136224">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurementStandard"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2>Nominal</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#IntelRealSenseDepthCameraD435">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DepthCamera"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#RGBCamera"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34f639b2aa5e4c5d93ae585298743382">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N6e532c74d4b649b1bdfeab8792d973d9"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf58b7547d4474f739a29a3cb323e1613">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Kite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasMinRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#DestructionDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#TemporalCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Width">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Knife">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_encoder_cam_pitch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Encoder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#isActive">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-core#Procedure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Donut">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa8800048b3b4c8fa6d5d8facb01ff25">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7693840bd73240aebae62d003b8afc1a"/>
+    <rdf:rest rdf:nodeID="Ne752a0b9677f495b92cd6e48508a6f24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Fork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_intel_d435rgbd_camera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#IntelRealSenseDepthCameraD435"/>
+    <produced rdf:resource="http://www.semanticweb.org/dorte/orka-full#obs_camera_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Kelvin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ThermodynamicUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne529338818214ccb9492a4c724beef9c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Nd632da93a6cf4d848fd15ac82093ac21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N631614c8c5c84fa688c72d4b2af1c9a5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf42a2644d6564b9096aa3afb3ee05de3"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N02725a7b38b245cea11995a628a503a5">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>entityHasCharacteristic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N34411b78c9b643d9b78c19804204c38e"/>
+    <swrl:head rdf:nodeID="Nac0de8160fe54684be09db37babdb08e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SizeCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#GeometricCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N706eaaa63b5f4c8db404e79a953193b0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nb8d57cdb413b462e813d893600f01de5"/>
+    <rdf:rest rdf:nodeID="Nbd7e8e97c1ad4c0798c7e086afb3a5bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Brightness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#EnvironmentCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#EnvironmentCharacteristic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ThermalCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N37fc3a43c12745bdae973dcbae11a4c3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N2c9a6faafc8043a1a6e94849123ffcaa"/>
+    <rdf:rest rdf:nodeID="N9925dd680bd84f128605414dee785ae3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLO">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DeepLearningModel"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+    <rdfs:subClassOf rdf:nodeID="N23a57672bbbc44b087c558e662842aaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#InformationStorageSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c05df199a13421ea2f79aa51276d216">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:oneOf rdf:nodeID="N1eb060340ae24082af60d6c9a3682481"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Cat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1279f82848c445bfb782d27c4ac7d15e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1280</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9dbc540a9b9640aeb04a6931d1a6ddd2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasBoundingBox"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#v"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_slam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Slam"/>
+    <orka-core:implementedOn rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5s6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="Nf97371b08e8e45a9abeb389471d56d13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasRoll">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasOrientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Oven">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a239b3ee68d40a29c7c9f8bf1b5dd56">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5n6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N5642dcf90a354a69b2cb7765f26a0cab"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca5e828fd7dc4fa9bf6370815036b358">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#observesCharacteristic"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dorte/orka-full#VisualCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f58cd74ea1c4b6090ec5d22ab4ff250">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nbd67c231a95d4bbe8319b1193167eab8"/>
+    <rdf:rest rdf:nodeID="Nb66e008605944189988dd5c9f0370213"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Color">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#VisualCharacteristic"/>
+    <rdfs:subClassOf rdf:nodeID="N3efdf35271b6415f898819f5da231bf3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21a1c19ccab94a719d6bb629a7326f02">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Boolean">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#NonStandardUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Button">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ContactSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5efe109d88145769c07cb31443fd932">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAccuracy"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#BlueChannelIntensity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PixelInsentity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N27455ee9782242dab373bbdc42e2c627">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>L2CS-Net Detection Ability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="Nb3d06fc2e92341988aeb217011be1a92"/>
+    <swrl:head rdf:nodeID="N87b0fdecd551449399f95b2bca180985"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Keyboard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b63a7d3d1be41378f9122be06fe5fd1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Zebra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a15f5e90b0f40d4a7df16f53a79656b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/dorte/orka-full#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#PressureSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd9a0c2a3b9e540f7aea6e9cbd7790beb">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#Robot"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#r"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ent_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SimpleStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Structure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac89abf446364d80bff84ef03133d285">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAngularResolution"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.225</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#Procedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5058bef6f1f14f0481063dbbaf1a6255">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N01c7b1371aae42e68bb332a7c2f51438"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Celsius">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ThermodynamicUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#OrientationSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#HumanPoseEstimationAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ComputerVisionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#WeightUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasSizeCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#turtlebot_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Robot"/>
+    <orka-core:hasName>TurtleBot</orka-core:hasName>
+    <rdfs:label>TurtleBot</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#s">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad92afdad9b54a0590e391ba38f3b4a5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5n"/>
+    <rdf:rest rdf:nodeID="N3e0657ebf85e4dac84a931045b0b726d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8330b203e510464cadb67f36b554bd17">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9a6f6823c209484995d7b7f351961617"/>
+    <rdf:rest rdf:nodeID="N4240ed4a9fed43989f1e20c43cbc6ade"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1aa74814f4374be089519948e087c5ee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N929c5c9294e74d4087aba332dbbdc2d6"/>
+    <rdf:rest rdf:nodeID="N7842cbaf2e1149e38ff8fada8a0654cc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12c992fccb9f46a3a2d24b8a1ba5dd0f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-core#ofCharacteristic"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb66e008605944189988dd5c9f0370213">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nc36e3bf152454bc1a28887df51136224"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#TimeUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9553b7d0d00d4f9682b2c12a5df59277">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#sourceObservationOf"/>
+    <rdf:rest rdf:nodeID="N6db648e3f9184cfcbc109cf9fb90f7c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasScanningFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Structure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#GeometricCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24388c56afa740638dc877bc4903de5c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N28a933f21fa54a4883aacc91ada5749c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3d06fc2e92341988aeb217011be1a92">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N4c289713722046b1b7781211321f9d9c"/>
+    <rdf:rest rdf:nodeID="N631614c8c5c84fa688c72d4b2af1c9a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Clock">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1eb060340ae24082af60d6c9a3682481">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rdf:first>
+    <rdf:rest rdf:nodeID="N1f43a700ff2f48aba5c35f004a11d0f4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58697c6675ee44f08ac96ec588341330">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf3c4f933cf1b4eeeac4161d0e5043dc1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9161ec8b35d645caa4c5beef1062ca3e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-core#Observation"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#o"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Shape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#GeometricCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fe507fb52394503a4ba685b31921a61">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#Roll"/>
+    <rdf:rest rdf:nodeID="N2f5cf28917ec467ebd39e42ad4c82c92"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#HumanFace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+    <rdfs:subClassOf rdf:nodeID="N3e3135ed4ff44288b6d051a8e554a199"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#degrees">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#mes_bumper_left">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Measurement"/>
+    <orka-core:ofCharacteristic rdf:resource="http://www.semanticweb.org/dorte/orka-full#char_ent_bumper_01"/>
+    <hasActivated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasActivated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#PositionSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0f50ca17cab4c04940397f8c4023275">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne14f0222a88244f3bd4e67698d9adcb6"/>
+    <rdf:rest rdf:nodeID="N20c8295007774bb0a466cffa723aaa94"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Millimeter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#SpatialUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#SoundwaveSrnsor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasActivated">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-core#hasValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34411b78c9b643d9b78c19804204c38e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ncc03a1563e8f4e9fa02537d0943b9eee"/>
+    <rdf:rest rdf:nodeID="N194619466c2145dbbabee8c92aae944d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Contains the standard measurements of the International System of Quantities (SI) as well as some additional measurement types, such as pixel values, and boolean measurement representing on/off measures</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Baseball_bat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_cliff_sensor_left">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#CliffSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Cake">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Backpack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#DistanceSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+    <rdfs:subClassOf rdf:nodeID="Na3bc84927eb24bd9bc6da726820a09e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Vase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#YOLOv5l">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#YoloV5"/>
+    <rdfs:subClassOf rdf:nodeID="N606d771ef1b249268501220657665655"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_encoder_rightwheel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Encoder"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N203d4222e9a94c50b3574a40a0accd70">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9dbc540a9b9640aeb04a6931d1a6ddd2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_MarksOrange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasColor rdf:resource="http://www.semanticweb.org/dorte/orka-full#eval_char_MarksOrange_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Weight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MaterialCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_mes_01_obs_yolo_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-core#Characteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6c457be87cf4f0d88fe52bad80508fa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N45d334a97538457990f00e5ed2d6d7e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Banana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11f1a81f57f74ba3bb0a5698ae288fb4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5m"/>
+    <rdf:rest rdf:nodeID="N8952ab4e471541da8de7774b357cf39a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_char_MarksOrange_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Color"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N194619466c2145dbbabee8c92aae944d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N8226529e9828479888681305c7d65fed"/>
+    <rdf:rest rdf:nodeID="Na650189ec44a4798bd2e8fb861272d6d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#m">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasAge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bottle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasHeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#hasInput">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#inputOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Context">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bowl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasTemperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#sourceObservationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_mes_02_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Yaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N360beed77fdc41b7bfada8d4b39b4e18">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#Location"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasPitch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasOrientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Toaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Dog">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#LightWaveSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+    <rdfs:subClassOf rdf:nodeID="Nca5e828fd7dc4fa9bf6370815036b358"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Bumper">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ContactSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#loc_lb01_bumper_left">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasLocationValue>left side of LocoBot</hasLocationValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd26dc26a096e4456843c912353ba766b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nb4a1131cb98f41df936b4aaa31bede9c"/>
+    <rdf:rest rdf:nodeID="N392dfd2e86f844e6afabd62ac978a117"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd632da93a6cf4d848fd15ac82093ac21">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#Pitch"/>
+    <rdf:rest rdf:nodeID="N2fe507fb52394503a4ba685b31921a61"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Microwave">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5550e1c6f63b4f279c97be84217e2ef5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#y"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_gyroscope01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Gyroscope"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#TV">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Pizza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasEnergyEfficiency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf42a2644d6564b9096aa3afb3ee05de3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#GazeDetector"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#alg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2285d7acb514a7a90a8348bfbd46a57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#isActive"/>
+    <owl:someValuesFrom rdf:nodeID="N0c05df199a13421ea2f79aa51276d216"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac0de8160fe54684be09db37babdb08e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N61342c89dd63403395a3985cc10eec52"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Teddy_bear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#GazeDetector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#HumanPoseEstimationAlgorithm"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf8a37960fe6454bba75ef226f5f0848">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N6328cc150162484bbf7cbbfd2ba991f7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f5cf28917ec467ebd39e42ad4c82c92">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#Yaw"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ent_bumper_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Baseball_glove">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#y">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a43074aa453453f838140a86ef4d9f5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasInputSize"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8952ab4e471541da8de7774b357cf39a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#YOLOv5m6"/>
+    <rdf:rest rdf:nodeID="Nad92afdad9b54a0590e391ba38f3b4a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_mes_03_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#Pitch"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8da628d66d32483089b4e85fa6f8d340">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasDetectionRange"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#DataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#InformationStorageSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#GreenChannelIntensity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PixelInsentity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Encoder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#CurrentSensor"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PositionSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne752a0b9677f495b92cd6e48508a6f24">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N1c7730d9d7fd400f96175e36f40439ca"/>
+    <rdf:rest rdf:nodeID="N069a72e75bfb4cf6bffed586e489afd7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f7034ec88674d5dba733f119cb02fa6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9e5419949f7f4eec9d9d781115efca7d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#char_mes_01_l2csnet_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Sonar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#sloc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Tiltsensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#OrientationSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Compass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#OrientationSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDepth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSizeCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#VisualCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasWorkingRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#LightIntensityUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#MeasurementUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Truck">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#lb01_wheeldrop_rightwheel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#WheeldropSensor"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#locobot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Handbag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N430c137eb40649d08853833f2cd3a8ca">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <rdf:rest rdf:nodeID="Na28f6d4a6be24583a1e1780ac83a6885"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ClassType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#HumiditySensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ExternalSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c9a6faafc8043a1a6e94849123ffcaa">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dorte/orka-full#InternalSensor"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/dorte/orka-full#s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#tb_01_lidar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/dorte/orka-full#LaserScanner"/>
+    <orka-core:hostedBy rdf:resource="http://www.semanticweb.org/dorte/orka-full#turtlebot_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Traffic_light">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#detectedObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectDetectionAlgorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Roll">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#Angle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#alg">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasSensorCharacteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Hot_dog">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#GPS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PositionSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasSparqlEndpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasShape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasObservableCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6db648e3f9184cfcbc109cf9fb90f7c2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasMeasurement"/>
+    <rdf:rest rdf:nodeID="N12c992fccb9f46a3a2d24b8a1ba5dd0f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#Robot">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Suitcase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#hasOutput">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#outputOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#StereoCamera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#DistanceSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#hasDetectionThreshold">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#hasAlgorithmCharacteristic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-core#Sensor">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#PhysicalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Measurement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#millimeter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Book">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1211cb0105fa4108922ad23334937cc6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/dorte/orka-full#GreenChannelIntensity"/>
+    <rdf:rest rdf:nodeID="N471db70d5dc24379b8509db4c8374da4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#face">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#Frisbee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dorte/orka-full#ObjectsFromMSCOCODataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#entity">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#eval_MarksFace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/dorte/orka-full#producedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

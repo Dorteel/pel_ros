@@ -3,7 +3,7 @@ import rdflib
 from pyvis.network import Network
 
 # Directory containing the RDF files
-rdf_directory = 'obs_graphs'
+base_directory = 'obs_graphs'
 
 # Define colors for different node and edge types
 color_instance = '#FFA500'  # Orange
@@ -94,7 +94,7 @@ def visualize_graph(graph, filename):
 
         if is_literal(o):
             # For literals, create a node with the last 10 characters of the value
-            o_str = str(o)[-10:]
+            o_str = str(o)[-100:]
             net.add_node(o_str, label=o_str, color=color_data_property)
             net.add_edge(s_str, o_str, label=p_str, color=color_data_property)
         else:
@@ -112,22 +112,38 @@ def visualize_graph(graph, filename):
     net.show(output_filename, notebook=False)
     print(f"Graph visualized and saved to {output_filename}")
 
+def get_latest_folder(directory):
+    """
+    Get the most recently created folder in the specified directory.
+
+    Args:
+    directory (str): The path to the base directory.
+
+    Returns:
+    str: The path to the most recently created folder.
+    """
+    folders = [os.path.join(directory, d) for d in os.listdir(directory) if os.path.isdir(os.path.join(directory, d))]
+    latest_folder = max(folders, key=os.path.getmtime)
+    return latest_folder
+
 def main():
     """
     Main function to load RDF files and visualize them.
     """
-    if not os.path.exists(rdf_directory):
-        print(f"Directory {rdf_directory} does not exist.")
+    if not os.path.exists(base_directory):
+        print(f"Directory {base_directory} does not exist.")
         return
 
-    rdf_files = [f for f in os.listdir(rdf_directory) if f.endswith('.rdf')]
+    latest_folder = get_latest_folder(base_directory)
+
+    rdf_files = [f for f in os.listdir(latest_folder) if f.endswith('.rdf')]
 
     if not rdf_files:
-        print(f"No RDF files found in directory {rdf_directory}.")
+        print(f"No RDF files found in directory {latest_folder}.")
         return
 
     for rdf_file in rdf_files:
-        rdf_path = os.path.join(rdf_directory, rdf_file)
+        rdf_path = os.path.join(latest_folder, rdf_file)
         graph = rdflib.Graph()
         graph.parse(rdf_path, format='xml')
         visualize_graph(graph, rdf_path)

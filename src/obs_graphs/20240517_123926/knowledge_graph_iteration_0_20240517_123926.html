@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_02_link\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_02_link\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_02_link/1715949566.5222533\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_02_link/1715949566.5222533\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_03_link/1715949566.522102\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_03_link/1715949566.522102\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "1000.0", "label": "1000.0", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/gyro\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/gyro\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/gyro/1715949566.5221484\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/gyro/1715949566.5221484\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_left_joint_sensor/1715949566.522194\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_left_joint_sensor/1715949566.522194\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "2024-05-17T12:39:26", "label": "2024-05-17T12:39:26", "shape": "dot"}, {"color": "#00FF00", "id": "(-5.436768266318455e-05, -1.4634854193514323e-07, -4.051396157867011e-07)", "label": "(-5.436768266318455e-05, -1.4634854193514323e-07, -4.051396157867011e-07)", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/Hokuyo_URG_04LX_UG01/1715949566.522047\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/Hokuyo_URG_04LX_UG01/1715949566.522047\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/head_2_joint_sensor/1715949566.4989502\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/head_2_joint_sensor/1715949566.4989502\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/inertial_unit/1715949566.5223572\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/inertial_unit/1715949566.5223572\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "(-0.001950562149227792, -7.762885483473029e-05, -0.7865263333641297)", "label": "(-0.001950562149227792, -7.762885483473029e-05, -0.7865263333641297)", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/base_cover_link\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/base_cover_link\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/base_cover_link/1715949566.522445\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/base_cover_link/1715949566.522445\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "f999\\xff99:\\xff99:\\xff999\\xff:9:\\xff:::\\xff::;\\xff:::\\xff:::\\xff:::\\xff:::\\xff;;;\\xff;;\u003c\\xff\u003c\u003c\u003c\\xff\"", "label": "f999\\xff99:\\xff99:\\xff999\\xff:9:\\xff:::\\xff::;\\xff:::\\xff:::\\xff:::\\xff:::\\xff;;;\\xff;;\u003c\\xff\u003c\u003c\u003c\\xff\"", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_left_joint_sensor\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_left_joint_sensor\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/accelerometer\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/accelerometer\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/accelerometer/1715949566.522312\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/accelerometer/1715949566.522312\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "0.0", "label": "0.0", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_depth_1715949566.524684.jpg", "label": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_depth_1715949566.524684.jpg", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_rgb\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_rgb\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_03_link\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_03_link\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/head_2_joint_sensor\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/head_2_joint_sensor\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint_sensor\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint_sensor\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint_sensor/1715949566.4984493\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint_sensor/1715949566.4984493\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/Hokuyo_URG_04LX_UG01\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/Hokuyo_URG_04LX_UG01\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint/1715949566.4983892\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint/1715949566.4983892\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "-8.246344961290035e-05", "label": "-8.246344961290035e-05", "shape": "dot"}, {"color": "#00FF00", "id": "33, 0.23377038538455963, 0.2295827567577362, 0.22749991714954376, inf, inf, inf, inf, inf, inf, inf)", "label": "33, 0.23377038538455963, 0.2295827567577362, 0.22749991714954376, inf, inf, inf, inf, inf, inf, inf)", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/head_1_joint_sensor/1715949566.4985719\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/head_1_joint_sensor/1715949566.4985719\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_right_joint_sensor\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_right_joint_sensor\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_right_joint_sensor/1715949566.5222247\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_right_joint_sensor/1715949566.5222247\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/head_1_joint_sensor\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/head_1_joint_sensor\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "-1.6114648957360945e-07", "label": "-1.6114648957360945e-07", "shape": "dot"}, {"color": "#00FF00", "id": "1.4086958080920852e-06", "label": "1.4086958080920852e-06", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "xd2?\\x93\\xb7\\xd2?\\x05\\xb8\\xd2?v\\xb8\\xd2?\\xe7\\xb8\\xd2?X\\xb9\\xd2?\\xc9\\xb9\\xd2?:\\xba\\xd2?\\xab\\xba\\xd2?\u0027", "label": "xd2?\\x93\\xb7\\xd2?\\x05\\xb8\\xd2?v\\xb8\\xd2?\\xe7\\xb8\\xd2?X\\xb9\\xd2?\\xc9\\xb9\\xd2?:\\xba\\xd2?\\xab\\xba\\xd2?\u0027", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_01_link\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_01_link\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_01_link/1715949566.5222802\u003e", "label": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_01_link/1715949566.5222802\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "0.07", "label": "0.07", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_depth\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_depth\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "-6.684180938697235e-08", "label": "-6.684180938697235e-08", "shape": "dot"}, {"color": "#00FF00", "id": "(0.0007585784273805449, -0.019154981586441053, 9.810644341004057)", "label": "(0.0007585784273805449, -0.019154981586441053, 9.810644341004057)", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/sensors//TIAGo_LITE/inertial_unit\u003e", "label": "\u003chttp://example.org/sensors//TIAGo_LITE/inertial_unit\u003e", "shape": "dot"}, {"color": "#00FF00", "id": "-3.4380555980805534e-07", "label": "-3.4380555980805534e-07", "shape": "dot"}, {"color": "#00FF00", "id": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_rgb_1715949566.5219135.jpg", "label": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_rgb_1715949566.5219135.jpg", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_02_link\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_02_link/1715949566.5222533\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_03_link/1715949566.522102\u003e", "label": "ssn1:observedProperty", "to": "1000.0"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/gyro\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/gyro/1715949566.5221484\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_left_joint_sensor/1715949566.522194\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/gyro/1715949566.5221484\u003e", "label": "ssn1:observedProperty", "to": "(-5.436768266318455e-05, -1.4634854193514323e-07, -4.051396157867011e-07)"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Hokuyo_URG_04LX_UG01/1715949566.522047\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/head_2_joint_sensor/1715949566.4989502\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/inertial_unit/1715949566.5223572\u003e", "label": "ssn1:observedProperty", "to": "(-0.001950562149227792, -7.762885483473029e-05, -0.7865263333641297)"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/base_cover_link\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/base_cover_link/1715949566.522445\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e", "label": "ssn1:observedProperty", "to": "f999\\xff99:\\xff99:\\xff999\\xff:9:\\xff:::\\xff::;\\xff:::\\xff:::\\xff:::\\xff:::\\xff;;;\\xff;;\u003c\\xff\u003c\u003c\u003c\\xff\""}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_left_joint_sensor\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_left_joint_sensor/1715949566.522194\u003e"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/accelerometer\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/accelerometer/1715949566.522312\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_cover_link/1715949566.522445\u003e", "label": "ssn1:observedProperty", "to": "0.0"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e", "label": "ssn1:observedProperty", "to": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_depth_1715949566.524684.jpg"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_rgb\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/gyro/1715949566.5221484\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_03_link\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_03_link/1715949566.522102\u003e"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/head_2_joint_sensor\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/head_2_joint_sensor/1715949566.4989502\u003e"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint_sensor\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint_sensor/1715949566.4984493\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_cover_link/1715949566.522445\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/Hokuyo_URG_04LX_UG01\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/Hokuyo_URG_04LX_UG01/1715949566.522047\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint/1715949566.4983892\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint_sensor/1715949566.4984493\u003e", "label": "ssn1:observedProperty", "to": "-8.246344961290035e-05"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/inertial_unit/1715949566.5223572\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Hokuyo_URG_04LX_UG01/1715949566.522047\u003e", "label": "ssn1:observedProperty", "to": "33, 0.23377038538455963, 0.2295827567577362, 0.22749991714954376, inf, inf, inf, inf, inf, inf, inf)"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/head_1_joint_sensor/1715949566.4985719\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/wheel_right_joint_sensor\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_right_joint_sensor/1715949566.5222247\u003e"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/head_1_joint_sensor\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/head_1_joint_sensor/1715949566.4985719\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_left_joint_sensor/1715949566.522194\u003e", "label": "ssn1:observedProperty", "to": "-1.6114648957360945e-07"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_02_link/1715949566.5222533\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/head_1_joint_sensor/1715949566.4985719\u003e", "label": "ssn1:observedProperty", "to": "1.4086958080920852e-06"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/torso_lift_joint\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint/1715949566.4983892\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e", "label": "ssn1:observedProperty", "to": "xd2?\\x93\\xb7\\xd2?\\x05\\xb8\\xd2?v\\xb8\\xd2?\\xe7\\xb8\\xd2?X\\xb9\\xd2?\\xc9\\xb9\\xd2?:\\xba\\xd2?\\xab\\xba\\xd2?\u0027"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_02_link/1715949566.5222533\u003e", "label": "ssn1:observedProperty", "to": "1000.0"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/base_sonar_01_link\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_01_link/1715949566.5222802\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint/1715949566.4983892\u003e", "label": "ssn1:observedProperty", "to": "0.07"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/Astra_depth\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_01_link/1715949566.5222802\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/torso_lift_joint_sensor/1715949566.4984493\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/accelerometer/1715949566.522312\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_right_joint_sensor/1715949566.5222247\u003e", "label": "ssn1:observedProperty", "to": "-6.684180938697235e-08"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_depth/1715949566.524684\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_03_link/1715949566.522102\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/accelerometer/1715949566.522312\u003e", "label": "ssn1:observedProperty", "to": "(0.0007585784273805449, -0.019154981586441053, 9.810644341004057)"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/sensors//TIAGo_LITE/inertial_unit\u003e", "label": "ssn1:hasObservation", "to": "\u003chttp://example.org/observations//TIAGo_LITE/inertial_unit/1715949566.5223572\u003e"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/head_2_joint_sensor/1715949566.4989502\u003e", "label": "ssn1:observedProperty", "to": "-3.4380555980805534e-07"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/base_sonar_01_link/1715949566.5222802\u003e", "label": "ssn1:observedProperty", "to": "1000.0"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/wheel_right_joint_sensor/1715949566.5222247\u003e", "label": "ssn1:observationResultTime", "to": "2024-05-17T12:39:26"}, {"arrows": "to", "color": "#00FF00", "from": "\u003chttp://example.org/observations//TIAGo_LITE/Astra_rgb/1715949566.5219135\u003e", "label": "ssn1:observedProperty", "to": "obs_graphs/20240517_123926/_TIAGo_LITE_Astra_rgb_1715949566.5219135.jpg"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

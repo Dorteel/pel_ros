@@ -1,67 +1,98 @@
 import rospy
-from std_msgs.msg import String, Float64, Float64MultiArray, ByteMultiArray, Header 
-from sensor_msgs.msg import Image, PointCloud2
-from rospy import AnyMsg
+import rdflib
+import time
+from std_msgs.msg import String, Float64
+from sensor_msgs.msg import Image, Imu  # Add other message types as needed
+from threading import Lock
+import importlib
 
-class DynamicSubscriber:
-    def __init__(self, prefix):
-        self.prefix = prefix
-        self.subscribers = {}
-        self.init_node()
-        self.subscribe_to_topics()
+# Define a sample period (50ms) and save period (10 seconds)
+SAMPLE_PERIOD = 0.05
+SAVE_PERIOD = 0.05
+iters = 2
 
-    def init_node(self):
-        rospy.init_node('observation_graph_creator', anonymous=True)
+# Dictionary to store the latest messages from each topic
+latest_messages = {}
+lock = Lock()
 
-    def callback(self, msg, topic):
-        rospy.loginfo(f"Received message on topic {topic}")
-        # Try to convert the AnyMsg to a specific type
-        try:
-            topic_type = self.get_topic_type(topic)
-            if topic_type:
-                specific_msg = self.convert_anymsg_to_specific(msg, topic_type)
-                # rospy.loginfo(f"Message from {topic}: {specific_msg}")
-        except Exception as e:
-            rospy.logerr(f"Error processing message from {topic}: {e}")
+# Specify Robot Name
+robot_name = 'TIAGo_LITE'
 
-    def subscribe_to_topics(self):
-        all_topics = rospy.get_published_topics()
-        for (topic, topic_type) in all_topics:
-            if topic.startswith(self.prefix):
-                self.subscribers[topic] = rospy.Subscriber(topic, AnyMsg, self.callback, callback_args=topic)
+def message_callback(msg, topic):
+    global latest_messages
+    with lock:
+        latest_messages[topic] = (msg, time.time())
 
-    def get_topic_type(self, topic):
-        """ Get the topic type for a given topic name. """
-        all_topics = rospy.get_published_topics()
-        for (topic_name, topic_type) in all_topics:
-            if topic_name == topic:
-                return topic_type
+def get_message_class(msg_type):
+    """
+    Dynamically import the message class from its type string.
+    """
+    try:
+        parts = msg_type.split('/')
+        module = importlib.import_module(parts[0] + ".msg")
+        return getattr(module, parts[1])
+    except (ImportError, AttributeError) as e:
+        rospy.logerr(f"Failed to import message class for type {msg_type}: {e}")
         return None
 
-    def convert_anymsg_to_specific(self, msg, topic_type):
-        """ Convert AnyMsg to a specific ROS message type. """
-        if topic_type == 'std_msgs/String':
-            specific_msg = String()
-        elif topic_type == 'sensor_msgs/Image':
-            specific_msg = Image()
-        elif topic_type == 'std_msgs/Float64':
-            specific_msg = Float64()
-        elif topic_type == 'std_msgs/Float64MultiArray':
-            specific_msg = Float64MultiArray()
-        else:
-            rospy.logwarn(f"Unsupported topic type: {topic_type}")
-            return msg
+def create_subscribers():
+    topics = rospy.get_published_topics()
+    subscribers = []
+    for topic, msg_type in topics:
+        if robot_name in topic:
+            rospy.loginfo(f"Subscribing to topic: {topic}")
+            msg_class = get_message_class(msg_type)
+            if msg_class:
+                subscriber = rospy.Subscriber(topic, msg_class, message_callback, callback_args=topic)
+                subscribers.append(subscriber)
+    return subscribers
 
-        specific_msg.deserialize(msg._buff)
-        return specific_msg
+def store_in_knowledge_graph(graph, ssn_namespace):
+    global latest_messages
+    with lock:
+        for topic, (msg, timestamp) in latest_messages.items():
+            sensor = rdflib.URIRef(f"http://example.org/sensors/{topic}")
+            observation = rdflib.URIRef(f"http://example.org/observations/{topic}/{timestamp}")
+            graph.add((sensor, ssn_namespace.hasObservation, observation))
+            graph.add((observation, ssn_namespace.observedProperty, rdflib.Literal(str(msg.data))))
+            graph.add((observation, ssn_namespace.observationResultTime, rdflib.Literal(time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(timestamp)))))
 
-    def run(self):
-        rospy.spin()
+def save_graph(graph, iteration_count):
+    timestamp = time.strftime("%Y%m%d_%H%M%S", time.gmtime())
+    filename = f'obs_graphs/knowledge_graph_iteration_{iteration_count}_{timestamp}.rdf'
+    graph.serialize(destination=filename, format='xml')
+    rospy.loginfo(f"Graph saved to {filename}")
+
+
+# Main function
+def main():
+    rospy.init_node('observation_graph_creator', anonymous=True)
+    subscribers = create_subscribers()
+    
+    rate = rospy.Rate(1 / SAMPLE_PERIOD)
+    last_save_time = time.time()
+    iteration_count = 0
+
+    SSN = rdflib.Namespace("http://purl.oclc.org/NET/ssnx/ssn#")
+
+    while not rospy.is_shutdown() and iteration_count < iters:
+        graph = rdflib.Graph()
+        graph.parse("/home/user/pel_ws/src/pel_ros/orka/owl/orka-full.rdf")
+        # graph.bind("ssn", SSN)
+
+        store_in_knowledge_graph(graph, SSN)
+        
+        current_time = time.time()
+        if current_time - last_save_time >= SAVE_PERIOD:
+            save_graph(graph, iteration_count)
+            last_save_time = current_time
+            iteration_count += 1
+        
+        rospy.loginfo(f"Iteration {iteration_count} completed")
+        rate.sleep()
 
 if __name__ == '__main__':
     try:
-        prefix = '/TIAGo'  # Prefix for topics to subscribe to
-        dynamic_subscriber = DynamicSubscriber(prefix)
-        dynamic_subscriber.run()
+        main()
     except rospy.ROSInterruptException:
         pass
