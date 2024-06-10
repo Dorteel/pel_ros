@@ -1,0 +1,126 @@
+# 1. Generate a graph (SSN)
+# - used properties:
+#   - sosa:Observation
+#   - sosa:phenomenonTime
+#   - sosa:Sensor
+#   - sosa:madeObservation & madeBySensor
+#   - sosa:ObservableProperty
+# 2. Get the sensors of the robot
+# 3. Add the measurements
+# 4. 
+
+from rdflib.namespace import SOSA, SSN
+import rospy
+import rdflib
+import time
+import os
+from std_msgs.msg import String, Float64
+from sensor_msgs.msg import Image, Imu  # Add other message types as needed
+from threading import Lock
+import importlib
+import cv2
+from cv_bridge import CvBridge
+
+# Define a sample period (50ms) and save period (10 seconds)
+SAMPLE_PERIOD = 0.05
+SAVE_PERIOD = 0.05
+iters = 2
+
+# Dictionary to store the latest messages from each topic
+latest_messages = {}
+lock = Lock()
+bridge = CvBridge()
+
+# Specify Robot Name
+robot_name = 'TIAGo_LITE'
+
+def message_callback(msg, topic):
+    global latest_messages
+    with lock:
+        latest_messages[topic] = (msg, time.time())
+
+def get_message_class(msg_type):
+    """
+    Dynamically import the message class from its type string.
+    """
+    try:
+        parts = msg_type.split('/')
+        module = importlib.import_module(parts[0] + ".msg")
+        return getattr(module, parts[1])
+    except (ImportError, AttributeError) as e:
+        rospy.logerr(f"Failed to import message class for type {msg_type}: {e}")
+        return None
+
+def create_subscribers():
+    topics = rospy.get_published_topics()
+    subscribers = []
+    for topic, msg_type in topics:
+        if robot_name in topic:
+            rospy.loginfo(f"Subscribing to topic: {topic}")
+            msg_class = get_message_class(msg_type)
+            if msg_class:
+                subscriber = rospy.Subscriber(topic, msg_class, message_callback, callback_args=topic)
+                subscribers.append(subscriber)
+    return subscribers
+
+def store_in_knowledge_graph(graph, ssn_namespace, folder_path):
+    global latest_messages
+    with lock:
+        for topic, (msg, timestamp) in latest_messages.items():
+            sensor = rdflib.URIRef(f"http://example.org/sensors/{topic}")
+            observation = rdflib.URIRef(f"http://example.org/observations/{topic}/{timestamp}")
+            graph.add((sensor, ssn_namespace.hasObservation, observation))
+            graph.add((observation, ssn_namespace.observedProperty, rdflib.Literal(str(msg.data))))
+            graph.add((observation, ssn_namespace.observationResultTime, rdflib.Literal(time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(timestamp)))))
+            
+            if isinstance(msg, Image):
+                # Convert ROS Image message to OpenCV image
+                cv_image = bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
+                image_filename = f"{folder_path}/{topic.replace('/', '_')}_{timestamp}.jpg"
+                cv2.imwrite(image_filename, cv_image)
+                graph.add((observation, ssn_namespace.observedProperty, rdflib.Literal(image_filename)))
+
+def save_graph(graph, iteration_count, folder_path):
+    timestamp = time.strftime("%Y%m%d_%H%M%S", time.gmtime())
+    filename = f'{folder_path}/knowledge_graph_iteration_{iteration_count}_{timestamp}.rdf'
+    graph.serialize(destination=filename, format='xml')
+    rospy.loginfo(f"Graph saved to {filename}")
+
+# Main function
+def main():
+    rospy.init_node('observation_graph_creator', anonymous=True)
+    subscribers = create_subscribers()
+    
+    rate = rospy.Rate(1 / SAMPLE_PERIOD)
+    last_save_time = time.time()
+    iteration_count = 0
+
+    SSN = rdflib.Namespace("http://purl.oclc.org/NET/ssnx/ssn#")
+    
+    # Create a timestamped folder
+    main_timestamp = time.strftime("%Y%m%d_%H%M%S", time.gmtime())
+    folder_path = f"obs_graphs/{main_timestamp}"
+    os.makedirs(folder_path, exist_ok=True)
+
+    while not rospy.is_shutdown() and iteration_count < iters:
+        graph = rdflib.Graph()
+        graph.parse("/home/user/pel_ws/src/pel_ros/orka/owl/orka-full.rdf")
+        graph.bind("ssn", SSN)
+
+        store_in_knowledge_graph(graph, SSN, folder_path)
+        
+        current_time = time.time()
+        if current_time - last_save_time >= SAVE_PERIOD:
+            save_graph(graph, iteration_count, folder_path)
+            last_save_time = current_time
+            iteration_count += 1
+        
+        rospy.loginfo(f"Iteration {iteration_count} completed")
+        rate.sleep()
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except rospy.ROSInterruptException:
+        pass
