@@ -263,7 +263,7 @@ for i in range(n_devices):
     d_type = device_names[d.getNodeType()-1]
     if d_type in sensor_function_names:
         # Create publishers
-        sensor_pub[d_name] = rospy.Publisher(f'{robot_name}/{d_type.lower()}/{d_name}', sensor_dtype[d_type], queue_size=10)
+        sensor_pub[d_name] = rospy.Publisher(f'{robot_name}/sensors/{d_type.lower()}/{d_name}', sensor_dtype[d_type], queue_size=10)
         # Add devices
         devices[d_name] = [d, d_type]
     print(f"{robot_name} : Device {d_name} of type {d_type} found!")

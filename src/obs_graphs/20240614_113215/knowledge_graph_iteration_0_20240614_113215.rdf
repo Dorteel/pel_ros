@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sosa="http://www.w3.org/ns/sosa/"
+   xmlns:ssn="http://www.w3.org/ns/ssn/"
+>
+  <rdf:Description rdf:about="http://example.org/obs_Astra_depth_1718364735.0646546">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/Astra_depth"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0646546</sosa:resultTime>
+    <sosa:hasSimpleResult>/home/user/pel_ws/src/pel_ros/src/obs_graphs/result_Astra_depth_1718364735.0646546.jpg</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/head_1_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_base_sonar_01_link_1718364735.0649893">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/base_sonar_01_link"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0649893</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_base_sonar_02_link_1718364735.064769">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/base_sonar_02_link"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.064769</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/gyro">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/angular_velocity"/>
+    <sosa:observes rdf:resource="http://example.org/rotation_rate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_accelerometer_1718364735.0647254">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/accelerometer"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0647254</sosa:resultTime>
+    <sosa:hasSimpleResult>(0.010064564268479619, -0.03934273082727717, 9.786965199700312)</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/head_2_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_cover_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/contact"/>
+    <sosa:observes rdf:resource="http://example.org/pressure"/>
+    <sosa:observes rdf:resource="http://example.org/force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/inertial_unit">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/orientation"/>
+    <sosa:observes rdf:resource="http://example.org/acceleration"/>
+    <sosa:observes rdf:resource="http://example.org/angular_velocity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Hokuyo_URG_04LX_UG01">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/point_cloud"/>
+    <sosa:observes rdf:resource="http://example.org/object_type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_Hokuyo_URG_04LX_UG01_1718364735.0649595">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/Hokuyo_URG_04LX_UG01"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0649595</sosa:resultTime>
+    <sosa:hasSimpleResult>(inf, inf, inf, inf, inf, inf, inf, 0.22750675678253174, 0.22958515584468842, 0.23377232253551483, 0.27292606234550476, 0.2713692784309387, 0.2698364555835724, 0.26832711696624756, 0.2661416828632355, 0.26468393206596375, 0.263248473405838, 0.2617478668689728, 0.260214239358902, 0.2578975558280945, 0.2563946545124054, 0.2547215521335602, 0.25307491421699524, 0.25145432353019714, 0.24985939264297485, 0.2473289519548416, 0.24579352140426636, 0.24428221583366394, 0.24279461801052094, 0.24133038520812988, 0.23988910019397736, 0.23847036063671112, 0.23694582283496857, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 4.3225908279418945, 4.341734886169434, 4.361268997192383, 4.16131591796875, 4.127542018890381, 4.120831489562988, 2.4573583602905273, 2.438096284866333, 2.419203281402588, 2.4006714820861816, 2.382495641708374, 2.3918371200561523, 2.404320478439331, 2.4170405864715576, 2.430007219314575, 2.443223714828491, 4.679166793823242, 4.705323696136475, 4.731982707977295, 4.759151935577393, 4.786839962005615, 3.642756462097168, 3.618820905685425, 3.595329999923706, 3.5886454582214355, 3.610905408859253, 3.6335904598236084, 4.996017932891846, 5.028219699859619, 5.061033725738525, 5.094474792480469, 5.128551483154297, 5.163279056549072, 5.198670387268066, 5.234738349914551, 5.2714972496032715, 5.308961391448975, 2.9282419681549072, 2.9125802516937256, 2.8972151279449463, 2.8821449279785156, 2.8915157318115234, 2.9135844707489014, 2.936082601547241, inf, inf, inf, inf, inf, inf, inf, inf, inf, 5.443393707275391, inf, inf, inf, inf, 4.777645587921143, 4.759268283843994, 4.7706298828125, 4.8161797523498535, inf, inf, inf, inf, inf, inf, inf, 3.2249794006347656, 3.2149322032928467, 3.2051284313201904, 3.195566415786743, 3.186246633529663, 3.237499713897705, 5.425421237945557, 5.487356185913086, 5.550727844238281, inf, inf, inf, inf, inf, 3.845046281814575, 3.836785316467285, 3.828793525695801, 3.82106876373291, 3.8260247707366943, 3.876774311065674, 5.588308334350586, 5.578603267669678, 5.569281101226807, 5.5603413581848145, 5.551782608032227, 5.519838333129883, 5.512172222137451, 5.504880428314209, 5.497962474822998, 5.491417407989502, 5.462320804595947, 5.456641674041748, 5.451330661773682, 5.446389198303223, 5.419540882110596, 5.415446758270264, 5.411720275878906, 1.5725457668304443, 1.5717018842697144, 1.5709648132324219, 1.5703343152999878, 1.5636119842529297, 1.5632222890853882, 1.5629401206970215, 1.5566908121109009, 1.5566486120224, 1.5507327318191528, 1.56088125705719, 1.5947610139846802, 5.294936180114746, 5.2968058586120605, 2.254432201385498, 2.2555811405181885, 2.2485382556915283, 2.2500343322753906, 2.243452787399292, 2.2453014850616455, 2.2391788959503174, 2.26417875289917, 2.8365883827209473, 2.8662333488464355, 3.5397119522094727, 3.5443434715270996, 3.536806344985962, 3.567645788192749, 5.222620010375977, 5.213161945343018, 5.204310417175293, 5.213778972625732, 5.205987453460693, 5.198797225952148, 5.1922101974487305, 5.203492164611816, 5.197970867156982, 5.193050861358643, 5.188732147216797, 5.183994770050049, 5.197638034820557, 5.499120235443115, 5.49696683883667, 5.495455741882324, 5.494590759277344, 5.490107536315918, 5.490528106689453, 5.49159574508667, 5.493309497833252, 5.495666980743408, 5.498666286468506, 5.5023088455200195, 5.506593227386475, 5.4933180809021, 5.498745441436768, 5.504811763763428, 5.51151704788208, 5.500209331512451, 5.508044242858887, 2.382948875427246, 2.383129119873047, 2.3771839141845703, 2.3777782917022705, 2.378596305847168, 2.3732106685638428, 2.37443208694458, 2.4223978519439697, 3.174030303955078, 3.1677799224853516, 5.249646186828613, 5.263782501220703, 5.259205341339111, 5.274423599243164, 5.27067756652832, 5.286985397338867, 5.284066677093506, 5.281527519226074, 5.299381732940674, 5.297664165496826, 5.316634178161621, 5.315738677978516, 5.335838317871094, 5.3357672691345215, 5.336068153381348, 5.357769012451172, 5.358895301818848, 5.3603901863098145, 5.383723735809326, 5.386050224304199, 5.388744831085205, 5.344928741455078, 5.254961967468262, 5.1677045822143555, 5.017329692840576, 5.020264625549316, 5.024984836578369, 5.030046463012695, 5.056721210479736, 3.2879576683044434, 3.19162917137146, 3.192068338394165, 3.192692995071411, 3.203559398651123, 3.204587697982788, 5.127335548400879, 2.478851318359375, 2.4028637409210205, 2.406001329421997, 2.4074862003326416, 2.4091074466705322, 2.4108660221099854, 2.4127607345581055, 2.41479229927063, 5.263948917388916, 5.275947570800781, 5.288321495056152, 5.301074504852295, 5.314210414886475, 5.327729225158691, 5.3416361808776855, 5.355933666229248, 5.370623588562012, 5.411638259887695, 5.4273247718811035, 5.443419456481934, 5.459925174713135, 5.476845741271973, 5.494185924530029, 5.5119476318359375, 5.53013801574707, 5.546985149383545, 5.566036701202393, 5.585529327392578, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 3.332484245300293, 3.351367950439453, 3.372683525085449, 3.394404411315918, 3.416539192199707, 3.439096450805664, 3.462082862854004, 3.485509157180786, 3.5093820095062256, 3.533712387084961, 3.5585081577301025, 3.5837795734405518, 3.609227418899536, 3.5899088382720947, 3.570955276489258, 3.552361488342285, 3.534120559692383, 3.516228199005127, 3.498678207397461, 3.4814658164978027, 3.464585065841675, 3.4480316638946533, 3.431800365447998, 3.415886878967285, 3.4002857208251953, 3.384993076324463, 3.3700039386749268, 3.3553149700164795, 3.340921640396118, 3.326819658279419, 3.3130061626434326, 3.299475908279419, 3.286226272583008, 3.2732534408569336, 2.8062663078308105, 2.7955918312072754, 2.8161933422088623, 2.8433687686920166, 2.8711204528808594, 2.899461030960083, 2.9284088611602783, 2.957979440689087, 2.9881889820098877, 3.0190560817718506, 3.0505993366241455, 3.082836866378784, 3.1132194995880127, 3.1039211750030518, 3.094855308532715, 3.0860204696655273, 3.062847852706909, 3.0545756816864014, 3.0465264320373535, 3.038698434829712, 3.031090021133423, 3.023698568344116, 3.016523838043213, 3.0095646381378174, 3.0028181076049805, 2.9827423095703125, 2.9765090942382812, 2.97048282623291, 2.9646637439727783, 2.9590506553649902, 2.953641891479492, 2.9355223178863525, 2.9305992126464844, 2.9258768558502197, 2.921355724334717, 2.9170331954956055, 2.9004764556884766, 2.896620988845825, 2.89296293258667, 2.8895013332366943, 2.886235237121582, 2.8711659908294678, 2.8683533668518066, 2.865734577178955, 2.8633108139038086, 2.849416971206665, 2.8474369049072266, 2.8456509113311768, 2.832648992538452, 2.8313019275665283, 2.8301479816436768, 2.818016290664673, 2.8172974586486816, 2.8167712688446045, 2.805492877960205, 2.805399179458618, 2.8055009841918945, 2.4056549072265625, 2.44757342338562, 2.397608518600464, 2.4047231674194336, 2.5081799030303955, 2.5684945583343506, 2.631434679031372, 2.7536919116973877, 2.77398681640625, 2.766096591949463, 2.7685601711273193, 2.7612361907958984, 2.754241466522217, 2.7573771476745605, 2.750943183898926, 2.7545218467712402, 2.7486460208892822, 2.752673387527466, 2.747354507446289, 2.742357015609741, 2.747076988220215, 2.74263596534729, 2.7385141849517822, 2.734708786010742, 2.7403759956359863, 2.737131118774414, 2.734201431274414, 2.7315893173217773, 2.7382333278656006, 2.736187696456909, 2.73445987701416, 2.7330503463745117, 2.731959581375122, 2.731187582015991, 2.7307353019714355, 2.730605125427246, 2.7329812049865723, 2.7334930896759033, 2.734325647354126, 2.735480308532715, 2.736955165863037, 2.7298200130462646, 2.731869697570801, 2.7342352867126465, 2.73691987991333, 2.739922523498535, 2.7340285778045654, 2.7375946044921875, 2.74147891998291, 2.7456815242767334, 2.740746259689331, 2.7455086708068848, 2.7505931854248047, 2.7463555335998535, 2.7519989013671875, 2.7579686641693115, 2.7544171810150146, 2.671376943588257, 2.6532845497131348, 2.630044460296631, 2.6125833988189697, 2.5900771617889404, 2.5732223987579346, 2.5564541816711426, 2.562800645828247, 2.5164263248443604, 2.458728075027466, 2.402111530303955, 2.401308298110962, 2.2089452743530273, 2.162975549697876, 2.118682861328125, 2.042649269104004, 2.0026397705078125, 1.933924674987793, 1.8976266384124756, 1.862533450126648, 1.80219566822052, 1.7701926231384277, 1.7392008304595947, 1.7091764211654663, 1.6574596166610718, 1.629923939704895, 1.6032094955444336, 1.5571342706680298, 1.5325366258621216, 1.5086424350738525, 1.4854247570037842, 1.445292353630066, 1.423819899559021, 1.4029319286346436, 1.382607340812683, 1.3628251552581787, 1.328518033027649, 1.3101385831832886, 1.2922329902648926, 1.274785041809082, 1.2577788829803467, 1.228172779083252, 1.2123095989227295, 1.1968352794647217, 1.1817374229431152, 1.167003870010376, 1.1526230573654175, 1.1274516582489014, 1.1139838695526123, 1.1008292436599731, 1.0879783630371094, 1.075421929359436, 1.063151478767395, 1.0511581897735596, 1.0394343137741089, 1.0279717445373535, 1.0077078342437744, 0.9969227910041809, 0.9863725900650024, 0.9760503768920898, 0.9659501314163208, 0.9560656547546387, 0.946391224861145, 0.936921238899231, 0.9276501536369324, 0.918572723865509, 0.9096841216087341, 0.9009791612625122, 0.8924535512924194, 0.8841023445129395, 0.8759213089942932, 0.8679060935974121, 0.8533999919891357, 0.8458145260810852, 0.8383800983428955, 0.8310930132865906, 0.8239501118659973, 0.8169476985931396, 0.8100824356079102, 0.8033513426780701, 0.7967512011528015, 0.7902790904045105, 0.7839319109916687, 0.7777072191238403, 0.7716020345687866, 0.7656137347221375, 0.7597398161888123, 0.7539777159690857, 0.7483251094818115, 0.7427797317504883, 0.7373390793800354, 0.7320011258125305, 0.7267636656761169, 0.7216247916221619, 0.7165822982788086, 0.7116342186927795, 0.7067787647247314, 0.702014148235321, 0.6973384022712708, 0.6927498579025269, 0.6882467865943909, 0.6838278770446777, 0.6794909834861755, 0.6752349734306335, 0.6710581183433533, 0.6669591069221497, 0.6629364490509033, 0.6589887738227844, 0.6551148295402527, 0.651313066482544, 0.6475822925567627, 0.6439214944839478, 0.6403293013572693, 0.6368045210838318, 0.6333461403846741, 0.6299528479576111, 0.6266236901283264, 0.6233577728271484, 0.6201539039611816, 0.6170111298561096, 0.6139284372329712, 0.6109049320220947, 0.6079397797584534, 0.6050320267677307, 0.6021807193756104, 0.5993853211402893, 0.5966447591781616, 0.5939583778381348, 0.5913252830505371, 0.5887448191642761, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 0.23667055368423462, 0.23819617927074432, 0.23974671959877014, 0.24132253229618073, 0.24292412400245667, 0.24455198645591736, 0.24620653688907623, 0.247871994972229, 0.2500934898853302, 0.2515302002429962, 0.2529893219470978, 0.2544483244419098, 0.25586971640586853, 0.2573132812976837, 0.2595577538013458, 0.26105353236198425, 0.26257267594337463, 0.2641155421733856, 0.265682578086853, 0.26809293031692505, 0.2697170078754425, 0.2713666558265686, 0.273042231798172, 0.23375147581100464, 0.2295757383108139, 0.22750109434127808, inf, inf, inf, inf, inf, inf, inf)</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_Astra_rgb_1718364735.0825167">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/Astra_rgb"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0825167</sosa:resultTime>
+    <sosa:hasSimpleResult>/home/user/pel_ws/src/pel_ros/src/obs_graphs/result_Astra_rgb_1718364735.0825167.jpg</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/wheel_right_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/angle">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_torso_lift_joint_sensor_1718364735.0479758">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/torso_lift_joint_sensor"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0479758</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-8.183480093732067e-05</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_sonar_03_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/proximity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_inertial_unit_1718364735.0651536">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/inertial_unit"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0651536</sosa:resultTime>
+    <sosa:hasSimpleResult>(-0.004315624530166737, -0.0011052578430278525, -0.787836331534253)</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/rotation_rate">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_head_1_joint_sensor_1718364735.039226">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/head_1_joint_sensor"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.039226</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.8334723510248446e-06</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Astra_depth">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/depth"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_wheel_right_joint_sensor_1718364735.065115">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/wheel_right_joint_sensor"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.065115</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.559849413648622e-07</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/torso_lift_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_sonar_01_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/proximity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_yolov5_1718364735.055448">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:usedProcedure rdf:resource="http://example.org/yolov5"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.055448</sosa:resultTime>
+    <sosa:hasSimpleResult>header: 
+  seq: 13
+  stamp: 
+    secs: 1718364735
+    nsecs:  37847518
+  frame_id: ''
+image_header: 
+  seq: 13
+  stamp: 
+    secs: 1718364735
+    nsecs:  37847518
+  frame_id: ''
+bounding_boxes: 
+  - 
+    Class: "couch"
+    probability: 0.7683117985725403
+    xmin: 0
+    ymin: 288
+    xmax: 143
+    ymax: 480
+  - 
+    Class: "person"
+    probability: 0.84095698595047
+    xmin: 0
+    ymin: 117
+    xmax: 145
+    ymax: 305</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/location">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/position">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/torso_lift_joint">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/velocity"/>
+    <sosa:observes rdf:resource="http://example.org/force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_base_cover_link_1718364735.065035">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/base_cover_link"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.065035</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_sonar_02_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/proximity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Astra_rgb">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/image"/>
+    <sosa:observes rdf:resource="http://example.org/video"/>
+    <sosa:observes rdf:resource="http://example.org/color"/>
+    <sosa:observes rdf:resource="http://example.org/motion"/>
+    <sosa:observes rdf:resource="http://example.org/object_type"/>
+    <sosa:observes rdf:resource="http://example.org/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/point_cloud">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/object_type">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_torso_lift_joint_1718364735.0389023">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/torso_lift_joint"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0389023</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/acceleration">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/pressure">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/accelerometer">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/acceleration"/>
+    <sosa:observes rdf:resource="http://example.org/vibration"/>
+    <sosa:observes rdf:resource="http://example.org/tilt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/orientation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/contact">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_base_sonar_03_link_1718364735.0650628">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/base_sonar_03_link"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0650628</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/angular_velocity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/motion">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_head_2_joint_sensor_1718364735.0392704">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/head_2_joint_sensor"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0392704</sosa:resultTime>
+    <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-7.420502799175986e-07</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/TIAGo_LITE">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/simulation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/obs_gyro_1718364735.0648258">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <sosa:madeBySensor rdf:resource="http://example.org/gyro"/>
+    <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1718364735.0648258</sosa:resultTime>
+    <sosa:hasSimpleResult>(9.947980892619984e-05, 5.4627923345831825e-05, -4.301627821340513e-07)</sosa:hasSimpleResult>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/image">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/vibration">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/rotation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/color">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/yolov5">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    <ssn:implementedBy rdf:resource="http://example.org/simulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/velocity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/video">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/distance">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/tilt">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/depth">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/force">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/proximity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+</rdf:RDF>

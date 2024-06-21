@@ -3,7 +3,10 @@ import rdflib
 from pyvis.network import Network
 
 # Directory containing the RDF files
-base_directory = 'obs_graphs'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct a path to a folder relative to the script directory
+base_directory = os.path.join(script_dir, 'obs_graphs')
 
 # Define colors for different node and edge types
 color_instance = '#FFA500'  # Orange

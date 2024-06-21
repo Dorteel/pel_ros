@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sosa="http://www.w3.org/ns/sosa/"
+>
+  <rdf:Description rdf:about="http://example.org/Hokuyo_URG_04LX_UG01">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/point_cloud"/>
+    <sosa:observes rdf:resource="http://example.org/object_type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/inertial_unit">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/orientation"/>
+    <sosa:observes rdf:resource="http://example.org/acceleration"/>
+    <sosa:observes rdf:resource="http://example.org/angular_velocity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_cover_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/contact"/>
+    <sosa:observes rdf:resource="http://example.org/pressure"/>
+    <sosa:observes rdf:resource="http://example.org/force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/torso_lift_joint">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/velocity"/>
+    <sosa:observes rdf:resource="http://example.org/force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/orientation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_sonar_03_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/proximity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/point_cloud">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/base_sonar_02_link">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/proximity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/tilt">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/head_1_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Astra_rgb">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/image"/>
+    <sosa:observes rdf:resource="http://example.org/video"/>
+    <sosa:observes rdf:resource="http://example.org/color"/>
+    <sosa:observes rdf:resource="http://example.org/motion"/>
+    <sosa:observes rdf:resource="http://example.org/object_type"/>
+    <sosa:observes rdf:resource="http://example.org/location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/pressure">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/depth">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/torso_lift_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/distance">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Astra_depth">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/distance"/>
+    <sosa:observes rdf:resource="http://example.org/depth"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/contact">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/simulation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/accelerometer">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/acceleration"/>
+    <sosa:observes rdf:resource="http://example.org/vibration"/>
+    <sosa:observes rdf:resource="http://example.org/tilt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/acceleration">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/rotation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/head_2_joint_sensor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/position"/>
+    <sosa:observes rdf:resource="http://example.org/angle"/>
+    <sosa:observes rdf:resource="http://example.org/rotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/object_type">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/image">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/proximity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/rotation_rate">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/gyro">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <sosa:isHostedBy rdf:resource="http://example.org/TIAGo_LITE"/>
+    <sosa:observes rdf:resource="http://example.org/angular_velocity"/>
+    <sosa:observes rdf:resource="http://example.org/rotation_rate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/video">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/location">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/color">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/velocity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/position">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/angular_velocity">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/vibration">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/TIAGo_LITE">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/motion">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/angle">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/force">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- start Webots -->
+  <arg name="no_gui" default="false" doc="Start Webots with minimal GUI"/>
+  <include file="$(find webots_ros)/launch/webots.launch">
+    <arg name="mode" value="realtime"/>
+    <arg name="no_gui" value="$(arg no_gui)"/>
+    <arg name="world" value="$(find pel_ros)/simulation/worlds/complete_apartment_tiago.wbt"/>
+  </include>
+
+  <arg name="auto_close" default="false" doc="Startup mode"/>
+  <env name="LD_LIBRARY_PATH" value="$(env LD_LIBRARY_PATH):$(env WEBOTS_HOME)/lib/controller"/>
+  <env name="PYTHONPATH" value="$(env PYTHONPATH):$(env WEBOTS_HOME)/lib/controller/python27" unless="$(eval '1' if env('ROS_DISTRO') == 'noetic' else '0')" />
+  <env name="PYTHONPATH" value="$(env PYTHONPATH):$(env WEBOTS_HOME)/lib/controller/python38" if="$(eval '1' if env('ROS_DISTRO') == 'noetic' else '0')" />
+  <env name="PYTHONPATH" value="$(env PYTHONPATH):$(env WEBOTS_HOME)/lib/controller/python" if="$(eval '1' if env('ROS_DISTRO') == 'noetic' else '0')" />
+  <node name="ros_simulation_publisher" pkg="pel_ros" type="ros_simulation_publisher.py" required="$(arg auto_close)" output="screen"/>
+  <node name="ros_controller" pkg="pel_ros" type="ros_controller.py" required="$(arg auto_close)" output="screen"/>
+
+  <!-- Include YOLOv5 ROS launch file -->
+  <include file="$(find yolov5_ros)/launch/yolov5.launch">
+    <arg name="weights" value="yolov5m.pt"/>
+    <arg name="data" value="$(find yolov5_ros)/src/yolov5/data/coco128.yaml"/>
+    <arg name="confidence_threshold" value="0.75"/>
+    <arg name="iou_threshold" value="0.45"/>
+    <arg name="maximum_detections" value="1000"/>
+    <arg name="device" value="0"/>
+    <arg name="agnostic_nms" value="true"/>
+    <arg name="line_thickness" value="3"/>
+    <arg name="dnn" value="true"/>
+    <arg name="half" value="false"/>
+    <arg name="inference_size_h" value="640"/>
+    <arg name="inference_size_w" value="640"/>
+    <arg name="view_image" value="true"/>
+    <arg name="input_image_topic" value="/TIAGo_LITE/sensors/camera/Astra_rgb"/>
+    <arg name="output_topic" value="/TIAGo_LITE/annotators/object_detector/yolov5/output_labels"/>
+    <arg name="publish_image" value="false"/>
+    <arg name="output_image_topic" value="/TIAGo_LITE/annotators/object_detector/yolov5/output_img"/>
+  </include>
+
+</launch>
