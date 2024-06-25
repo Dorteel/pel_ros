@@ -4,3 +4,6 @@
 [submodule "orka"]
 	path = orka
 	url = https://github.com/Dorteel/orka.git
+[submodule "annotators/yolov5_ros"]
+	path = annotators/yolov5_ros
+	url = https://github.com/Dorteel/yolov5_ros.git

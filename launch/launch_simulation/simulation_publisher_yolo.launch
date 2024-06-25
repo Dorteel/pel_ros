@@ -23,7 +23,7 @@
     <arg name="confidence_threshold" value="0.75"/>
     <arg name="iou_threshold" value="0.45"/>
     <arg name="maximum_detections" value="1000"/>
-    <arg name="device" value="0"/>
+    <arg name="device" value="cpu"/>
     <arg name="agnostic_nms" value="true"/>
     <arg name="line_thickness" value="3"/>
     <arg name="dnn" value="true"/>
