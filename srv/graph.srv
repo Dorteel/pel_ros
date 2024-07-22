@@ -1,0 +1,5 @@
+# Request containing the asserted graph
+string asserted_graph
+---
+# Response with an inferred graph
+string infered_graph

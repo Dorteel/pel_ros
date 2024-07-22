@@ -3,7 +3,7 @@ from pyvis.network import Network
 from owlready2 import get_ontology, Thing
 
 #owl_file_path = '/home/user/pel_ws/src/pel_ros/orka/owl/orka-full-inferred.rdf'
-owl_file_path = '/home/user/pel_ws/src/pel_ros/src/obs_graphs/knowledge_graph__TIAGo_LITE_head_1_joint_sensor_20240516_142433.rdf'
+owl_file_path = '/home/mark/kai_ws/src/locobot_development/pel_ros/src/obs_graphs/20240722_142038/knowledge_graph_iteration_0_20240722_142218.rdf'
 
 def load_ontology(owl_file_path):
     # Load the ontology

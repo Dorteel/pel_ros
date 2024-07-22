@@ -1,10 +1,4 @@
-# 1. Generate a graph (SSN)
-# - used properties:
-#   - sosa:Observation
-#   - sosa:phenomenonTime
-#   - sosa:Sensor
-#   - sosa:madeObservation & madeBySensor
-#   - sosa:ObservableProperty
+# 1. Generate a graph (ORKA)
 # 2. Get the sensors of the robot
 # 3. Add the measurements
 # 4. 
@@ -16,6 +10,7 @@ import time
 import os
 from std_msgs.msg import String, Float64
 from sensor_msgs.msg import Image, Imu  # Add other message types as needed
+from detection_msgs.msg import BoundingBoxes, BoundingBox
 from threading import Lock
 import importlib
 import cv2
@@ -30,7 +25,7 @@ base_directory = os.path.join(script_dir, 'obs_graphs')
 
 # Define a sample period (50ms) and save period (10 seconds)
 SAMPLE_PERIOD = 0.05
-SAVE_PERIOD = 0.05
+SAVE_PERIOD = 10
 iters = 2
 
 # Dictionary to store the latest messages from each topic
@@ -61,8 +56,7 @@ properties = {
 }
 
 # Specify Robot Name
-robot_name = 'TIAGo_LITE'
-
+robot_name = rospy.get_param("~robot_name", "TIAGo_LITE")
 kg_namespace = rdflib.Namespace("http://example.org/")
 
 def message_callback(msg, topic):
@@ -84,6 +78,7 @@ def get_message_class(msg_type):
 
 def create_subscribers():
     topics = rospy.get_published_topics()
+    print(topics)
     subscribers = []
     for topic, msg_type in topics:
         if robot_name in topic:
@@ -122,13 +117,18 @@ def create_robot_kg_ssn():
     # Add sensors
     # *This method needs to be changed - it depends on the published messages*
     for topic in latest_messages.keys():
-        _, robot_id, sensor_type, sensor_name = topic.split('/')
+        if 'sensors' in topic:
+            _, robot_id, _ ,sensor_type, sensor_name = topic.split('/')
+        elif 'annotators' in topic:
+            _, robot_id, _ , annotator_type, annotator_name, _ = topic.split('/')
         sensor = kg_namespace[sensor_name]
+        print(sensor)
         robot_kg.add((sensor, RDF.type, SOSA.Sensor))
         robot_kg.add((sensor, SOSA.isHostedBy, robot))  
         
         for property in properties[sensor_type]:
             obs_prop = kg_namespace[property]
+            print(obs_prop)
             robot_kg.add((obs_prop, RDF.type, SOSA.ObservableProperty))
             robot_kg.add((sensor, SOSA.observes, obs_prop))
         
@@ -140,14 +140,18 @@ def create_obs_graph(graph, folder_path):
     with lock:
         for topic, (msg, timestamp) in latest_messages.items():
             # find which robot and sensor we are talking about 
-            _, robot_id, sensor_type, sensor_name = topic.split('/')
-    
+            if 'sensors' in topic:
+                _, robot_id, _ ,sensor_type, sensor_name = topic.split('/')
+            elif 'annotators' in topic:
+                _, robot_id, _ , annotator_type, annotator_name, _ = topic.split('/')
             if isinstance(msg, Image):
                 # Convert ROS Image message to OpenCV image
                 cv_image = bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
                 image_filename = f"{folder_path}/result_{sensor_name}_{timestamp}.jpg"
                 cv2.imwrite(image_filename, cv_image)
                 result = rdflib.Literal(image_filename)
+            elif isinstance(msg, BoundingBoxes):
+                result = rdflib.Literal(msg.bounding_boxes)
             else:
                 result = rdflib.Literal(msg.data)
 
@@ -200,8 +204,9 @@ def save_graph(graph, iteration_count, folder_path):
 
 def main():
     rospy.init_node('observation_graph_creator', anonymous=True)
+    rospy.sleep(30)
     subscribers = create_subscribers()
-    
+    graph = create_robot_kg_ssn()
     rate = rospy.Rate(1 / SAMPLE_PERIOD)
     last_save_time = time.time()
     iteration_count = 0
@@ -211,17 +216,17 @@ def main():
     folder_path = os.path.join(base_directory, main_timestamp)
     os.makedirs(folder_path, exist_ok=True)
     
-    while not rospy.is_shutdown() and iteration_count < iters:
 
-        graph = create_robot_kg_ssn()
+    while not rospy.is_shutdown():
         create_obs_graph(graph, base_directory)
         current_time = time.time()
         if current_time - last_save_time >= SAVE_PERIOD:
             save_graph(graph, iteration_count, folder_path)
+            rospy.loginfo(f"Iteration {iteration_count} completed")
             last_save_time = current_time
             iteration_count += 1
         
-        rospy.loginfo(f"Iteration {iteration_count} completed")
+        
         rate.sleep()
 
 

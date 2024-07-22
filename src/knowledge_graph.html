@@ -33,8 +33,8 @@
 
              #mynetwork {
                  width: 100%;
-                 height: 600px;
-                 background-color: #ffffff;
+                 height: 1000px;
+                 background-color: #222222;
                  border: 1px solid lightgray;
                  position: relative;
                  float: left;
@@ -88,8 +88,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#FFA500", "id": "\u003chttp://example.org/simulation\u003e", "label": "\u003chttp://example.org/simulation\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "\u003chttp://example.org/TIAGo_LITE\u003e", "label": "\u003chttp://example.org/TIAGo_LITE\u003e", "shape": "dot"}, {"color": "#FFA500", "id": "ssn:System", "label": "ssn:System", "shape": "dot"}, {"color": "#FFA500", "id": "sosa:Platform", "label": "sosa:Platform", "shape": "dot"}]);
-                  edges = new vis.DataSet([{"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/simulation\u003e", "label": "sosa:isHostedBy", "to": "\u003chttp://example.org/TIAGo_LITE\u003e"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/simulation\u003e", "label": "rdf:type", "to": "ssn:System"}, {"arrows": "to", "color": "#FF0000", "from": "\u003chttp://example.org/TIAGo_LITE\u003e", "label": "rdf:type", "to": "sosa:Platform"}]);
+                  nodes = new vis.DataSet([]);
+                  edges = new vis.DataSet([]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -100,35 +100,7 @@
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {
-    "configure": {
-        "enabled": false
-    },
-    "edges": {
-        "color": {
-            "inherit": true
-        },
-        "smooth": {
-            "enabled": true,
-            "type": "dynamic"
-        }
-    },
-    "interaction": {
-        "dragNodes": true,
-        "hideEdgesOnDrag": false,
-        "hideNodesOnDrag": false
-    },
-    "physics": {
-        "enabled": true,
-        "stabilization": {
-            "enabled": true,
-            "fit": true,
-            "iterations": 1000,
-            "onlyDynamicEdges": false,
-            "updateInterval": 50
-        }
-    }
-};
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -30000, "centralGravity": 0.1, "springLength": 250, "springConstant": 0.05, "damping": 0.09}, "minVelocity": 0.75}, "nodes": {"borderWidth": 2, "borderWidthSelected": 4, "font": {"size": 16, "strokeWidth": 2}, "shapeProperties": {"useBorderWithImage": true}}};
 
                   
 
