@@ -168,6 +168,7 @@ catkin_install_python(PROGRAMS
   sensors/webcam_sub.py
   src/obs_graph_creator.py
   src/observation_graph_generator.py
+  src/test_obs_graph_creator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
