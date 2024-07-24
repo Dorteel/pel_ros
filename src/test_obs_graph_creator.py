@@ -83,7 +83,7 @@ class ObservationGraphNode:
         
         # Add the robot
         self.orka.add((self.ns[self.robot_name], RDF.type, self.ns.Robot))
-        
+        ## TODO: Add sensors according to ORKA
         rospy.loginfo(f"...adding sensors and procedures")
         topics = [topic for topic, _ in rospy.get_published_topics()]
         for topic in topics:
