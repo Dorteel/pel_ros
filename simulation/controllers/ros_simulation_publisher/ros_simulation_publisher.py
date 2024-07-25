@@ -65,20 +65,21 @@ sensor_function_names = {'ACCELEROMETER' : 'getValues',
                     'CAMERA' : 'getImage',
                     'COMPASS' : 'getValues',
                     'DISTANCE_SENSOR' : 'getValue',
-                    'EMITTER' : 'getChannel',
+                    # 'EMITTER' : 'getChannel',
                     'GPS' : 'getValues',
                     'GYRO' : 'getValues',
                     'INERTIAL_UNIT' : 'getRollPitchYaw',
-                    'LED' : 'get',
+                    #'LED' : 'get',
                     'LIDAR' : 'getRangeImage',
                     'LIGHT_SENSOR' : 'getValue',
-                    'LINEAR_MOTOR' : 'getVelocity',
+                    #'LINEAR_MOTOR' : 'getVelocity',
                     'POSITION_SENSOR' : 'getValue',
                     'RADAR' : 'getNumberOfTargets',
                     'RANGE_FINDER' : 'getRangeImage',
-                    'RECEIVER' : 'getBytes',
+                    #'RECEIVER' : 'getBytes',
                     'TOUCH_SENSOR' : 'getValue',
-                    'VACUUM_GRIPPER' : 'getPresence'}
+                    #'VACUUM_GRIPPER' : 'getPresence'
+                    }
 
 
 sensor_dtype = {'ACCELEROMETER' : Float64MultiArray,
@@ -86,20 +87,21 @@ sensor_dtype = {'ACCELEROMETER' : Float64MultiArray,
                     'CAMERA' : Image,
                     'COMPASS' : Float64MultiArray,
                     'DISTANCE_SENSOR' : Float64,
-                    'EMITTER' : Float64,
+                    # 'EMITTER' : Float64,
                     'GPS' : Float64,
                     'GYRO' : Float64MultiArray,
                     'INERTIAL_UNIT' : Float64MultiArray,
-                    'LED' : Float64,
+                    #'LED' : Float64,
                     'LIDAR' : Float64MultiArray,
                     'LIGHT_SENSOR' : Float64,
-                    'LINEAR_MOTOR' : Float64,
+                    # 'LINEAR_MOTOR' : Float64,
                     'POSITION_SENSOR' : Float64,
                     'RADAR' : Float64,
                     'RANGE_FINDER' : Image,
-                    'RECEIVER' : Float64,
+                    #'RECEIVER' : Float64,
                     'TOUCH_SENSOR' : Float64,
-                    'VACUUM_GRIPPER' : Float64}
+                    #'VACUUM_GRIPPER' : Float64
+                    }
 
 sensor_pub = {}
 

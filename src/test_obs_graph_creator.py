@@ -80,7 +80,13 @@ class ObservationGraphNode:
         self.orka.bind("ssn", SSN)      # bind a user-declared namespace to a prefix
         self.orka.bind("ex", self.ns)      # bind a user-declared namespace to a prefix
         self.orka.bind("oboe", Namespace("http://ecoinformatics.org/oboe/oboe.1.2/oboe.owl"))
-        
+        sensor_list = {}
+                # Define the property URI
+        property_uri = URIRef("https://w3id.org/def/orka#hasWeBotsName")
+        # Query the graph to find subjects with the specified property
+        for subj, obj in self.orka.subject_objects(predicate=property_uri):
+            sensor_list[str(obj)] = subj
+        print(sensor_list)
         # Add the robot
         self.orka.add((self.ns[self.robot_name], RDF.type, self.ns.Robot))
         ## TODO: Add sensors according to ORKA
@@ -91,15 +97,15 @@ class ObservationGraphNode:
                 _, robot_id, _ ,sensor_type, sensor_name = topic.split('/')
                 sensor_name_full = f"{self.robot_name}_sensor_{sensor_name}"
                 sensor = self.ns[sensor_name_full]
-                sensor_type = sensor_type.capitalize()
-                rospy.loginfo(f"... ...adding {sensor} as a {self.ns[sensor_type]}")
-                self.orka.add((sensor, RDF.type, self.ns[sensor_type]))
+                sensor_type = sensor_list[sensor_type.lower()]
+                rospy.loginfo(f"... ...adding {sensor} as a {sensor_type}")
+                self.orka.add((sensor, RDF.type, sensor_type))
                 self.orka.add((sensor, SOSA.isHostedBy, self.ns[self.robot_name]))  
             elif 'annotators' in topic:
                 _, robot_id, _ , annotator_type, annotator_name, _ = topic.split('/')
                 annotator_name_full = f"{self.robot_name}_procedure_{annotator_name}"
                 annotator = self.ns[annotator_name_full]
-                annotator_type = annotator_type.capitalize()
+                annotator_type = ''.join([s.capitalize() for s in annotator_type.split('_')])
                 rospy.loginfo(f"... ...adding {annotator} as a {self.ns[annotator_type]}")
                 self.orka.add((annotator, RDF.type, self.ns[annotator_type]))
                 self.orka.add((annotator, SSN.implementedBy, self.ns[self.robot_name]))  
