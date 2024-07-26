@@ -1,2 +1,5 @@
 /build
 /.vscode
+/wikidata5m_entity.txt
+/vg_ground_truth.csv
+/groundtruth.csv

@@ -1,0 +1,80 @@
+name,id,result1_name,result1_id,result2_name,result2_id,result3_name,result3_id,result4_name,result4_id,result5_name,result5_id,result6_name,result6_id,result7_name,result7_id,result8_name,result8_id,result9_name,result9_id,result10_name,result10_id
+person,Q215627,individual,Q795052,legal person,Q3778211,person or organization,Q106559804
+bicycle,Q11442,mode of transport,Q334166,individual means of transport,Q109734237,two-wheeler,Q233040,velocipede,Q595658,sports equipment,Q768186
+car,Q1420,motor vehicle,Q752870,road vehicle,Q1515493,multi-track vehicle,Q12060681
+motorcycle,Q34493,two-wheeler,Q233040,road vehicle,Q1515493,single-track vehicle,Q11723891,motorcycle based vehicle,Q17152681,intermediate vehicle,Q123273011
+airplane,Q197,product,Q2424752,aircraft lift-power class,Q22676022,powered aircraft,Q1949826,fixed-wing aircraft,Q2875704
+bus,Q5638,commercial vehicle,Q580939,motor vehicle,Q752870,road vehicle,Q1515493,passenger vehicle,Q87410987
+train,Q870,mode of transport,Q334166,rolling stock,Q1414135,wheeled vehicle,Q15618781
+truck,Q43193,commercial vehicle,Q580939,road vehicle,Q1515493,multi-track vehicle,Q12060681,wheeled vehicle,Q15618781
+boat,Q35872,vehicle,Q42889,watercraft,Q1229765,boat type,Q16103215,watercraft type,Q16335899
+traffic light,Q8004,appliance,Q1183543,light source,Q1146001,road equipment,Q2354362,road traffic control device,Q7339568,physical sign,Q105449313
+fire hydrant,Q634299,hydrant,Q11191576,Q11559528,Q11559528
+stop sign,Q250429,priority signs,Q4122263
+bench,Q204776,seat,Q2207370,street furniture,Q13397636
+bird,Q5113,taxon,Q16521,organisms known by a particular common name,Q55983715,Vertebrata,Q25241
+cat,Q146,organisms known by a particular common name,Q55983715,Felidae,Q25265,pet,Q39201,domesticated mammal,Q57814795
+dog,Q144,organisms known by a particular common name,Q55983715,pet,Q39201,domesticated mammal,Q57814795
+horse,Q726,Equidae,Q165115,domesticated mammal,Q57814795,milk yielding animal,Q110878538,taxon,Q16521
+sheep,Q7368,herbivore,Q59099,ruminant,Q842175,productive animal,Q1797813,domesticated mammal,Q57814795,organisms known by a particular common name,Q55983715
+cow,Q830,organisms known by a particular common name,Q55983715,paraphyletic group,Q58051350,livestock,Q103459,cattle,Q4767951,captive mammal,Q57812611,domesticated mammal,Q57814795
+elephant,Q7378,mammal,Q110551885,organisms known by a particular common name,Q55983715
+bear,Q11788,Carnivora,Q25306,taxon,Q16521
+zebra,Q32789,taxon,Q16521
+giraffe,Q15083,taxon,Q16521
+backpack,Q5843,bag,Q1323314,pack,Q88717080
+umbrella,Q41607,costume accessory,Q1065579,personal protective equipment,Q1333024
+handbag,Q467505,costume accessory,Q1065579,bag,Q1323314
+tie,Q44416,costume accessory,Q1065579,neckwear,Q6985603,"long, thin object",Q113519195
+suitcase,Q200814,baggage,Q865054
+frisbee,Q131689,sports equipment,Q768186
+skis,Q172226,sports equipment,Q768186,means of transport,Q106839123,skiing & snowboarding equipment,Q117209093,product category,Q63981612
+snowboard,Q2000617,sports equipment,Q768186,skiing & snowboarding equipment,Q117209093,board,Q123421533,product category,Q63981612
+sports ball,Q18545,toy,Q11422,sports equipment,Q768186,artificial physical object,Q8205328,type of physical object by shape,Q122853628
+kite,Q42861,toy,Q11422,aerodyne,Q154503
+baseball bat,Q809910,weapon functional class,Q124078422,cold weapon,Q222405,sports equipment,Q768186,bat,Q12047696
+baseball glove,Q809894,glove,Q169031,sports equipment,Q768186,sports glove,Q30239264
+skateboard,Q15783,sports equipment,Q768186,wheeled vehicle,Q15618781,vehicle without engine,Q41321608,individual means of transport,Q109734237,movement aid device,Q109852002
+surfboard,Q457689,sports equipment,Q768186,watercraft,Q1229765,board,Q123421533,watercraft type,Q16335899
+tennis racket,Q240502,sports equipment,Q768186,bat,Q12047696,sports terminology,Q28829877
+bottle,Q80228,physical container,Q987767,vessel,Q96952903,"long, thin object",Q113519195
+wine glass,Q1531435,stemware,Q14920412,tableware,Q851782
+cup,Q81727,physical container,Q987767,drinking vessel,Q2453629,vessel,Q96952903
+fork,Q81881,cutlery,Q81944
+knife,Q32489,physical tool,Q39546,stabbing weapon,Q1514280,artificial physical object,Q8205328,bladed object,Q28692583
+spoon,Q81895,cutlery,Q81944,cookware and bakeware,Q154038,material,Q214609
+bowl,Q153988,tableware,Q851782,physical container,Q987767,object form,Q207961
+banana,Q503,fruit,Q3314483,berry,Q13184,tropical fruit,Q844144,fruit,Q3314483,tropical and subtropical fruit,Q27481647
+apple,Q89,fruit,Q3314483,product,Q2424752
+sandwich,Q28803,type of food or dish,Q19861951,finger food,Q748611,bánh,Q5004791
+orange,Q13191,tropical fruit,Q844144,hesperidium,Q1429336,citrus fruit,Q2574750,fruit,Q3314483
+broccoli,Q47722,taxon,Q16521,useful plant,Q11992872
+carrot,Q81,food group,Q767036,trivial name,Q913170,root vegetable,Q20136,taproot,Q609336,finger food,Q748611,food ingredient,Q25403900,food crop,Q31839438
+hot dog,Q181055,fast food,Q81799,dish,Q746549,meat pastry,Q2957687,sausage sandwich,Q7427595
+pizza,Q177,flatbread,Q666242,snack,Q749316,finished good,Q1408229,convenience food,Q13030962,"Pizzas, casseroles",Q26996677,type of food or dish,Q19861951
+donut,Q192783,dessert,Q182940,fritter,Q690292,dish,Q746549,snack,Q749316,viennoiserie,Q1401891,bánh,Q5004791,fried dough,Q5503624
+cake,Q13276,torta,Q3573026,bánh,Q5004791,bakers' confection,Q113389041
+chair,Q15026,furniture,Q14745,seat,Q2207370
+couch,Q131514,furniture,Q14745,seat,Q2207370
+potted plant,Q756,autotroph,Q131427,taxon,Q16521
+bed,Q42177,furniture,Q14745,bedroom furniture,Q4879419,artificial physical object,Q8205328,furnishings,Q12375131,sleeping place,Q45422604,Reclining furniture,Q115300686
+dining table,Q14748,furniture,Q14745
+toilet,Q7857,facility,Q13226383,plumbing fixture,Q2024731
+TV,Q289,mass media,Q11033,broadcasting,Q15078788,infrastructure,Q121359,industry,Q268592,type of mass media,Q121132955
+laptop,Q3962,personal computer,Q16338,consumer electronics,Q581105,portable computer,Q1820120,mobile computer,Q16917685,class of computers,Q716676,computer form factor,Q1148887,invention,Q14208553
+mouse,Q7987,computer hardware,Q3966,pointing device,Q184824,input device,Q864114
+remote,Q185091,object,Q488383,product category,Q63981612,input device,Q864114,electronic machine,Q2858615,battery-powered device,Q113446414,handheld device accessory,Q116961952,add-on,Q117670709
+keyboard,Q250,human interface device,Q1348085,keyboard,Q1921606,text entry interface,Q7708418
+cell phone,Q17517,telephone,Q11035,mobile device,Q5082128,cell phone and accessories,Q115921882
+microwave,Q127956,home appliance,Q212920,electrical appliance,Q2425052,cooking appliance,Q57583712
+oven,Q36539,major appliance,Q12269769,cooking appliance,Q57583712,heating equipment,Q111509483
+toaster,Q14890,home appliance,Q212920,small appliance,Q3558289,cooking appliance,Q57583712
+sink,Q140565,plumbing fixture,Q2024731,wash basin,Q2383211,sink,Q71119090
+refrigerator,Q37828,home appliance,Q212920,chiller,Q1501558,electrical appliance,Q2425052,major appliance,Q12269769
+book,Q571,document,Q49848,media,Q340169,publication,Q732577,product,Q2424752,type of mass media,Q121132955
+clock,Q376,machine,Q11019,metrological mechanism,Q4198689,timepiece,Q42622779,decorative object,Q115923123
+vase,Q191851,work of art,Q838948,physical container,Q987767,vessel,Q96952903
+scissors,Q40847,cutting tool,Q1760958,hand tool,Q2578402,long and narrow object,Q113383399
+teddy bear,Q213477,stuffed toy,Q682582,toy animal,Q22937791
+hair drier,Q15004,home appliance,Q212920,heat gun,Q1057985,hairstyling tool,Q5639584
+toothbrush,Q134205,brush,Q614467,tooth cleaning instrument,Q122052040
