@@ -1,0 +1,54 @@
+id,label,type
+Q7734,Joshua,instance
+Q12137,spherical shell,instance
+Q17278,circle,instance
+Q93189,egg as food,instance
+Q153988,bowl,instance
+Q224104,cartouche,instance
+Q1165717,waveform,instance
+Q1532758,clamshell design,instance
+Q1557435,tomoe,instance
+Q1647152,shape of the universe,instance
+Q2645130,squircle,instance
+Q2754860,cyclamor,instance
+Q3111368,vesica piscis,instance
+Q5156701,Component television,instance
+Q5488888,crescent,instance
+Q7576718,spherical wedge,instance
+Q13127755,◊,instance
+Q25202900,apex,instance
+Q27995891,ungula,instance
+Q12141,Penrose triangle,subclass
+Q12510,torus,subclass
+Q45926,annulus,subclass
+Q161973,curve,subclass
+Q185969,geoid,subclass
+Q192768,paraboloid,subclass
+Q193410,oval,subclass
+Q200674,Latin cross,subclass
+Q201717,helix,subclass
+Q208395,spheroid,subclass
+Q327496,hairstyle,subclass
+Q437882,figure of the Earth,subclass
+Q505628,hyperboloid,subclass
+Q815741,geometric shape,subclass
+Q826930,heart,subclass
+Q905612,trefoil,subclass
+Q911331,molecular geometry,subclass
+Q1068978,maple leaf,subclass
+Q1072483,helicoid,subclass
+Q1139519,arrow,subclass
+Q1165717,waveform,subclass
+Q1549067,pompeblêd,subclass
+Q2995432,anteclise,subclass
+Q3421342,stripe,subclass
+Q4122143,note head,subclass
+Q4374872,battery format,subclass
+Q4698744,airfoil,subclass
+Q5039606,carinate,subclass
+Q5488888,crescent,subclass
+Q7455385,serration,subclass
+Q7520789,Simple cell,subclass
+Q11626671,cut,subclass
+Q19827967,Jewish nose,subclass
+Q25212061,body shape,subclass

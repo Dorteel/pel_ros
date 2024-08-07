@@ -1,0 +1,5 @@
+hasColor : blue
+hasMaterial : plastic
+hasPart : 
+hasLabel : mouse
+hasShape : round

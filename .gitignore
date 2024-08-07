@@ -3,3 +3,6 @@
 /wikidata5m_entity.txt
 /vg_ground_truth.csv
 /groundtruth.csv
+/glove
+/glove.6B.zip
+src/test/data/results/correction/

@@ -1,0 +1,11 @@
+id,targetLabel,targetID,taskType,hasLabel,P279,hasColor,P462,hasShape,P1419,HasMaterial,P186,hasPart,P527,hasCertainty
+1_bean_bag.jpg,bean bag chair,Q55698,correction,couch,Q131514,pink,Q429220,,,textile,Q28823,,,0.45
+cat_kitten.jpg,ball,Q18545,correction,mouse,Q7987,blue,Q1088,round,Q12507,plastic,Q11474,,,0.71
+cat_donskoy.jpg,cat,Q146,correction,person,Q215627,grey,Q42519,,,organic,Q4914589,,,0.48
+citrus_fruits_2.jpg,lemon,Q500,correction,orange,Q13191,yellow,Q943,round/elliptic,Q12507,organic,Q4914589,,,0.55
+dog_dalmatian.jpg,dog,Q144,correction,giraffe,Q15083,black/white,Q23444,,,organic,Q4914589,,,0.62
+chair_wheelchair_2.jpg,wheelchair,Q191931,refinement,chair,Q15026,black/white,Q23445,,,"metal, plastic",Q11426,wheel,Q446,0.36
+cup_measuring_cup.jpg,measuring_cup,Q907099,refinement,cup,Q81727,white,Q23446,,,plastic,Q11474,,,0.78
+cup_mug.jpg,mug,Q386215,refinement,cup,Q81727,white,Q23447,,,ceramic,Q45621,handle,Q200266,0.93
+cup_tea_glass_2.jpg,tea_glass,Q1796586,refinement,cup,Q81727,brown,Q47071,,,glass,Q11469,handle,Q200266,0.63
+fruits.jpg,blood_orange,Q303669,refinement,orange,Q13191,red,Q3142,round,Q12507,organic,Q4914589,,,0.85

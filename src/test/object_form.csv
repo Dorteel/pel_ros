@@ -1,0 +1,172 @@
+id,label,type
+L144535-S3,L144535-S3,instance
+P7937,form of creative work,instance
+Q7734,Joshua,instance
+Q12137,spherical shell,instance
+Q17278,circle,instance
+Q93189,egg as food,instance
+Q153988,bowl,instance
+Q224104,cartouche,instance
+Q382537,Spanish flower,instance
+Q1165717,waveform,instance
+Q1348694,Earth flattening,instance
+Q1532758,clamshell design,instance
+Q1557435,tomoe,instance
+Q1647152,shape of the universe,instance
+Q2084112,Tumblehome,instance
+Q2644914,Q2644914,instance
+Q2645130,squircle,instance
+Q2743443,Asconoid,instance
+Q2754860,cyclamor,instance
+Q3111368,vesica piscis,instance
+Q3827429,plate,instance
+Q4530416,Q4530416,instance
+Q5156701,Component television,instance
+Q5488888,crescent,instance
+Q7576718,spherical wedge,instance
+Q9388782,Zbuk,instance
+Q11419619,shirokuban,instance
+Q11565604,acuminate,instance
+Q12975241,Q12975241,instance
+Q13045157,Rrakota,instance
+Q13127755,◊,instance
+Q16684194,coarse piece,instance
+Q25202900,apex,instance
+Q26913416,cylindrical dome,instance
+Q27995891,ungula,instance
+Q57052728,un-notched,instance
+Q59247542,Q59247542,instance
+Q87118597,Clover Leaf,instance
+Q99743296,lenticular,instance
+Q100793538,loop-de-loop,instance
+Q111288537,round with a round hole,instance
+Q112309234,scalloped with 12 notches,instance
+Q112309452,scalloped with 8 notches,instance
+Q114702346,Q114702346,instance
+Q114702347,Q114702347,instance
+Q114702348,Q114702348,instance
+Q114702349,Q114702349,instance
+Q115542951,Q115542951,instance
+Q119132654,Q119132654,instance
+Q123991332,Apioid,instance
+Q124343772,arch shape,instance
+Q124343821,semicircular elevated arch,instance
+Q126489405,Round with a square hole,instance
+Q126489415,Quarter circle,instance
+Q126489428,Scalloped,instance
+Q126489454,Scalloped with a hole,instance
+Q126489484,Annular sector,instance
+Q126489492,Round with cutouts,instance
+Q126489499,Half Circle,instance
+Q112180474,concave,subclass
+Q112180486,convex,subclass
+Q112180558,concave-convex,subclass
+Q112648281,escutcheon shape,subclass
+Q114702350,Q114702350,subclass
+Q116254192,star shape,subclass
+Q116751752,Pokémon shape,subclass
+Q116923827,mushroom shape,subclass
+Q117229639,serpentiform,subclass
+Q117285082,Y-shaped,subclass
+Q123905164,Q123905164,subclass
+Q124518178,lower semicircle,subclass
+Q12141,Penrose triangle,subclass
+Q12510,torus,subclass
+Q45926,annulus,subclass
+Q161973,curve,subclass
+Q185969,geoid,subclass
+Q192768,paraboloid,subclass
+Q193410,oval,subclass
+Q200674,Latin cross,subclass
+Q201717,helix,subclass
+Q208395,spheroid,subclass
+Q290667,envelope,subclass
+Q327496,hairstyle,subclass
+Q437882,figure of the Earth,subclass
+Q505628,hyperboloid,subclass
+Q811339,design of buildings,subclass
+Q815741,geometric shape,subclass
+Q826930,heart,subclass
+Q851003,Plate buckling,subclass
+Q865787,pear-shaped,subclass
+Q905612,trefoil,subclass
+Q911331,molecular geometry,subclass
+Q1068978,maple leaf,subclass
+Q1072483,helicoid,subclass
+Q1139519,arrow,subclass
+Q1165717,waveform,subclass
+Q1308508,Q1308508,subclass
+Q1420976,fissure,subclass
+Q1481822,Q1481822,subclass
+Q1519441,form deviation,subclass
+Q1549067,pompeblêd,subclass
+Q1592451,Q1592451,subclass
+Q1756045,quasigeoid,subclass
+Q1899935,Q1899935,subclass
+Q1924125,Q1924125,subclass
+Q2182536,wedge-shaped,subclass
+Q2478604,contour,subclass
+Q2496761,roundness,subclass
+Q2553808,diamond-shaped lozange,subclass
+Q2620655,syneclise,subclass
+Q2657438,conical,subclass
+Q2995432,anteclise,subclass
+Q3001206,closed curve,subclass
+Q3077457,shape,subclass
+Q3421342,stripe,subclass
+Q4122143,note head,subclass
+Q4374872,battery format,subclass
+Q4698744,airfoil,subclass
+Q4903716,bicone,subclass
+Q5039606,carinate,subclass
+Q5457948,flatness,subclass
+Q5488888,crescent,subclass
+Q7046710,Nodoid,subclass
+Q7226512,pseudo-polyomino,subclass
+Q7455385,serration,subclass
+Q7520789,Simple cell,subclass
+Q11268718,keyhole-shaped kofun,subclass
+Q11385782,Q11385782,subclass
+Q11419619,shirokuban,subclass
+Q11626671,cut,subclass
+Q12146258,geodesic pyramid,subclass
+Q18627956,Q18627956,subclass
+Q19827967,Jewish nose,subclass
+Q24012047,vase shape,subclass
+Q25099975,Biconcave disc,subclass
+Q25212061,body shape,subclass
+Q28840938,corniform,subclass
+Q47298037,horseshoe shape,subclass
+Q47298214,bell-shaped,subclass
+Q55132951,blockfront,subclass
+Q56025688,thin rod,subclass
+Q59564206,round,subclass
+Q64816562,silhouette,subclass
+Q96746126,screw head shape,subclass
+Q97487864,oxbow,subclass
+Q97487930,serpentine,subclass
+Q97604756,breakfront,subclass
+Q97607814,bombé,subclass
+Q97613936,Q97613936,subclass
+Q98640139,ovoid,subclass
+Q107368287,Q107368287,subclass
+Q107371057,Q107371057,subclass
+Q107426401,curvilinear,subclass
+Q107426446,circular front,subclass
+Q107426454,U-shaped,subclass
+Q107426456,V-shaped,subclass
+Q107426459,T-shaped,subclass
+Q107426462,L-shaped,subclass
+Q107426470,leaf-shaped,subclass
+Q107426486,fan-shaped,subclass
+Q107426497,egg-shaped,subclass
+Q107436303,X-shaped,subclass
+Q107436355,S-shaped,subclass
+Q107436432,kidney-shaped,subclass
+Q107436552,vase-shaped,subclass
+Q107436708,almond-shaped,subclass
+Q107436803,lanceolate,subclass
+Q108449240,Q108449240,subclass
+Q108533242,Q108533242,subclass
+Q109556222,Q109556222,subclass
+Q110865053,pointy,subclass

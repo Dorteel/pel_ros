@@ -1,0 +1,168 @@
+id,label,type
+Q23444,white,instance
+Q47071,brown,instance
+Q194191,ochre,instance
+Q208045,gold (color),instance
+Q218218,mulberry,instance
+Q253181,Egyptian blue,instance
+Q303826,crimson,instance
+Q310115,glaucous,instance
+Q313120,cerulean,instance
+Q372669,alice blue,instance
+Q372973,aquamarine,instance
+Q373160,sky blue,instance
+Q373586,electric blue,instance
+Q425278,cobalt blue,instance
+Q454847,amaranth,instance
+Q492192,feldgrau,instance
+Q492305,Eigengrau,instance
+Q498423,Falu red,instance
+Q513479,Tuscan red,instance
+Q533047,rose,instance
+Q534583,International Klein Blue,instance
+Q543923,rust,instance
+Q604079,mauve,instance
+Q646964,blue-green,instance
+Q679355,amber,instance
+Q737438,vermilion,instance
+Q767608,sepia,instance
+Q797446,burgundy,instance
+Q846504,tangerine,instance
+Q864152,olive,instance
+Q901499,Maya blue,instance
+Q901715,gunmetal,instance
+Q901731,umber,instance
+Q906936,lime,instance
+Q947638,midnight blue,instance
+Q950159,Tiffany Blue,instance
+Q953243,royal blue,instance
+Q958012,mahogany,instance
+Q958363,wheat,instance
+Q1003676,steel blue,instance
+Q1078214,teal,instance
+Q1091453,safety orange,instance
+Q1168275,Persian red,instance
+Q1169566,mustard,instance
+Q1324818,apricot,instance
+Q1402829,red-violet,instance
+Q1403218,eggplant,instance
+Q1426821,cardinal,instance
+Q1520693,roan,instance
+Q1552133,green earth,instance
+Q1632621,rosso corsa,instance
+Q1670336,tan,instance
+Q1770362,Air Force blue,instance
+Q1970335,ecru,instance
+Q2002932,isabelline,instance
+Q2013559,oxblood,instance
+Q2021643,cornflower blue,instance
+Q2268159,scarlet,instance
+Q2294908,sapphire,instance
+Q2296108,heliotrope,instance
+Q2303165,sinopia,instance
+Q2307593,taupe,instance
+Q2334511,cerise,instance
+Q2411228,coral,instance
+Q2468392,lavender,instance
+Q2478619,cadmium pigments,instance
+Q2510690,cosmic latte,instance
+Q2545722,Persian blue,instance
+Q2591774,puce,instance
+Q2617229,periwinkle,instance
+Q2720565,lemon,instance
+Q2722041,copper,instance
+Q2725283,saffron,instance
+Q2730433,cream,instance
+Q2778382,bronze,instance
+Q2906455,Majorelle Blue,instance
+Q2929220,byzantium,instance
+Q2932937,coffee,instance
+Q2996915,coquelicot,instance
+Q3014419,wine,instance
+Q3080423,raspberry,instance
+Q3108722,plum,instance
+Q3116794,Payne's grey,instance
+Q3257809,purple,instance
+Q3276756,magenta,instance
+Q3443194,Turkey red,instance
+Q3446513,ruby,instance
+Q3518540,terra cotta,instance
+Q3776734,cadet grey,instance
+Q4727574,Alizarin crimson,instance
+Q4928721,blue-gray,instance
+Q5005364,fuchsia,instance
+Q5043987,carnelian,instance
+Q5069879,champagne,instance
+Q5122822,citrine,instance
+Q5148721,peach,instance
+Q5347944,eggshell,instance
+Q5404819,Eton blue,instance
+Q5451569,fire engine red,instance
+Q5508507,fulvous,instance
+Q5960345,turquoise,instance
+Q5975887,navy blue,instance
+Q6161740,jasmine,instance
+Q6502169,lava,instance
+Q6551204,Lincoln green,instance
+Q6731851,magnolia,instance
+Q6826076,Mexican pink,instance
+Q7126798,palatinate,instance
+Q7158021,pearl,instance
+Q7377969,rufous,instance
+Q7399114,sage,instance
+Q7622361,straw,instance
+Q7863999,UCLA Blue,instance
+Q7914921,vanilla,instance
+Q9303163,sand,instance
+Q10296772,carmine,instance
+Q11696368,sunset,instance
+Q13550497,goldenrod,instance
+Q13631176,candy apple red,instance
+Q16831078,indian red,instance
+Q17082553,camel,instance
+Q17105502,forest green,instance
+Q22133966,blush,instance
+Q25112525,YInMn Blue,instance
+Q943,yellow,subclass
+Q3133,green,subclass
+Q3142,red,subclass
+Q107775,streak,subclass
+Q166902,primary color,subclass
+Q183127,polychromy,subclass
+Q191807,fluorescence,subclass
+Q372733,aqua,subclass
+Q373934,secondary color,subclass
+Q373984,complementary colors,subclass
+Q374445,tertiary color,subclass
+Q376346,web color,subclass
+Q429220,pink,subclass
+Q513479,Tuscan red,subclass
+Q604079,mauve,subclass
+Q666403,liturgical colour,subclass
+Q838368,black-and-white,subclass
+Q846504,tangerine,subclass
+Q853516,human skin color,subclass
+Q876459,equine coat color,subclass
+Q899318,sienna,subclass
+Q901731,umber,subclass
+Q910300,spectral color,subclass
+Q1048314,human hair color,subclass
+Q2303165,sinopia,subclass
+Q2513175,pastel,subclass
+Q2722041,copper,subclass
+Q2929220,byzantium,subclass
+Q2998796,impossible color,subclass
+Q3404720,tincture,subclass
+Q3443194,Turkey red,subclass
+Q3518638,Van Dyke brown,subclass
+Q4117665,Mordant red 19,subclass
+Q4868226,bastard,subclass
+Q5069879,champagne,subclass
+Q5148636,color of water,subclass
+Q5180360,Tyrian purple,subclass
+Q6731851,magnolia,subclass
+Q6773194,Mars surface color,subclass
+Q6901438,monochromatic color,subclass
+Q7460350,shade of white,subclass
+Q7899245,Upsdell red,subclass
+Q25312687,metallic color,subclass

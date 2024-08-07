@@ -1,0 +1,11 @@
+id,targetLabel,targetID,taskType,P279,P462,P1419,P186,P527
+1_bean_bag.jpg,bean bag chair,Q55698,correction,Q131514,Q429220,,Q28823,
+cat_kitten.jpg,ball,Q18545,correction,Q7987,Q1088,Q12507,Q11474,
+cat_donskoy.jpg,cat,Q146,correction,Q215627,Q42519,,Q4914589,
+citrus_fruits_2.jpg,lemon,Q500,correction,Q13191,Q943,Q12507,Q4914589,
+dog_dalmatian.jpg,dog,Q144,correction,Q15083,Q23444,,Q4914589,
+chair_wheelchair_2.jpg,wheelchair,Q191931,refinement,Q15026,Q23445,,Q11426,Q446
+cup_measuring_cup.jpg,measuring_cup,Q907099,refinement,Q81727,Q23446,,Q11474,
+cup_mug.jpg,mug,Q386215,refinement,Q81727,Q23447,,Q45621,Q200266
+cup_tea_glass_2.jpg,tea_glass,Q1796586,refinement,Q81727,Q47071,,Q11469,Q200266
+fruits.jpg,blood_orange,Q303669,refinement,Q13191,Q3142,Q12507,Q4914589,

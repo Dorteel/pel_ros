@@ -1,0 +1,5 @@
+hasColor : grey
+hasMaterial : organic
+hasPart : 
+hasLabel : cat
+hasShape : 

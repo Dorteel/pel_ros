@@ -1,0 +1,657 @@
+id,label,type
+Q5861,glass fiber,instance
+Q11469,glass,instance
+Q11472,paper,instance
+Q34095,bronze,instance
+Q47107,bucket,instance
+Q47401,rubble masonry,instance
+Q124686,cellulose acetate,instance
+Q147701,Bixa orellana,instance
+Q164789,1000-Stunden-Glas,instance
+Q178150,insulator,instance
+Q188245,polyester,instance
+Q191529,wallpaper,instance
+Q207745,Angelica archangelica,instance
+Q208045,gold (color),instance
+Q209671,faience,instance
+Q211367,sheet metal,instance
+Q244680,latex,instance
+Q308968,encaustic painting,instance
+Q335404,ceramic glaze,instance
+Q365651,Sheet moulding compound,instance
+Q387723,pearlite,instance
+Q441961,BoPET,instance
+Q481840,cellulose acetate film,instance
+Q537460,tool steel,instance
+Q575611,bainite,instance
+Q580807,albumen print,instance
+Q634782,Q634782,instance
+Q642231,medium-density fibreboard,instance
+Q725158,structural steel,instance
+Q729386,phosphogypsum,instance
+Q782491,Petroleum seep,instance
+Q811361,architectural glass,instance
+Q811527,Baumberger Kalksandstein,instance
+Q830894,stoneware,instance
+Q837336,dross,instance
+Q852520,reinforcement,instance
+Q881868,Blasfilm,instance
+Q891460,Bollingen sandstone,instance
+Q906675,vulcanized fibre,instance
+Q911999,lime mortar,instance
+Q1035568,Carbro print,instance
+Q1053066,Q1053066,instance
+Q1083901,sheepskin,instance
+Q1118875,interplanetary medium,instance
+Q1136132,Cosmine,instance
+Q1138868,photographic plate,instance
+Q1147086,catgut,instance
+Q1164661,niello,instance
+Q1164939,seed ball,instance
+Q1209550,Q1209550,instance
+Q1225161,Fassung,instance
+Q1266528,duplex stainless steel,instance
+Q1319518,ice paper,instance
+Q1319761,carton pierre,instance
+Q1354051,Fire retardant,instance
+Q1365156,rubrication,instance
+Q1402193,Felbel,instance
+Q1426146,Q1426146,instance
+Q1520074,liquid packaging board,instance
+Q1587663,hard-paste porcelain,instance
+Q1625488,Woodfree uncoated paper,instance
+Q1747762,Lincrusta,instance
+Q1780867,litter,instance
+Q1783547,Tartan track,instance
+Q1815078,woodburytype,instance
+Q1855903,maraging steel,instance
+Q1885921,matte,instance
+Q1992479,Nile mud,instance
+Q2083390,maki-e,instance
+Q2216009,Resonite,instance
+Q2227780,computronium,instance
+Q2258151,Q2258151,instance
+Q2514428,Q2514428,instance
+Q2657921,Radar-absorbent material,instance
+Q2666962,cross-linked polyethylene,instance
+Q2835646,alfenide,instance
+Q2883496,aftersun lotion,instance
+Q2929139,bicast leather,instance
+Q2933666,calcin,instance
+Q3006326,Q3006326,instance
+Q3071757,oakum,instance
+Q3192874,Kapton,instance
+Q3259954,wood-free paper,instance
+Q3331795,Q3331795,instance
+Q3398130,cold porcelain,instance
+Q3411503,Q3411503,instance
+Q3486764,Q3486764,instance
+Q3518543,englazed terracotta,instance
+Q3521309,banana leaf,instance
+Q3570411,XMC,instance
+Q3571727,muck,instance
+Q3618652,anticorodal,instance
+Q3623049,Liquid Armor,instance
+Q3695968,Q3695968,instance
+Q3774812,vicryl,instance
+Q3827311,Q3827311,instance
+Q4037631,Q4037631,instance
+Q4410572,photosensitive materials,instance
+Q4851537,ballast,instance
+Q4950800,Bowen's Kale,instance
+Q30765445,Q30765445,instance
+Q31836102,Q31836102,instance
+Q41086347,Q41086347,instance
+Q42219026,Bisazza,instance
+Q51398317,sand-lime brick,instance
+Q55362414,Boost,instance
+Q55844718,polyamid 66 - 30% glass fiber reinforced,instance
+Q56426036,Q56426036,instance
+Q57408632,glass plate negative,instance
+Q59564478,Copper-covered steel,instance
+Q62127883,Q62127883,instance
+Q62703273,Source Title Test,instance
+Q64627092,caribou antler,instance
+Q65158341,charred wood,instance
+Q65231578,Q65231578,instance
+Q96414785,white bronze,instance
+Q97326595,Genista bristle,instance
+Q97570383,glass diapositive,instance
+Q100989089,Silver-plated bronze,instance
+Q100989092,verguld brons,instance
+Q101012451,stretchable semiconductor,instance
+Q104787315,Q104787315,instance
+Q105611446,engineered cellular magmatic,instance
+Q105754839,cellulose nitrate,instance
+Q105754994,mixed material,instance
+Q105755247,diazo emulsion,instance
+Q105755385,silver halide emulsion,instance
+Q105755527,non-safety base,instance
+Q105954869,magnetic particle,instance
+Q106298646,vesicular emulsion,instance
+Q106450569,Q106450569,instance
+Q107090331,Q107090331,instance
+Q107142597,Q107142597,instance
+Q107167884,Q107167884,instance
+Q107167947,Q107167947,instance
+Q108281202,Q108281202,instance
+Q109017568,floated wood,instance
+Q109363825,acrylic plates,instance
+Q109536955,Q109536955,instance
+Q110762887,Biocomposite granules,instance
+Q110867681,copper-nickel clad nickel center in nickel brass ring,instance
+Q110868008,stainless steel center in bronze plated steel ring,instance
+Q111284327,Mycelium-based composites,instance
+Q111915532,Abrasion resistant steel,instance
+Q112265432,welding glass,instance
+Q112651323,optoelectronic material,instance
+Q113555477,Q113555477,instance
+Q114876232,Q114876232,instance
+Q115121113,veal leather,instance
+Q115137272,Mycomaterial,instance
+Q115407540,Gotthard granite,instance
+Q115913763,fiber mesh,instance
+Q116943012,wooden masher,instance
+Q116943123,wooden stirrer,instance
+Q117600770,nicolo paste,instance
+Q118594126,CELRe,instance
+Q120693445,cellulose wadding,instance
+Q121433303,Energy materials,instance
+Q122151219,reinforced autoclaved aerated concrete,instance
+Q123382044,gold leather,instance
+Q123684690,Biostimulant,instance
+Q123907190,Q123907190,instance
+Q123908390,clay bar,instance
+Q124038998,chine collé paper,instance
+Q124287651,railway material,instance
+Q124664142,piñon pitch,instance
+Q124670792,pink ivory wood,instance
+Q124670821,Bloodwood,instance
+Q124709788,Pacific yew,instance
+Q124710413,suedette,instance
+Q124711092,coachwood,instance
+Q125152419,ash splint,instance
+Q126157490,Q126157490,instance
+Q126888035,polyhydroxybutyrate fiber,instance
+Q127786588,Titanium sponge,instance
+Q127900441,road material,instance
+Q4999148,Burley,instance
+Q5113880,chromogenic print,instance
+Q5190030,crumb rubber,instance
+Q5249625,decorative laminate,instance
+Q5604502,Greenset,instance
+Q5656951,Harewood,instance
+Q5772281,Chiq,instance
+Q5996925,Petaka,instance
+Q6000059,Fisto,instance
+Q6072245,iron-based superconductor,instance
+Q6075270,Q6075270,instance
+Q6335818,KPR,instance
+Q6721348,Maban,instance
+Q6954932,NOREM,instance
+Q7039314,niobium alloy,instance
+Q7081466,Oil stick,instance
+Q7428560,Sawali,instance
+Q7463524,corrugated fiberboard,instance
+Q7502038,Short fiber reinforced blends,instance
+Q7514254,Silastic,instance
+Q7666665,súgán,instance
+Q7783228,Thermoplastic polyurethane,instance
+Q8069755,Zetix,instance
+Q9180794,Bryt,instance
+Q9185706,Celolith,instance
+Q9186706,Cerezit,instance
+Q9213713,Dynatop,instance
+Q9267076,geogrid,instance
+Q9371980,Went,instance
+Q9380072,Q9380072,instance
+Q10282072,textile fiber,instance
+Q10344325,papel de carta,instance
+Q10344327,gelatin silver paper,instance
+Q10371265,shrilk,instance
+Q10373636,Abalon,instance
+Q10423587,Avlut,instance
+Q10477656,Duossal,instance
+Q10521987,henna,instance
+Q10531259,Q10531259,instance
+Q10658707,råglas,instance
+Q10658935,Rödlut,instance
+Q10671418,Q10671418,instance
+Q10693511,Terylen,instance
+Q10748318,ormolu,instance
+Q11308311,Silicone hydrogel,instance
+Q11333393,Gloiopeltis,instance
+Q11475571,Iwaenogu,instance
+Q11685531,aluminium,instance
+Q11712601,inlet,instance
+Q12029485,log,instance
+Q12044528,pedig,instance
+Q12356334,Vajdo,instance
+Q12386982,Q12386982,instance
+Q12388615,Q12388615,instance
+Q12549853,Q12549853,instance
+Q12550880,Q12550880,instance
+Q12552140,Q12552140,instance
+Q12730133,Hyfil,instance
+Q12773864,Piket,instance
+Q12819504,Baxya,instance
+Q12820140,Q12820140,instance
+Q12822068,Gazlama,instance
+Q12831616,ouatine,instance
+Q12832521,Zarhal,instance
+Q12948720,Eishèr,instance
+Q13050295,Tillo,instance
+Q13199336,Injuk,instance
+Q13407040,Diflex,instance
+Q13421874,Kartit,instance
+Q13561156,brick dust,instance
+Q13641632,Q13641632,instance
+Q14524284,dip pen,instance
+Q14934005,paperboard,instance
+Q15788728,Biomaterial,instance
+Q15903075,macromolecular materials,instance
+Q16001964,Aerographene,instance
+Q16677725,Q16677725,instance
+Q16887460,Brickbat,instance
+Q17105928,soft-paste porcelain,instance
+Q17121855,Nanopin film,instance
+Q17141444,mixed technique,instance
+Q18113858,rubber,instance
+Q18388737,TetraKO,instance
+Q18391481,NASICON,instance
+Q18455014,Q18455014,instance
+Q19609548,Q19609548,instance
+Q20755061,Q20755061,instance
+Q21086803,Q21086803,instance
+Q21086850,Q21086850,instance
+Q21086851,Q21086851,instance
+Q21087162,Q21087162,instance
+Q21087322,Q21087322,instance
+Q21778954,Q21778954,instance
+Q24041680,Q24041680,instance
+Q24870553,LIMEX,instance
+Q25414626,sheet,instance
+Q27321028,chromed white metal,instance
+Q28456311,explosive antimony,instance
+Q30090844,Pakhia,instance
+Q30688663,Mondotrack,instance
+Q744,nickel,subclass
+Q753,copper,subclass
+Q758,zinc,subclass
+Q5309,graphite,subclass
+Q9698,depleted uranium,subclass
+Q11421,magnet,subclass
+Q11426,metal,subclass
+Q11456,semiconductor,subclass
+Q11469,glass,subclass
+Q11474,plastic,subclass
+Q22731,stone,subclass
+Q26520,raised-bed gardening,subclass
+Q28823,textile,subclass
+Q33526,stucco,subclass
+Q35197,mirror,subclass
+Q43513,emerald,subclass
+Q45621,ceramic,subclass
+Q45701,waste,subclass
+Q62230,Breeding color,subclass
+Q81163,polymer,subclass
+Q81895,spoon,subclass
+Q82658,gypsum,subclass
+Q113796,precipitation,subclass
+Q124695,wax,subclass
+Q127583,sapphire,subclass
+Q127980,fat,subclass
+Q133067,mosaic,subclass
+Q145958,polyimide,subclass
+Q152079,ash,subclass
+Q162908,electrolyte,subclass
+Q174219,paint,subclass
+Q177496,Besatz,subclass
+Q177998,agar,subclass
+Q181790,composite material,subclass
+Q189082,cell culture,subclass
+Q189720,dye,subclass
+Q190527,alum,subclass
+Q190878,activated carbon,subclass
+Q193841,cellophane,subclass
+Q194523,nuclear fuel,subclass
+Q202251,rock asphalt,subclass
+Q206615,building material,subclass
+Q212254,compost,subclass
+Q213096,seashell,subclass
+Q215414,foam,subclass
+Q225666,cubic zirconia,subclass
+Q251473,foil,subclass
+Q266564,filter cake,subclass
+Q271768,slag,subclass
+Q282695,sprue,subclass
+Q289472,biogenic substance,subclass
+Q311935,artificial turf,subclass
+Q334265,transmission medium,subclass
+Q372301,abrasive,subclass
+Q376724,bandage,subclass
+Q379503,retroreflective sheeting,subclass
+Q389782,cardboard,subclass
+Q410707,graphite oxide,subclass
+Q413068,polyisocyanurate,subclass
+Q423261,gutta-percha,subclass
+Q436625,substrate,subclass
+Q452996,Intumescent,subclass
+Q466714,neutron moderator,subclass
+Q497166,metamaterial,subclass
+Q549563,mulch,subclass
+Q551997,wire,subclass
+Q615476,rhinestone,subclass
+Q652828,gelcoat,subclass
+Q728944,inclusion,subclass
+Q735160,crude drug,subclass
+Q759922,foaming agent,subclass
+Q789683,Auxetics,subclass
+Q805282,ballistic gelatin,subclass
+Q811527,Baumberger Kalksandstein,subclass
+Q831619,admixture,subclass
+Q886220,potting soil,subclass
+Q902144,soft matter,subclass
+Q906323,certified reference material,subclass
+Q906675,vulcanized fibre,subclass
+Q908279,release agent,subclass
+Q910229,molecular sieve,subclass
+Q910990,scintillator,subclass
+Q911679,spark,subclass
+Q911922,colourant,subclass
+Q967847,nanomaterial,subclass
+Q979014,Pterocarpus indicus,subclass
+Q1000364,buckypaper,subclass
+Q1053956,bead,subclass
+Q1123417,refractory material,subclass
+Q1131303,loam,subclass
+Q1153946,plain weave,subclass
+Q1155083,granular material,subclass
+Q1269650,thermal insulation material,subclass
+Q1297687,structural material,subclass
+Q1337073,putty,subclass
+Q1354051,Fire retardant,subclass
+Q1374261,stereom,subclass
+Q1378670,scrap,subclass
+Q1389392,roll bender,subclass
+Q1396391,Q1396391,subclass
+Q12046275,polymeric material,subclass
+Q12049475,Q12049475,subclass
+Q12054798,slime,subclass
+Q12089156,Q12089156,subclass
+Q12101201,dispersed media,subclass
+Q12553098,Q12553098,subclass
+Q12767712,insulator,subclass
+Q12848659,Q12848659,subclass
+Q13078381,glass-ceramic,subclass
+Q13134879,Q13134879,subclass
+Q13169402,quarantine material,subclass
+Q13174497,bul,subclass
+Q13509984,DARVA-Glass,subclass
+Q15303351,art material,subclass
+Q15727343,organic non-mineral compound,subclass
+Q15727345,inorganic non-mineral compound,subclass
+Q15809077,Q15809077,subclass
+Q15809796,Q15809796,subclass
+Q15825043,Q15825043,subclass
+Q16039692,Q16039692,subclass
+Q16331076,anisotropic material,subclass
+Q16331841,superconductor,subclass
+Q16674791,Q16674791,subclass
+Q16829513,material,subclass
+Q16910644,Borate glass,subclass
+Q17009658,dunnage,subclass
+Q17083616,vivarium substrate,subclass
+Q17162844,body piercing material,subclass
+Q18027753,debris,subclass
+Q18106590,fictional materials in the Stargate franchise,subclass
+Q18218093,etching print,subclass
+Q18378458,single-layer materials,subclass
+Q18667172,composition board,subclass
+Q19275827,Q19275827,subclass
+Q19708685,finishing material,subclass
+Q19915288,Q19915288,subclass
+Q19978957,Q19978957,subclass
+Q20019601,printing material,subclass
+Q20098970,inorganic matter,subclass
+Q20544752,Rosa Porriño,subclass
+Q20918485,growing media,subclass
+Q21235358,Q21235358,subclass
+Q21869848,Q21869848,subclass
+Q23808145,La Mancha Negra,subclass
+Q24503377,mesh,subclass
+Q24568869,thermal interface material,subclass
+Q25481880,paramagnetic material,subclass
+Q25509247,reference material,subclass
+Q25530610,diamagnetic material,subclass
+Q26717101,conductor,subclass
+Q26828324,lure,subclass
+Q28942423,building insulation material,subclass
+Q29560509,dance rubber,subclass
+Q30673259,quantum materials,subclass
+Q30750724,Q30750724,subclass
+Q31450902,Q31450902,subclass
+Q31842778,wire mesh,subclass
+Q34669510,malleable material,subclass
+Q37328283,recyclate,subclass
+Q37328535,recycled material,subclass
+Q39365114,dichroic material,subclass
+Q43557297,albumin paper,subclass
+Q46976206,surface preparation material,subclass
+Q50379874,biomedical and dental material,subclass
+Q50998618,feather,subclass
+Q55238861,tape,subclass
+Q55590127,backing,subclass
+Q56230644,Q56230644,subclass
+Q57051271,Grivory GM-4H,subclass
+Q57273893,metal replacement,subclass
+Q57305800,recyclable material,subclass
+Q57305827,biobased material,subclass
+Q57305858,compostable material,subclass
+Q57305881,biodegradable material,subclass
+Q57306213,Cleartran,subclass
+Q57306278,convoluted acoustical foam,subclass
+Q64029133,gelatin silver print,subclass
+Q64353376,Durapore,subclass
+Q65084729,developing dyes,subclass
+Q65085565,vat dyes,subclass
+Q65768838,paleographical writing material,subclass
+Q65787050,veneer,subclass
+Q66157003,packing material,subclass
+Q71853915,jackfruit wood,subclass
+Q81623716,tracing cloth,subclass
+Q97648592,nickel laterite ore,subclass
+Q98103134,Q98103134,subclass
+Q98108610,shape-memory material,subclass
+Q100268447,sheet steel,subclass
+Q104658930,Q104658930,subclass
+Q105840205,PVC fabric,subclass
+Q106549312,air-sensitive substance,subclass
+Q106762594,Q106762594,subclass
+Q106819724,fine-grain material,subclass
+Q106819789,coarse-grain material,subclass
+Q106819845,medium-grain material,subclass
+Q107158420,perovskite,subclass
+Q107470276,electromaterial,subclass
+Q110728867,shape memory ceramics,subclass
+Q110867630,copper plated steel,subclass
+Q1398005,trimming,subclass
+Q1408064,lining,subclass
+Q1427914,sealant,subclass
+Q1452237,fritted glass,subclass
+Q1455598,frequency selective surface,subclass
+Q1493054,type of wood,subclass
+Q1514145,Q1514145,subclass
+Q1529908,Silly Putty,subclass
+Q1550712,primary commodity,subclass
+Q1570182,coating,subclass
+Q1658591,adulterant,subclass
+Q1696452,eclipse plumage,subclass
+Q1726215,process material,subclass
+Q1792430,Q1792430,subclass
+Q1792537,artificial leather,subclass
+Q1806889,phase-change material,subclass
+Q1845776,Q1845776,subclass
+Q1857284,nerve channel filling,subclass
+Q1879770,fire extinguishing agent,subclass
+Q1889369,neutron reflector,subclass
+Q1899373,flower food,subclass
+Q1924900,metallic material,subclass
+Q1941576,tracer,subclass
+Q2033428,mineral material,subclass
+Q2033925,semimetal,subclass
+Q2083902,plant ash,subclass
+Q2098669,platinum print,subclass
+Q2118097,ABC dry chemical,subclass
+Q2234662,rail fastenings,subclass
+Q2320782,Q2320782,subclass
+Q2325585,I-joist,subclass
+Q2334057,Q2334057,subclass
+Q2343427,Q2343427,subclass
+Q2352600,food contact material,subclass
+Q2362275,substrate,subclass
+Q2394122,Q2394122,subclass
+Q2403399,Q2403399,subclass
+Q2409019,fertile material,subclass
+Q2433683,Q2433683,subclass
+Q2518864,delving material,subclass
+Q2532944,Q2532944,subclass
+Q2578669,Q2578669,subclass
+Q2594492,Half-metal,subclass
+Q2639556,nanocomposite,subclass
+Q2653794,Q2653794,subclass
+Q2719350,ceramic material,subclass
+Q2748498,batten,subclass
+Q2794488,padding,subclass
+Q2800708,organogel,subclass
+Q3040056,dental material,subclass
+Q3150257,Q3150257,subclass
+Q3259286,Q3259286,subclass
+Q3271208,porous medium,subclass
+Q3300022,synthetic material,subclass
+Q3327760,writing surface,subclass
+Q3332002,clinker,subclass
+Q3405827,natural material,subclass
+Q3451297,archival material,subclass
+Q3604148,sparking flint,subclass
+Q3820332,Earth,subclass
+Q3851760,linear elastic material,subclass
+Q3913535,matrix isolation,subclass
+Q4146210,"petroleum, oils and lubricants",subclass
+Q4370255,Q4370255,subclass
+Q4428995,sorbent,subclass
+Q4672810,Acetylated wood,subclass
+Q4774939,antimicrobial surface,subclass
+Q4914589,Bio-based material,subclass
+Q5025838,came,subclass
+Q5054339,Cauchy elastic material,subclass
+Q5135573,clothing material,subclass
+Q5327163,Earth materials,subclass
+Q5376832,energetic material,subclass
+Q5428682,Factice,subclass
+Q5449002,film base,subclass
+Q5989315,Q5989315,subclass
+Q6964018,nanocrystalline material,subclass
+Q7020535,Newtonian material,subclass
+Q7049495,nonmineral,subclass
+Q7136957,parge,subclass
+Q7360130,rolag,subclass
+Q7580229,spray foam,subclass
+Q7624687,strongly correlated material,subclass
+Q7632154,aquarium substrate,subclass
+Q7648839,susceptor,subclass
+Q7880557,ultralight material,subclass
+Q7973224,water-reactive substance,subclass
+Q7978502,web,subclass
+Q9174072,Q9174072,subclass
+Q9259184,ferromagnetic material,subclass
+Q9359040,toxic industrial products,subclass
+Q10350153,Q10350153,subclass
+Q10358506,Q10358506,subclass
+Q10675206,ingredient,subclass
+Q11236878,lacquer,subclass
+Q11587827,magnetic material,subclass
+Q11660423,electric material,subclass
+Q11735559,Q11735559,subclass
+Q12018789,Q12018789,subclass
+Q12021600,inert material,subclass
+Q110867743,nickel brass clad nickel centre in copper-nickel ring,subclass
+Q110867753,aluminium-bronze center in copper-nickel ring,subclass
+Q110867986,brass plated steel,subclass
+Q110868305,bronze plated steel,subclass
+Q110870125,nickel plated steel,subclass
+Q110899391,Bronze plated nickel,subclass
+Q110899513,Nickel plated copper-nickel,subclass
+Q110900113,Nickel clad steel,subclass
+Q110981251,brass plated steel centre in nickel plated steel ring,subclass
+Q110981338,copper plated zinc,subclass
+Q110983998,bimetallic coin material,subclass
+Q110990527,Gold (.875),subclass
+Q110996919,"Aluminium-bronze (90% Copper, 8% Aluminium, 2% Zinc)",subclass
+Q111020388,nickel plated zinc,subclass
+Q111076597,"Brass plated steel (72.5% Copper, 27.5% Steel)",subclass
+Q111080615,Copper clad steel,subclass
+Q111080819,"Aluminium-bronze (92% copper, 6% aluminium, 2% nickel)",subclass
+Q111182590,"Aluminium (96% Aluminum, 3.5% Magnesium, 0.5% Manganese)",subclass
+Q111182828,"Nickel brass (75% Copper, 4% Nickel, 21% Zinc)",subclass
+Q111182945,Acmonital (austenitic),subclass
+Q111210502,ancient materials,subclass
+Q111210503,cellular material,subclass
+Q111381606,"Nickel brass (70% Copper, 18% Zinc, 12% Nickel)",subclass
+Q111398539,"Aluminium-bronze (92% Copper, 6% Aluminum, 2% Nickel)",subclass
+Q111398734,nickel plated copper,subclass
+Q111475048,"Brass plated steel (Plating: 72.5% Copper, 27.5% Zinc)",subclass
+Q111475055,Aluminium-magnesium,subclass
+Q111475245,"Aluminium (Aluminium 98%, Other Metals 2%)",subclass
+Q111475488,Brass clad steel,subclass
+Q111475492,"Aluminium-bronze (88.4% Copper, 5% Aluminum, 5% Nickel, 0.6% Manganese)",subclass
+Q111475513,"Nickel plated steel (Plating: 95% Iron, 5% Nickel)",subclass
+Q111550836,Nickel plated iron,subclass
+Q111677973,"Nickel brass (55% Copper, 27% Nickel,18% Zinc)",subclass
+Q111679199,"Aluminium-bronze (91.5% Copper, 8.5% Aluminum)",subclass
+Q111679211,Plated steel (brass and copper plated),subclass
+Q111679507,"Brass (58% Copper, 40% Zinc, 2% Manganese)",subclass
+Q111684391,"Aluminium-magnesium (98.5% Aluminium, 1.5% Magnesium)",subclass
+Q111696369,copper-nickel plated nickel,subclass
+Q111709094,Aluminium-bronze (Cu884 Ni50 Al50 Fe10 Mn6),subclass
+Q111725350,deposit,subclass
+Q111982852,mycelium-based materials,subclass
+Q112166866,matrix,subclass
+Q112166889,"Copper-nickel (74.50% copper, 25.25% nickel)",subclass
+Q112233954,"Copper-aluminium (91% Copper, 9% Aluminium)",subclass
+Q112248491,"Brass (70% Copper, 30% Zinc)",subclass
+Q112309212,"Nickel brass (79% Copper, 20% Zinc, 1% Nickel)",subclass
+Q112310011,"Copper clad aluminium (48% Copper, 52% Aluminium)",subclass
+Q112310511,"Bronze (97% Copper, 0.5% Tin, 2.5% Zinc)",subclass
+Q112651323,optoelectronic material,subclass
+Q112730895,heterogenous material,subclass
+Q112829710,biosilica,subclass
+Q113158687,Moldable wood,subclass
+Q113263271,embedding medium,subclass
+Q113996626,micromaterial,subclass
+Q114009002,"Nickel brass (69.5% Copper, 18% Zinc, 12% Nickel, 0.5% Manganese)",subclass
+Q114081747,Nickel brass clad copper,subclass
+Q114151272,Aluminium (Etial 30),subclass
+Q114162023,"Nickel brass (60% Copper, 20% Nickel, 20% Zinc)",subclass
+Q114163292,"Brass (95% Copper, 5% Zinc)",subclass
+Q114210275,"Copper-nickel (Copper 92%, nickel 8%)",subclass
+Q114251859,"Bronze (95% Copper, 3% Tin, 2% Zinc)",subclass
+Q114267129,Silver (.500),subclass
+Q114267198,Silver (.100),subclass
+Q115590870,bulk material,subclass
+Q115625159,organic binding media,subclass
+Q116483820,cactus leather,subclass
+Q118744324,Q118744324,subclass
+Q118744330,Q118744330,subclass
+Q118959220,Q118959220,subclass
+Q119828231,new material,subclass
+Q120419627,absorbent,subclass
+Q120886785,"Aluminium (96.2% Aluminium, 3.5% Magnesium, 0.3% Manganese)",subclass
+Q120907375,electrochemically active material,subclass
+Q122879154,Redgra,subclass
+Q122980410,Q122980410,subclass
+Q124152853,inoculum,subclass
+Q124980396,18k white gold,subclass
+Q125272422,man-made material,subclass
+Q125302059,unknown material,subclass
+Q125302170,undetermined material,subclass

@@ -1,0 +1,165 @@
+id,label,type
+Q5861,glass fiber,instance
+Q11469,glass,instance
+Q11472,paper,instance
+Q34095,bronze,instance
+Q47107,bucket,instance
+Q124686,cellulose acetate,instance
+Q147701,Bixa orellana,instance
+Q178150,insulator,instance
+Q188245,polyester,instance
+Q191529,wallpaper,instance
+Q207745,Angelica archangelica,instance
+Q208045,gold (color),instance
+Q209671,faience,instance
+Q211367,sheet metal,instance
+Q244680,latex,instance
+Q335404,ceramic glaze,instance
+Q365651,Sheet moulding compound,instance
+Q387723,pearlite,instance
+Q441961,BoPET,instance
+Q537460,tool steel,instance
+Q575611,bainite,instance
+Q580807,albumen print,instance
+Q725158,structural steel,instance
+Q830894,stoneware,instance
+Q891460,Bollingen sandstone,instance
+Q911999,lime mortar,instance
+Q1083901,sheepskin,instance
+Q1138868,photographic plate,instance
+Q1147086,catgut,instance
+Q1164661,niello,instance
+Q1354051,Fire retardant,instance
+Q1747762,Lincrusta,instance
+Q1780867,litter,instance
+Q1783547,Tartan track,instance
+Q1815078,woodburytype,instance
+Q1855903,maraging steel,instance
+Q1885921,matte,instance
+Q3192874,Kapton,instance
+Q3259954,wood-free paper,instance
+Q3398130,cold porcelain,instance
+Q3521309,banana leaf,instance
+Q3571727,muck,instance
+Q3774812,vicryl,instance
+Q4851537,ballast,instance
+Q4999148,Burley,instance
+Q5113880,chromogenic print,instance
+Q5190030,crumb rubber,instance
+Q5249625,decorative laminate,instance
+Q5656951,Harewood,instance
+Q6335818,KPR,instance
+Q7039314,niobium alloy,instance
+Q7463524,corrugated fiberboard,instance
+Q7502038,Short fiber reinforced blends,instance
+Q10521987,henna,instance
+Q10748318,ormolu,instance
+Q14934005,paperboard,instance
+Q17141444,mixed technique,instance
+Q18388737,TetraKO,instance
+Q28456311,explosive antimony,instance
+Q744,nickel,subclass
+Q753,copper,subclass
+Q758,zinc,subclass
+Q5309,graphite,subclass
+Q9698,depleted uranium,subclass
+Q11421,magnet,subclass
+Q11426,metal,subclass
+Q11456,semiconductor,subclass
+Q11469,glass,subclass
+Q11474,plastic,subclass
+Q28823,textile,subclass
+Q33526,stucco,subclass
+Q35197,mirror,subclass
+Q43513,emerald,subclass
+Q45621,ceramic,subclass
+Q45701,waste,subclass
+Q81163,polymer,subclass
+Q81895,spoon,subclass
+Q82658,gypsum,subclass
+Q113796,precipitation,subclass
+Q124695,wax,subclass
+Q127583,sapphire,subclass
+Q127980,fat,subclass
+Q133067,mosaic,subclass
+Q145958,polyimide,subclass
+Q152079,ash,subclass
+Q162908,electrolyte,subclass
+Q174219,paint,subclass
+Q177998,agar,subclass
+Q181790,composite material,subclass
+Q189082,cell culture,subclass
+Q189720,dye,subclass
+Q190527,alum,subclass
+Q190878,activated carbon,subclass
+Q193841,cellophane,subclass
+Q194523,nuclear fuel,subclass
+Q202251,rock asphalt,subclass
+Q206615,building material,subclass
+Q212254,compost,subclass
+Q213096,seashell,subclass
+Q215414,foam,subclass
+Q225666,cubic zirconia,subclass
+Q251473,foil,subclass
+Q271768,slag,subclass
+Q289472,biogenic substance,subclass
+Q311935,artificial turf,subclass
+Q334265,transmission medium,subclass
+Q372301,abrasive,subclass
+Q376724,bandage,subclass
+Q389782,cardboard,subclass
+Q410707,graphite oxide,subclass
+Q423261,gutta-percha,subclass
+Q436625,substrate,subclass
+Q466714,neutron moderator,subclass
+Q497166,metamaterial,subclass
+Q549563,mulch,subclass
+Q551997,wire,subclass
+Q652828,gelcoat,subclass
+Q735160,crude drug,subclass
+Q902144,soft matter,subclass
+Q906323,certified reference material,subclass
+Q911922,colourant,subclass
+Q967847,nanomaterial,subclass
+Q979014,Pterocarpus indicus,subclass
+Q1000364,buckypaper,subclass
+Q1053956,bead,subclass
+Q1123417,refractory material,subclass
+Q1131303,loam,subclass
+Q1153946,plain weave,subclass
+Q1155083,granular material,subclass
+Q1337073,putty,subclass
+Q1354051,Fire retardant,subclass
+Q1374261,stereom,subclass
+Q12101201,dispersed media,subclass
+Q17009658,dunnage,subclass
+Q17162844,body piercing material,subclass
+Q24503377,mesh,subclass
+Q28942423,building insulation material,subclass
+Q1398005,trimming,subclass
+Q1427914,sealant,subclass
+Q1529908,Silly Putty,subclass
+Q1570182,coating,subclass
+Q1658591,adulterant,subclass
+Q1792537,artificial leather,subclass
+Q1806889,phase-change material,subclass
+Q1889369,neutron reflector,subclass
+Q2098669,platinum print,subclass
+Q2118097,ABC dry chemical,subclass
+Q2352600,food contact material,subclass
+Q3040056,dental material,subclass
+Q3271208,porous medium,subclass
+Q3327760,writing surface,subclass
+Q3332002,clinker,subclass
+Q3405827,natural material,subclass
+Q3913535,matrix isolation,subclass
+Q4428995,sorbent,subclass
+Q4914589,Bio-based material,subclass
+Q5135573,clothing material,subclass
+Q5428682,Factice,subclass
+Q7020535,Newtonian material,subclass
+Q7360130,rolag,subclass
+Q7632154,aquarium substrate,subclass
+Q7880557,ultralight material,subclass
+Q10675206,ingredient,subclass
+Q11236878,lacquer,subclass

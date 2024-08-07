@@ -1,0 +1,13 @@
+Concept_name,WikiDataID,TransE,DistMult
+wheelchair,Q191931,0.4886574,
+chair,Q15026,0.6574812,
+fauteuil,Q981009,0.4095629,
+wing chair,Q1847455,0.3458917,
+litter,Q476850,0.34584346,
+rocking chair,Q14963,0.34553403,
+Bergère,Q820539,0.22479339,
+electric chair,Q185639,0.30244684,
+office chair,Q1021686,0.48078465,
+high chair,Q1622390,0.33223706,
+folding chair,Q1744391,0.3089435,
+deckchair,Q1824203,0.36631653,

@@ -1,0 +1,46 @@
+id,label,type
+Q5330,impact factor,instance
+Q856335,bibliographic coupling,instance
+Q1627586,frequency distribution,instance
+Q4878967,Bed size,instance
+Q7268788,quality of life,instance
+Q13222844,moment,instance
+Q19986423,Volcanic explosivity index 4: Pelean/Plinian,instance
+Q19987976,Volcanic explosivity index 3: Vulcanian/Pelean,instance
+Q19988003,Volcanic explosivity index 2: Strombolian/Vulcanian,instance
+Q19988064,Volcanic explosivity index 1: Hawaiian/Strombolian,instance
+Q19988083,Volcanic explosivity index 0: Hawaiian,instance
+Q19988184,Volcanic explosivity index 5: Plinian,instance
+Q19988258,Volcanic explosivity index 6: Plinian/Ultra-Plinian,instance
+Q19988329,Volcanic explosivity index 7: Ultra-Plinian,instance
+Q19988452,Volcanic explosivity index 8: Supervolcanic,instance
+Q23925698,Mercalli scale I,instance
+Q23925699,Mercalli scale II,instance
+Q23925700,Mercalli scale III,instance
+Q23925701,Mercalli scale IV,instance
+Q23925702,Mercalli scale V,instance
+Q23925703,Mercalli scale VI,instance
+Q23925704,Mercalli scale VII,instance
+Q23925705,Mercalli scale VIII,instance
+Q23925706,Mercalli scale IX,instance
+Q23925707,Mercalli scale X,instance
+Q23925708,Mercalli scale XI,instance
+Q23925709,Mercalli scale XII,instance
+Q111994404,NAAS Score,instance
+Q119858032,bendability,instance
+Q322481,size,subclass
+Q518730,order of magnitude,subclass
+Q761942,frequency deviation,subclass
+Q829825,instrumentation,subclass
+Q1144560,rate,subclass
+Q1146367,file size,subclass
+Q3180866,genome size,subclass
+Q3860305,human brain size,subclass
+Q17119820,sensory threshold,subclass
+Q27861737,citation index,subclass
+Q54928607,abnormally low value,subclass
+Q63345803,abnormally high value,subclass
+Q93929144,Q93929144,subclass
+Q102313643,family size,subclass
+Q109658333,font size,subclass
+Q115040911,document length,subclass

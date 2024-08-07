@@ -1,0 +1,13 @@
+id,label,type
+Q5330,impact factor,instance
+Q856335,bibliographic coupling,instance
+Q4878967,Bed size,instance
+Q7268788,quality of life,instance
+Q13222844,moment,instance
+Q322481,size,subclass
+Q518730,order of magnitude,subclass
+Q761942,frequency deviation,subclass
+Q1144560,rate,subclass
+Q1146367,file size,subclass
+Q3180866,genome size,subclass
+Q3860305,human brain size,subclass

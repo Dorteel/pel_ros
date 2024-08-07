@@ -1,0 +1,80 @@
+import numpy as np
+import requests
+import zipfile
+import os
+
+# Function to download and unzip GloVe vectors
+def download_glove():
+    print("Downloading GloVe vectors...")
+    glove_url = "http://nlp.stanford.edu/data/glove.6B.zip"
+    response = requests.get(glove_url)
+    with open("glove.6B.zip", "wb") as f:
+        f.write(response.content)
+    
+    print("Unzipping GloVe vectors...")
+    with zipfile.ZipFile("glove.6B.zip", "r") as zip_ref:
+        zip_ref.extractall("glove")
+    print("Download and extraction completed.")
+
+# Function to load GloVe vectors
+def load_glove(file_path):
+    print(f"Loading GloVe vectors from {file_path}...")
+    words = []
+    vectors = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for i, line in enumerate(f):
+            values = line.split()
+            word = values[0]
+            vector = np.array(values[1:], dtype="float32")
+            words.append(word)
+            vectors.append(vector)
+    return words, np.stack(vectors)
+
+# Normalize the vectors to unit length
+def normalize_vectors(vectors):
+    norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+    return vectors / norms
+
+# Function to find the closest word
+def find_closest_word(word_vec, all_words, all_vectors, exclude_words=[]):
+    print("Finding the closest word...")
+    distances = np.dot(all_vectors, word_vec)
+    for word in exclude_words:
+        if word in word_to_index:
+            distances[word_to_index[word]] = -np.inf  # Exclude these words by setting their distance to -inf
+    best_word_index = np.argmax(distances)
+    return all_words[best_word_index]
+
+# Download GloVe vectors if not already downloaded
+if not os.path.exists("glove"):
+    download_glove()
+
+# Load GloVe vectors
+words, vectors = load_glove("glove/glove.6B.300d.txt")
+
+# Normalize the vectors
+print("Normalizing vectors...")
+vectors = normalize_vectors(vectors)
+print("Normalization completed.")
+
+# Create a dictionary for quick word look-up
+print("Creating word-to-index dictionary...")
+word_to_index = {word: index for index, word in enumerate(words)}
+print("Dictionary created.")
+
+# Define the words for the analogy
+words_to_test = ["orange", "round", "yellow", "fruit"]
+
+# Perform the analogy king - man + woman = ?
+print(f"Calculating analogy: {words_to_test[0]} - {words_to_test[1]} + {words_to_test[2]}")
+
+# Retrieve the word vectors and normalize them
+word_vectors = [vectors[word_to_index[x]] for x in words_to_test]
+
+# Calculate the resulting vector
+result_vector = word_vectors[3] + word_vectors[2] + word_vectors[1]
+
+# Find the closest word to the resulting vector
+closest_word = find_closest_word(result_vector, words, vectors, exclude_words=words_to_test)
+
+print(f"The word closest to '{words_to_test[0]} + {words_to_test[1]} + {words_to_test[2]}' is: {closest_word}")

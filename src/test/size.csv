@@ -1,0 +1,49 @@
+id,label,type
+Q11859815,format,instance
+Q18435329,Q18435329,instance
+Q24041714,Q24041714,instance
+Q71131362,organ size,instance
+Q100513017,medium,instance
+Q104889913,Q104889913,instance
+Q109983486,Lilliput,instance
+Q117309724,Closed populations (human),instance
+Q122829782,Q122829782,instance
+Q205299,paper size,subclass
+Q280097,Kamsarmax,subclass
+Q378729,Medimax LNG carrier,subclass
+Q759853,film format,subclass
+Q831898,company size,subclass
+Q994710,Q994710,subclass
+Q1075138,clothing sizes,subclass
+Q1282281,Newcastlemax bulk carrier,subclass
+Q1512674,Sammax container ship,subclass
+Q1544756,Setouchmax ship,subclass
+Q1915584,human penis size,subclass
+Q1961252,NOKmax,subclass
+Q1972790,Q1972790,subclass
+Q2594337,Wozmax bulk carrier,subclass
+Q2625603,population,subclass
+Q3077341,cinema format,subclass
+Q3589038,thickness,subclass
+Q7048587,nominal size,subclass
+Q7140503,particle size,subclass
+Q9392675,loading gauge,subclass
+Q13362697,human vaginal size,subclass
+Q15846799,Q15846799,subclass
+Q16640016,Q16640016,subclass
+Q17155893,group size,subclass
+Q18602566,book format,subclass
+Q27926404,audio tape specifications,subclass
+Q55636096,traditional point-size name,subclass
+Q59863344,medium-sized,subclass
+Q60982237,Q60982237,subclass
+Q72591134,open area,subclass
+Q91783353,book size,subclass
+Q98815202,droplet size,subclass
+Q107407300,monumental,subclass
+Q110082448,vast,subclass
+Q117713523,oversize,subclass
+Q118177118,farm size,subclass
+Q119505167,school size,subclass
+Q119531880,size of enterprise,subclass
+Q125693200,sperm size,subclass

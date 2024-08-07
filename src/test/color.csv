@@ -1,0 +1,777 @@
+id,label,type
+Q23444,white,instance
+Q47071,brown,instance
+Q75737,hot pink,instance
+Q194191,ochre,instance
+Q208045,gold (color),instance
+Q218218,mulberry,instance
+Q244822,garnet,instance
+Q253181,Egyptian blue,instance
+Q303826,crimson,instance
+Q310115,glaucous,instance
+Q313120,cerulean,instance
+Q372669,alice blue,instance
+Q372973,aquamarine,instance
+Q373160,sky blue,instance
+Q373173,lapis lazuli,instance
+Q373586,electric blue,instance
+Q373658,jungle green,instance
+Q373787,spring green,instance
+Q425278,cobalt blue,instance
+Q454847,amaranth,instance
+Q492192,feldgrau,instance
+Q492305,Eigengrau,instance
+Q498423,Falu red,instance
+Q513479,Tuscan red,instance
+Q533047,rose,instance
+Q534583,International Klein Blue,instance
+Q536284,liver,instance
+Q543923,rust,instance
+Q604079,mauve,instance
+Q612837,seal brown,instance
+Q628657,brunswick green,instance
+Q646964,blue-green,instance
+Q679355,amber,instance
+Q723995,diamond color,instance
+Q737438,vermilion,instance
+Q767608,sepia,instance
+Q797446,burgundy,instance
+Q846504,tangerine,instance
+Q864152,olive,instance
+Q899295,Naples yellow,instance
+Q901499,Maya blue,instance
+Q901715,gunmetal,instance
+Q901731,umber,instance
+Q906936,lime,instance
+Q909115,gamboge,instance
+Q919991,British racing green,instance
+Q947638,midnight blue,instance
+Q950159,Tiffany Blue,instance
+Q953243,royal blue,instance
+Q958012,mahogany,instance
+Q958363,wheat,instance
+Q972729,chamois,instance
+Q987293,school bus yellow,instance
+Q1003676,steel blue,instance
+Q1078214,teal,instance
+Q1091453,safety orange,instance
+Q1115352,Q1115352,instance
+Q1168275,Persian red,instance
+Q1169566,mustard,instance
+Q1171945,sangria,instance
+Q1324818,apricot,instance
+Q1402679,Mountbatten pink,instance
+Q1402829,red-violet,instance
+Q1403218,eggplant,instance
+Q1406264,green-yellow,instance
+Q1409234,rich black,instance
+Q1411452,slate gray,instance
+Q1426821,cardinal,instance
+Q1520693,roan,instance
+Q1552133,green earth,instance
+Q1585372,Q1585372,instance
+Q1627085,honey,instance
+Q1632621,rosso corsa,instance
+Q1670336,tan,instance
+Q1747509,middle gray,instance
+Q1770362,Air Force blue,instance
+Q1925148,orchid,instance
+Q1970335,ecru,instance
+Q2002932,isabelline,instance
+Q2013559,oxblood,instance
+Q2021643,cornflower blue,instance
+Q2040833,chestnut,instance
+Q2138972,fawn,instance
+Q2145530,UN blue,instance
+Q2266769,Paolo Veronese green,instance
+Q2268159,scarlet,instance
+Q2285791,Q2285791,instance
+Q2293227,selective yellow,instance
+Q2294901,baby blue,instance
+Q2294908,sapphire,instance
+Q2296108,heliotrope,instance
+Q2303165,sinopia,instance
+Q2307593,taupe,instance
+Q2334511,cerise,instance
+Q2411228,coral,instance
+Q2465494,emerald,instance
+Q2468392,lavender,instance
+Q2478619,cadmium pigments,instance
+Q2478760,Q2478760,instance
+Q2487355,alpine white,instance
+Q2510690,cosmic latte,instance
+Q2541418,celadon,instance
+Q2545722,Persian blue,instance
+Q2553431,army green,instance
+Q2564184,pumpkin,instance
+Q2591774,puce,instance
+Q2617229,periwinkle,instance
+Q2631989,amethyst,instance
+Q2701939,Zaans green,instance
+Q2720565,lemon,instance
+Q2722041,copper,instance
+Q2725283,saffron,instance
+Q2730433,cream,instance
+Q2778382,bronze,instance
+Q2836489,tawny,instance
+Q2842346,amber colour,instance
+Q2853007,anthracite,instance
+Q2866788,asparagus,instance
+Q2904578,Q2904578,instance
+Q2905897,bright cream,instance
+Q2906455,Majorelle Blue,instance
+Q2906465,Q2906465,instance
+Q2906500,smoke,instance
+Q2906503,frosted blue,instance
+Q2906505,horizon blue,instance
+Q2906506,mineral blue,instance
+Q2906519,petrol blue,instance
+Q2925617,brique,instance
+Q2929220,byzantium,instance
+Q2932471,Q2932471,instance
+Q2932537,catechu,instance
+Q2932937,coffee,instance
+Q2936397,cinnamon,instance
+Q2937858,caramel,instance
+Q2974481,citron,instance
+Q2996915,coquelicot,instance
+Q3007035,Nymphenschenkelfarbe,instance
+Q3014419,wine,instance
+Q3058453,Q3058453,instance
+Q3080396,strawberry,instance
+Q3080423,raspberry,instance
+Q3108722,plum,instance
+Q3116435,Q3116435,instance
+Q3116788,steel gray,instance
+Q3116792,linen,instance
+Q3116794,Payne's grey,instance
+Q3117006,Q3117006,instance
+Q3149822,incarnate,instance
+Q3160411,light jade,instance
+Q3257809,purple,instance
+Q3276756,magenta,instance
+Q3305070,harlequin,instance
+Q3306072,Q3306072,instance
+Q3358660,true ultramarine,instance
+Q3365600,Parma,instance
+Q3389253,pistachio,instance
+Q3443194,Turkey red,instance
+Q3443208,cadmium red,instance
+Q3445504,Q3445504,instance
+Q3446513,ruby,instance
+Q3491936,gris souris,instance
+Q3518540,terra cotta,instance
+Q3535555,turtledove,instance
+Q3554596,vanilla,instance
+Q3556203,bottle green,instance
+Q3556204,celadon green,instance
+Q3556223,Q3556223,instance
+Q3556225,pine green,instance
+Q3556227,Q3556227,instance
+Q3621275,cadmium orange,instance
+Q3621276,burnt orange,instance
+Q3631631,light turquoise,instance
+Q3639460,titanium white,instance
+Q3639461,zinc white,instance
+Q3641120,Savoy blue,instance
+Q3641130,blue peafowl,instance
+Q3641131,dark blue,instance
+Q3660634,carrot red,instance
+Q3705434,denim,instance
+Q3738728,fallow,instance
+Q3746538,flax,instance
+Q3757283,gainsboro,instance
+Q3762369,reddish Naples yellow,instance
+Q3762375,cadmium yellow,instance
+Q3762379,laser lemon,instance
+Q3776734,cadet grey,instance
+Q3776736,Grey-Asparagus,instance
+Q3776737,ash grey,instance
+Q3843568,maize,instance
+Q3844391,Mandarin orange,instance
+Q3849855,pastel brown,instance
+Q3858954,myrtle green,instance
+Q3886119,old gold,instance
+Q3894699,papaya whip,instance
+Q3899621,pear,instance
+Q3900633,peach-orange,instance
+Q3906414,platinum,instance
+Q3907669,Q3907669,instance
+Q3941700,Pompeian red,instance
+Q3984546,Q3984546,instance
+Q3985184,dark brown,instance
+Q4001278,green tea,instance
+Q4006208,robin egg blue,instance
+Q4009896,Green Legnano,instance
+Q4009897,cinnabar green,instance
+Q4009899,camouflage green,instance
+Q4009900,swamp green,instance
+Q4009903,#008000,instance
+Q4013847,cobalt violet,instance
+Q4100014,russet,instance
+Q4281308,Marengo,instance
+Q4405716,light green,instance
+Q4519952,camel hair color,instance
+Q4727574,Alizarin crimson,instance
+Q4849102,Baker-Miller Pink,instance
+Q4928721,blue-gray,instance
+Q5005364,fuchsia,instance
+Q5043987,carnelian,instance
+Q5069879,champagne,instance
+Q5120881,cinereous,instance
+Q5122822,citrine,instance
+Q5148721,peach,instance
+Q5149928,Columbia blue,instance
+Q5170059,cordovan,instance
+Q5223370,dark red,instance
+Q5347944,eggshell,instance
+Q5402922,rosa-orange,instance
+Q5404819,Eton blue,instance
+Q5451569,fire engine red,instance
+Q5508507,fulvous,instance
+Q5605374,Q5605374,instance
+Q5648078,Hangool and haital,instance
+Q5922149,Persian green,instance
+Q5960345,turquoise,instance
+Q5975887,navy blue,instance
+Q6161740,jasmine,instance
+Q6275890,jonquil,instance
+Q6502169,lava,instance
+Q6551204,Lincoln green,instance
+Q6555379,lion,instance
+Q6592940,tomato color,instance
+Q6700908,Q6700908,instance
+Q6731851,magnolia,instance
+Q6826076,Mexican pink,instance
+Q6845574,Mikado yellow,instance
+Q7126798,palatinate,instance
+Q7127114,paleness,instance
+Q7158021,pearl,instance
+Q7231989,Portland Orange,instance
+Q7377969,rufous,instance
+Q7399114,sage,instance
+Q7441815,seashell,instance
+Q7580765,spring bud,instance
+Q7622361,straw,instance
+Q7847367,True Blue,instance
+Q7851535,Tufts Blue,instance
+Q7863999,UCLA Blue,instance
+Q7914921,vanilla,instance
+Q8217074,Persimmon,instance
+Q9303163,sand,instance
+Q10296772,carmine,instance
+Q10659011,smoky cream,instance
+Q10747136,flame,instance
+Q10859033,bordeaux,instance
+Q10862213,Bondi blue,instance
+Q10862356,Turkish blue,instance
+Q10927920,Tǔ huángsè,instance
+Q10931309,Q10931309,instance
+Q11090565,Dawn Red,instance
+Q11144247,Persian Indigo,instance
+Q11151270,sea blue,instance
+Q11261134,enji,instance
+Q11374716,Kyō purple,instance
+Q11409186,Q11409186,instance
+Q11447749,Kobicha,instance
+Q11502631,Shinbashi colour,instance
+Q11515057,Q11515057,instance
+Q11535061,persimmon,instance
+Q11538188,cherry blossom pink,instance
+Q11538290,Q11538290,instance
+Q11538718,color of safflower,instance
+Q11557246,Asagi-iro,instance
+Q11606233,dark blue,instance
+Q11617258,Madder,instance
+Q11620271,moegi,instance
+Q11622600,indigo white,instance
+Q11625224,Q11625224,instance
+Q11635157,Q11635157,instance
+Q11635977,Q11635977,instance
+Q11660962,Q11660962,instance
+Q11660963,blue no. 24,instance
+Q11676208,Hiwa-iro,instance
+Q11696368,sunset,instance
+Q11763188,Lubryka,instance
+Q11878163,ultramarine red,instance
+Q12322810,Q12322810,instance
+Q12817889,Alvon,instance
+Q12858979,magenta rose,instance
+Q12894641,lilac,instance
+Q12899119,Caesius,instance
+Q12899155,brilliant white,instance
+Q12901657,Gray21,instance
+Q12901869,Q12901869,instance
+Q12901881,rutile,instance
+Q12902516,Venetus,instance
+Q12902590,Q12902590,instance
+Q13139264,Q13139264,instance
+Q13417144,wisteria,instance
+Q13424722,fern green,instance
+Q13550497,goldenrod,instance
+Q13582464,jade,instance
+Q13631176,candy apple red,instance
+Q14946424,blue-violet,instance
+Q15141414,peach-yellow,instance
+Q15141721,hunter green,instance
+Q15141723,bright green,instance
+Q15141724,moss green,instance
+Q15699769,dark brown,instance
+Q15890339,pale denim,instance
+Q16001621,acid green,instance
+Q16039699,violet-blue,instance
+Q16078735,Macau green,instance
+Q16128149,ochrous,instance
+Q16645086,yellow-orange,instance
+Q16831078,indian red,instance
+Q16924498,BISU Visual Identity,instance
+Q16938160,harvest gold,instance
+Q16938364,drab,instance
+Q17015621,NIVO,instance
+Q17082553,camel,instance
+Q17105502,forest green,instance
+Q18207065,Federal Standard 595 camouflage colours,instance
+Q18349136,Coyote brown,instance
+Q18459573,young shoot color,instance
+Q18627178,iceberg,instance
+Q18627185,Dartmouth green,instance
+Q18657380,Q18657380,instance
+Q18657742,lithopone white,instance
+Q18657831,Q18657831,instance
+Q18658385,Q18658385,instance
+Q18658462,clam pink,instance
+Q18659392,Q18659392,instance
+Q18669148,snow blue,instance
+Q19361243,antique pink,instance
+Q19364263,pale pink,instance
+Q19571398,dark purple,instance
+Q19572932,marigold,instance
+Q19599545,raisin black,instance
+Q19605446,capri,instance
+Q19711126,permanent green,instance
+Q19888352,olive brown,instance
+Q19888366,pinkish-brown,instance
+Q19888373,purple-black,instance
+Q19888381,purple-brown,instance
+Q19888422,yellow-brown,instance
+Q20046295,Q20046295,instance
+Q20829325,Verde cian,instance
+Q20972103,Pearl Mystic Turquoise,instance
+Q21864159,yellow-white,instance
+Q21864306,yellow-green,instance
+Q22006653,color,instance
+Q22133966,blush,instance
+Q22237935,Bleu de France,instance
+Q22933795,Q22933795,instance
+Q22933999,Q22933999,instance
+Q22934008,Q22934008,instance
+Q22934018,Q22934018,instance
+Q22934027,Q22934027,instance
+Q22934036,Q22934036,instance
+Q22934046,Q22934046,instance
+Q22934057,Q22934057,instance
+Q22934068,Q22934068,instance
+Q22934076,Q22934076,instance
+Q22934085,Q22934085,instance
+Q22934092,Q22934092,instance
+Q22934683,Q22934683,instance
+Q22934808,Q22934808,instance
+Q22934820,Q22934820,instance
+Q22963919,laurel green,instance
+Q22963960,green-yellow,instance
+Q22963968,white smoke,instance
+Q23931909,deep electric blue,instance
+Q23931911,iridescent electric blue,instance
+Q24239813,brown special,instance
+Q24239818,insignia red,instance
+Q24239857,Pink,instance
+Q24574924,India green,instance
+Q24820286,watermelon,instance
+Q24836972,sand beige,instance
+Q24836976,Q24836976,instance
+Q24837001,light grass green,instance
+Q24871044,Q24871044,instance
+Q24911879,Marian blue,instance
+Q25112525,YInMn Blue,instance
+Q25203611,mango,instance
+Q25336659,azalea,instance
+Q25336662,pastel green,instance
+Q25343693,Morello,instance
+Q25348505,wine dregs,instance
+Q25349006,Reseda green,instance
+Q943,yellow,subclass
+Q3133,green,subclass
+Q3142,red,subclass
+Q107775,streak,subclass
+Q166902,primary color,subclass
+Q183127,polychromy,subclass
+Q191807,fluorescence,subclass
+Q334660,Abtönfarbe,subclass
+Q370424,local color,subclass
+Q372733,aqua,subclass
+Q373934,secondary color,subclass
+Q373984,complementary colors,subclass
+Q374445,tertiary color,subclass
+Q376346,web color,subclass
+Q429220,pink,subclass
+Q507666,Colors of the day in Thailand,subclass
+Q513479,Tuscan red,subclass
+Q604079,mauve,subclass
+Q666403,liturgical colour,subclass
+Q686487,political colour,subclass
+Q838368,black-and-white,subclass
+Q846504,tangerine,subclass
+Q853516,human skin color,subclass
+Q876459,equine coat color,subclass
+Q899318,sienna,subclass
+Q901731,umber,subclass
+Q910300,spectral color,subclass
+Q1048314,human hair color,subclass
+Q1396399,colorless,subclass
+Q1396457,colour system,subclass
+Q1396489,oil color,subclass
+Q1531295,splashed white,subclass
+Q1627085,honey,subclass
+Q1751288,spot color,subclass
+Q1796648,non-luminous colour,subclass
+Q1817674,animal coat,subclass
+Q1982444,mineral colour,subclass
+Q2285097,Q2285097,subclass
+Q2303165,sinopia,subclass
+Q2327089,Q2327089,subclass
+Q2400601,Q2400601,subclass
+Q2459845,Q2459845,subclass
+Q2513175,pastel,subclass
+Q2549475,Q2549475,subclass
+Q2722041,copper,subclass
+Q2832043,alabaster,subclass
+Q2929220,byzantium,subclass
+Q2937714,Q2937714,subclass
+Q2972693,Q2972693,subclass
+Q2998796,impossible color,subclass
+Q3080403,Q3080403,subclass
+Q3281180,malachite,subclass
+Q3334729,Q3334729,subclass
+Q3404720,tincture,subclass
+Q3443194,Turkey red,subclass
+Q3443196,Q3443196,subclass
+Q3443231,Q3443231,subclass
+Q3443232,Q3443232,subclass
+Q3518638,Van Dyke brown,subclass
+Q3560480,Q3560480,subclass
+Q3683633,color,subclass
+Q4032445,8-bit color,subclass
+Q4117665,Mordant red 19,subclass
+Q4868226,bastard,subclass
+Q4918316,Bismarck brown,subclass
+Q5069879,champagne,subclass
+Q5148636,color of water,subclass
+Q5170059,cordovan,subclass
+Q5180360,Tyrian purple,subclass
+Q5309270,Q5309270,subclass
+Q6664774,structural coloration,subclass
+Q6731851,magnolia,subclass
+Q6773194,Mars surface color,subclass
+Q6901438,monochromatic color,subclass
+Q6961784,Helesor,subclass
+Q7447760,selective color,subclass
+Q7460350,shade of white,subclass
+Q7899245,Upsdell red,subclass
+Q8230718,Q8230718,subclass
+Q9258022,process color,subclass
+Q10531259,Q10531259,subclass
+Q10588536,Q10588536,subclass
+Q10747136,flame,subclass
+Q10834659,grue,subclass
+Q11422261,JNR color,subclass
+Q11463808,adzuki,subclass
+Q11567360,achromatic color,subclass
+Q11635977,Q11635977,subclass
+Q12576779,Kula,subclass
+Q12857896,Calico sheep,subclass
+Q12901658,Q12901658,subclass
+Q14029419,Pigeon colors,subclass
+Q14564445,quaternary color,subclass
+Q15699787,bistre brown,subclass
+Q15915227,Q15915227,subclass
+Q16682421,Q16682421,subclass
+Q17122705,brown,subclass
+Q17122834,blue,subclass
+Q17122854,green,subclass
+Q17421658,RAL classic color,subclass
+Q25393814,maroon,instance
+Q25401999,light olive beige,instance
+Q25402007,beige green,instance
+Q25815651,peridot,instance
+Q26187774,English red,instance
+Q29319716,cherry,instance
+Q29960645,Q29960645,instance
+Q30137105,slate blue,instance
+Q31889271,Q31889271,instance
+Q35625860,dirty white,instance
+Q39046969,Marrs green,instance
+Q40889182,Byzantine blue,instance
+Q42533823,Persian rose,instance
+Q43213808,seven prismatic colors,instance
+Q47203406,greyish magenta,instance
+Q47203481,parsley green,instance
+Q48988258,blood red,instance
+Q50381999,Venice red,instance
+Q52428980,haint blue,instance
+Q52681964,light blue green,instance
+Q54346167,cerulean blue,instance
+Q55148403,natural silk color,instance
+Q55611196,Indian Yellow,instance
+Q56273889,Android green,instance
+Q56324355,eggplant,instance
+Q56324873,Q56324873,instance
+Q56528582,vivid sky blue,instance
+Q56887977,ice blue,instance
+Q56887985,morning blue,instance
+Q57178144,voroneț blue,instance
+Q57305216,Blue (CMYK) (pigment blue),instance
+Q57305302,Blue (NCS),instance
+Q57305337,Blue (Munsell),instance
+Q59960325,Glass paint,instance
+Q60679298,illuminating emerald,instance
+Q60679352,brighter dark red,instance
+Q60741845,shades of azure,instance
+Q60785280,Erin,instance
+Q60971306,orange-red,instance
+Q61600225,light purple,instance
+Q61927422,Israel blue,instance
+Q62058583,red-orange,instance
+Q63089713,Barbie pink,instance
+Q64211725,carmine pink,instance
+Q65034853,Zima blue,instance
+Q65239920,Q65239920,instance
+Q68223248,light yellow,instance
+Q68365832,light orange,instance
+Q69362239,golden brown,instance
+Q69524026,hazel,instance
+Q69692146,light red,instance
+Q69914380,NCS red,instance
+Q69914710,NCS green,instance
+Q69914970,NCS yellow,instance
+Q69915238,NCS blue,instance
+Q70218161,mahogany red,instance
+Q71392381,dark grey,instance
+Q71404162,light brown,instance
+Q71405932,red brown,instance
+Q71406823,dusky brown,instance
+Q71460159,Skagen yellow,instance
+Q71873134,light pink,instance
+Q76011056,bister,instance
+Q77459172,turquoise surf,instance
+Q77595803,sandy brown,instance
+Q84430532,turquoise blue,instance
+Q84430751,dark turquoise,instance
+Q84432247,rubine red,instance
+Q84435145,pale aqua,instance
+Q84436827,Microsoft blue,instance
+Q84436829,Microsoft red,instance
+Q84437225,Microsoft green,instance
+Q84437365,Microsoft yellow,instance
+Q86043318,fiery red,instance
+Q87647352,Q87647352,instance
+Q89190389,apple green,instance
+Q90711961,minium,instance
+Q90725387,honey brown,instance
+Q90809398,cigar brown,instance
+Q90812259,red and white,instance
+Q91417704,Ayanami Blue,instance
+Q93493270,bright orange,instance
+Q96803467,charcoal grey,instance
+Q97106579,Vegas gold,instance
+Q97342238,Q97342238,instance
+Q97342321,chartreuse green,instance
+Q97376472,Q97376472,instance
+Q97376557,Shobu (Color),instance
+Q97376612,moss green,instance
+Q97377848,ancient purple,instance
+Q97379214,Edo purple,instance
+Q97528669,Berliner Blau,instance
+Q97664082,Q97664082,instance
+Q97930410,auburn,instance
+Q98111784,brick red,instance
+Q98123378,Sösvart,instance
+Q98148703,Orientrot,instance
+Q99211754,yolk yellow,instance
+Q100135995,rose gold,instance
+Q101785488,old lace,instance
+Q101786150,FT pink,instance
+Q101881550,Q101881550,instance
+Q103888297,Princeton orange,instance
+Q105883127,#FFFFFE,instance
+Q105993773,nude,instance
+Q105995092,titanium,instance
+Q105996967,greige,instance
+Q105997630,wood,instance
+Q106006497,coyote,instance
+Q106006649,stout,instance
+Q106006725,hickory,instance
+Q106056288,steel,instance
+Q106060357,putty,instance
+Q106061107,cork,instance
+Q106065388,mother of pearl,instance
+Q106065780,sesame,instance
+Q106065949,chili,instance
+Q106066018,quarry,instance
+Q106066153,mink,instance
+Q106231338,unpainted,instance
+Q106510499,pecan,instance
+Q106510555,amphora,instance
+Q106816855,pale blue,instance
+Q107665058,amaranth purple,instance
+Q107665369,Cerise,instance
+Q107667856,Japanese violet,instance
+Q108312028,electrum,instance
+Q108312069,ginger green,instance
+Q108917663,arsenic,instance
+Q109358281,Q109358281,instance
+Q109433927,licorice,instance
+Q109433936,ebony,instance
+Q109435152,charcoal,instance
+Q109437866,process yellow,instance
+Q109440395,rosewood,instance
+Q109441995,brass,instance
+Q109442450,battleship grey,instance
+Q109600141,Q109600141,instance
+Q110102658,madder,instance
+Q110102703,daffodil,instance
+Q110102849,milk white,instance
+Q110103247,canary,instance
+Q110740794,Q110740794,instance
+Q111080140,Islamic green,instance
+Q111784255,rose pink,instance
+Q111812647,cool black,instance
+Q111851367,dark jungle green,instance
+Q111889906,Blurple,instance
+Q111889929,Discord Black,instance
+Q112056389,Bright Mango,instance
+Q112083819,dark Teal Tune,instance
+Q112175360,folly,instance
+Q112208628,greenish-blue,instance
+Q112246722,pastel pink,instance
+Q112262766,dhaani,instance
+Q112722251,Q112722251,instance
+Q112732350,pine forest,instance
+Q112732364,deep purple,instance
+Q112732446,sage green,instance
+Q112732567,deep blue,instance
+Q112732593,tyrian purple,instance
+Q112732637,black russian,instance
+Q113448965,dark indigo,instance
+Q113826352,pinkish-lavender,instance
+Q113897502,greenish-white,instance
+Q113996021,colourful grey,instance
+Q114001780,purplish red,instance
+Q114001891,slightly pink,instance
+Q114002049,pinkish-white,instance
+Q114420553,bone white,instance
+Q114877269,starlight,instance
+Q115121358,yellowish-white,instance
+Q115185412,reddish purple,instance
+Q115208329,sulphur,instance
+Q115413654,purplish black,instance
+Q115413683,dark maroon,instance
+Q115413772,purplish brown,instance
+Q115413818,nearly black,instance
+Q115413850,blackish,instance
+Q115413960,yellowish,instance
+Q115413993,dull red,instance
+Q115640836,grenadine pink,instance
+Q115640889,lavender gray,instance
+Q115653670,office green,instance
+Q115676970,parrot green,instance
+Q115702282,raven black,instance
+Q115733603,swarthy,instance
+Q115733625,sooty,instance
+Q115736060,lead grey,instance
+Q115858149,violet red,instance
+Q115858787,pastel red,instance
+Q115859278,tile red,instance
+Q115861882,rose red,instance
+Q115863738,copper red,instance
+Q115886141,purple-blue,instance
+Q115918071,blond,instance
+Q115924565,chalk white,instance
+Q115941768,dull blue,instance
+Q115944478,dark ruby,instance
+Q115945837,rose buff,instance
+Q24899991,member color,subclass
+Q25312687,metallic color,subclass
+Q26212273,icon color,subclass
+Q27926191,Q27926191,subclass
+Q29572385,multicolored,subclass
+Q55138168,sadd colors,subclass
+Q65281107,cool color,subclass
+Q66033606,natural-colored,subclass
+Q98241906,official color,subclass
+Q100430541,albero,subclass
+Q101090528,black and white,subclass
+Q104919542,Pantone color,subclass
+Q105096490,color in nature,subclass
+Q105825176,hair color,subclass
+Q106516770,undertone,subclass
+Q106622681,X11 color,subclass
+Q106831324,light,subclass
+Q107746919,neutral,subclass
+Q108105469,Q108105469,subclass
+Q109658301,background color,subclass
+Q111442693,neon green,subclass
+Q111549375,Q111549375,subclass
+Q113482095,leaf color,subclass
+Q115395119,fruit color,subclass
+Q119414466,hazel brown,subclass
+Q122746318,black & white,subclass
+Q124832680,Q124832680,subclass
+Q126417256,warm color,subclass
+Q115959703,Q115959703,instance
+Q115959845,opal green,instance
+Q116786995,medium purple,instance
+Q116787015,neon blue,instance
+Q116787017,neon carrot,instance
+Q116787024,nickel,instance
+Q116787041,olive green,instance
+Q116787059,bright yellow,instance
+Q117194159,French fuchsia,instance
+Q117711817,peach-pink,instance
+Q117750933,pinkish-purple,instance
+Q118292929,Q118292929,instance
+Q119267340,green-brown,instance
+Q119267768,rose-purple,instance
+Q119442843,Q119442843,instance
+Q119953849,pale yellow,instance
+Q119984045,whitish,instance
+Q119985571,pinkish,instance
+Q120735097,Q120735097,instance
+Q120833460,rainbow colours,instance
+Q121012829,gray green,instance
+Q121347242,Q121347242,instance
+Q121711136,cyan-blue,instance
+Q121715819,blue-magenta,instance
+Q121716878,green-cyan,instance
+Q122938835,Q122938835,instance
+Q122998749,orange-yellow,instance
+Q123575515,gentle blue,instance
+Q123688114,Q123688114,instance
+Q123852722,ruber,instance
+Q123852800,medium ruby,instance
+Q123852833,ruby red,instance
+Q123852873,big dip o'ruby,instance
+Q123852956,antique ruby,instance
+Q123852998,deep ruby,instance
+Q124153022,dark yellow,instance
+Q124309091,brownish,instance
+Q124327868,yellowish-orange,instance
+Q124327873,reddish,instance
+Q124327877,yellowish-red,instance
+Q124327881,purplish,instance
+Q124328099,blackish-purple,instance
+Q124836499,dark pink,instance
+Q125053642,Space Gray,instance
+Q125096972,Space Black,instance
+Q125706334,Absolute Zero,instance
+Q126888533,Stanford Cardinal Red,instance
+Q126888561,Palo Alto Green,instance
