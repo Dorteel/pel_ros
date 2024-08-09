@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: pel_ros
+Description: Description of pel_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

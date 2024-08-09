@@ -1,0 +1,13 @@
+{
+    "ros.distro": "noetic",
+    "python.autoComplete.extraPaths": [
+        "/home/user/pel_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/user/Downloads/Installers/webots-R2023b-x86-64/webots/lib/controller"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/user/pel_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/user/Downloads/Installers/webots-R2023b-x86-64/webots/lib/controller"
+    ]
+}

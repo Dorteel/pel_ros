@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240715-1335-Experimental"
+	Name="dorteel"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="dorteel"
+	OSRelease="6.0.12-76060012-generic"
+	OSVersion="#202212290932~1674066459~20.04~3cd2bf3-Ubuntu SMP PREEMPT_DYNAMI"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="141"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="64092"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2294.66"
+	>
+	<Testing>
+		<StartDateTime>Jul 15 15:35 CEST</StartDateTime>
+		<StartTestTime>1721050550</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jul 15 15:35 CEST</EndDateTime>
+		<EndTestTime>1721050550</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
