@@ -14,4 +14,7 @@ pip install -r requirements.txt # install the requirements for yolov5
 
 
 ## Running the simulation
-To run the simulation, you can run the following roslaunch file
+To run the simulation using the LocoBot, run the following command:
+```console
+git clone https://github.com/Dorteel/locobot_simulation.git
+```
