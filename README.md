@@ -14,8 +14,16 @@ cd yolov5_ros/src/yolov5
 pip install -r requirements.txt # install the requirements for yolov5
 ```
 
-## Running the simulation
-To run the simulation using the LocoBot, run the following command:
+## Simulation
+
+### Running the simulation using Gazebo
+To run the simulation using the LocoBot in the Gazebo simulation environment, run the following command:
 ```console
 git clone https://github.com/Dorteel/locobot_simulation.git
+```
+
+### Running the simulation using WeBots
+To run the simulation using WeBots, run the following:
+```console
+roslaunch pel_ros simulation_publisher.launch
 ```
