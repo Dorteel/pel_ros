@@ -173,6 +173,7 @@ include_directories(
 catkin_install_python(PROGRAMS
   test/sensors/webcam_pub.py
   test/sensors/webcam_sub.py
+  test/service_test.py
   src/obs_graph_creator.py
   src/observation_graph_generator.py
   src/test_obs_graph_creator.py
