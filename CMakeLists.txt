@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   message_generation
+  detection_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -62,6 +63,9 @@ add_service_files(
   FILES
   graph.srv
   query.srv
+  annotatorsrv/ImageDetection.srv
+  annotatorsrv/PointCloudDetection.srv
+  annotatorsrv/ImageMaskDetection.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -74,7 +78,10 @@ add_service_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-  std_msgs#   std_msgs
+  std_msgs
+  detection_msgs
+  sensor_msgs
+  #   std_msgs
 )
 
 ################################################
@@ -109,7 +116,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES pel_ros
-#  CATKIN_DEPENDS cv_bridge image_transport roscpp rospy sensor_msgs std_msgs
+CATKIN_DEPENDS cv_bridge image_transport roscpp rospy sensor_msgs std_msgs detection_msgs
 #  DEPENDS system_lib
 )
 
@@ -164,11 +171,13 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
-  sensors/webcam_pub.py
-  sensors/webcam_sub.py
+  test/sensors/webcam_pub.py
+  test/sensors/webcam_sub.py
   src/obs_graph_creator.py
   src/observation_graph_generator.py
   src/test_obs_graph_creator.py
+  src/frame_manager.py
+  utils/pc_separator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
