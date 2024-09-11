@@ -1,0 +1,12 @@
+<launch>
+    <!-- Launch services from the pel_ros package -->
+    <include file="$(find pel_ros)/launch/services.launch"/>
+
+    <!-- Launch the object_alignment node -->
+    <node pkg="your_package_name" type="object_alignment.py" name="object_alignment" output="screen">
+        <!-- Parameters for the node -->
+        <param name="image_topic" value="/locobot/camera/color/image_raw"/>
+        <param name="pointcloud_topic" value="/locobot/camera/depth/color/points"/>
+        <param name="draw_output" value="true"/>  <!-- Set this to false if you don't want to draw the output -->
+    </node>
+</launch>

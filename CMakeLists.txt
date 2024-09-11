@@ -178,6 +178,7 @@ catkin_install_python(PROGRAMS
   src/observation_graph_generator.py
   src/test_obs_graph_creator.py
   src/frame_manager.py
+  scripts/object_alignment.py
   utils/pc_separator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

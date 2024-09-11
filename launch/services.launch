@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch material_detector_service.py from the material_detector package -->
+    <node name="material_detector_service" pkg="vit_inference" type="material_detector_service.py" output="screen" />
+
+    <!-- Launch detr_detector_service.py from the detr_detector package -->
+    <node name="detr_detector_service" pkg="detr_detector" type="detr_detector_service.py" output="screen" />
+
+    <!-- Launch color_detector_service.py from the color_extractor package -->
+    <node name="color_detector_service" pkg="color_extractor" type="color_detector_service.py" output="screen" />
+
+    <!-- Launch yolo_service.py from the yolov5_ros package -->
+    <node name="yolo_service" pkg="yolov5_ros" type="yolo_service.py" output="screen" />
+</launch>

@@ -1,3 +1,3 @@
 sensor_msgs/Image image
 ---
-detection_msgs/ImageMasks masks
+detection_msgs/ImageMasks objects
