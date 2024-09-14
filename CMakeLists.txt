@@ -62,7 +62,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   graph.srv
-  query.srv
+  Query.srv
   annotatorsrv/ImageDetection.srv
   annotatorsrv/PointCloudDetection.srv
   annotatorsrv/ImageMaskDetection.srv
@@ -116,7 +116,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES pel_ros
-CATKIN_DEPENDS cv_bridge image_transport roscpp rospy sensor_msgs std_msgs detection_msgs
+CATKIN_DEPENDS cv_bridge image_transport owlready2 roscpp rospy sensor_msgs std_msgs detection_msgs
 #  DEPENDS system_lib
 )
 
@@ -179,6 +179,7 @@ catkin_install_python(PROGRAMS
   src/test_obs_graph_creator.py
   src/frame_manager.py
   scripts/object_alignment.py
+  scripts/main_service.py
   utils/pc_separator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

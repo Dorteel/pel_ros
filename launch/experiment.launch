@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="pel_ros" type="main_service.py" name="main_service" output="screen" 
+          cwd="node" launch-prefix="/home/user/pel_ws/.venv/bin/python3" />
+  </launch>
