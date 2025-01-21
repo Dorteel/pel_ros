@@ -181,6 +181,7 @@ catkin_install_python(PROGRAMS
   scripts/object_alignment.py
   scripts/main_service.py
   utils/pc_separator.py
+  utils/configuration_parser_service.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

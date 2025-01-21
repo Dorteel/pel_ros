@@ -1,0 +1,41 @@
+---
+annotators:
+  yolo_object_detector:
+    name: "YOLOv4 Object Detector"
+    model_path: "/path/to/yolo_model/yolov4.weights"  # Path to the YOLO weights file
+    config_path: "/path/to/yolo_model/yolov4.cfg"     # Path to the YOLO configuration file
+    classes_path: "/path/to/yolo_model/coco.names"    # Path to the class names file
+    confidence_threshold: 0.5   # Confidence threshold for detections
+    nms_threshold: 0.4          # Non-Maximum Suppression (NMS) threshold
+    input_image_topic: "/camera/color/image_raw"  # Topic where the YOLO model subscribes to the image stream
+    output_detection_topic: "/yolo/detections"    # Topic where YOLO publishes detected objects
+    image_resolution: "640x480"  # Expected input resolution for the YOLO model
+    use_gpu: true                # Boolean to specify whether to use GPU acceleration
+    input_queue_size: 1          # Queue size for incoming images
+    output_queue_size: 1         # Queue size for outgoing detections
+    detection_classes:
+      - person
+      - bicycle
+      - car
+      - motorcycle
+      - airplane
+      - bus
+      - train
+      - truck
+      - boat
+      - traffic light
+      - fire hydrant
+      - stop sign
+      - parking meter
+      - bench
+      - bird
+      - cat
+      - dog
+      - horse
+      - sheep
+      - cow
+      - elephant
+      - bear
+      - zebra
+      - giraffe
+      - brick

@@ -1,0 +1,16 @@
+---
+sensors:
+  camera_link:
+    sensor_name: "locobot_camera"
+    sensor_type: "camera"
+    frame_id: "camera_link"
+    topic: "/camera_link/image_raw"
+    hfov: 90
+    format: "RGB"
+    image_width: 640
+    image_height: 480
+    update_rate: 20
+    range:
+      min: 20
+      far: 30
+  
