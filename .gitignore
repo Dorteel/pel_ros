@@ -1,0 +1,76 @@
+# ROS2 / colcon build artifacts
+build/
+install/
+log/
+*.egg-info/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Compiled files
+*.o
+*.a
+*.so
+*.dylib
+
+# Autotools
+Makefile
+aclocal.m4
+autom4te.cache/
+config.log
+config.status
+configure
+depcomp
+install-sh
+ltmain.sh
+missing
+
+# CMake
+CMakeLists.txt.user
+CMakeUserPresets.json
+cmake_install.cmake
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.#*
+
+# ROS2 runtime files
+.ros/
+.rosdeps/
+
+# Generated code from services/messages (for non-built packages)
+# This is often generated, but we want to track it in git for consistency
+# Uncomment if you prefer to exclude generated files:
+# *_pb2.py
+# *_pb2_grpc.py
