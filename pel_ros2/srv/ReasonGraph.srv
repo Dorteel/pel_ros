@@ -1,0 +1,11 @@
+string reasoner
+bool infer_property_values
+bool infer_data_property_values
+string save_path
+string format
+---
+bool success
+bool consistent
+string used_reasoner
+string saved_path
+string message

@@ -1,0 +1,4 @@
+string graph_path
+---
+bool success
+string message

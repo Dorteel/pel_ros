@@ -1,0 +1,5 @@
+string sparql_query
+---
+bool success
+string[] results
+string message
