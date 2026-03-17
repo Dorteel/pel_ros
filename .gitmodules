@@ -1,3 +1,4 @@
 [submodule "pel_ros2/orka"]
 	path = pel_ros2/orka
 	url = https://github.com/Dorteel/orka.git
+	branch = orka-v2
