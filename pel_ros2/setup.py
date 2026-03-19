@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'graph_manager_node = pel_ros2.graph_manager_node:main',
+            'simulator_test = pel_ros2.simulator_test:main',
             'test = pel_ros2.test:main'
         ],
     },
