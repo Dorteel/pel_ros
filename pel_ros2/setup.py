@@ -11,13 +11,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'srv'), [
-            'srv/LoadGraph.srv',
-            'srv/QueryGraph.srv',
-            'srv/SaveGraph.srv',
-            'srv/InitializeGraph.srv',
-            'srv/ReasonGraph.srv',
-        ]),
     ],
     install_requires=['setuptools', 'rclpy', 'owlready2'],
     zip_safe=True,
@@ -30,7 +23,6 @@ setup(
         'console_scripts': [
             'graph_manager_node = pel_ros2.graph_manager_node:main',
             'simulator_test = pel_ros2.simulator_test:main',
-            'test = pel_ros2.test:main'
         ],
     },
 )
