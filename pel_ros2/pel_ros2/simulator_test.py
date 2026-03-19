@@ -10,6 +10,7 @@ This node demonstrates a simple workflow:
 5. Save the materialized graph
 """
 
+import os
 import sys
 from pathlib import Path
 
@@ -18,6 +19,20 @@ from rclpy.node import Node
 
 # Import the client
 from pel_ros2.orka_graph_client import OrkaGraphClient
+
+
+def get_orka_path():
+    """Resolve the path to the orka submodule."""
+    colcon_prefix = os.getenv('COLCON_PREFIX_PATH', '').split(':')[0]
+    if colcon_prefix:
+        # Go up from install directory to get the workspace root
+        workspace_root = Path(colcon_prefix).parent
+        orka_path = workspace_root / "pel_ros2" / "orka"
+    else:
+        # Fallback: assume running from source
+        orka_path = Path(__file__).parent.parent.parent / "orka"
+    
+    return orka_path
 
 
 class SimulatorTestNode(Node):
@@ -41,9 +56,8 @@ class SimulatorTestNode(Node):
             
             # Step 1: Load the ontology
             self.get_logger().info("\n[2/5] Loading ontology graph...")
-            ontology_path = str(
-                Path(__file__).parent.parent / "orka" / "owl" / "orka-core-tiago.owl"
-            )
+            orka_path = get_orka_path()
+            ontology_path = str(orka_path / "owl" / "orka-core-tiago.owl")
             success = self.client.load_graph(ontology_path)
             
             if not success:
@@ -53,9 +67,8 @@ class SimulatorTestNode(Node):
             
             # Step 2: Initialize graph with robot
             self.get_logger().info("\n[3/5] Initializing graph with robot from XACRO...")
-            xacro_path = str(
-                Path(__file__).parent.parent / "orka" / "urdfs" / "turtlebot3" / "turtlebot3_gazebo.xacro"
-            )
+            orka_path = get_orka_path()
+            xacro_path = str(orka_path / "urdfs" / "turtlebot3" / "turtlebot3_gazebo.xacro")
             result = self.client.initialize_graph(
                 xacro_path=xacro_path,
                 robot_instance_name="test_robot"
