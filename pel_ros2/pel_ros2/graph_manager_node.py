@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
 """ROS2 wrapper around ORKA graph functionalities."""
 
+import os
 import sys
 from pathlib import Path
 
@@ -7,7 +9,17 @@ import rclpy
 from rclpy.node import Node
 
 # Add orka to path so we can import graph_manager
-sys.path.insert(0, str(Path(__file__).parent.parent / "orka"))
+# Try to find orka from the colcon workspace
+colcon_prefix = os.getenv('COLCON_PREFIX_PATH', '').split(':')[0]
+if colcon_prefix:
+    # Go up from install directory to get the workspace root
+    workspace_root = Path(colcon_prefix).parent
+    orka_path = workspace_root / "pel_ros2" / "orka"
+else:
+    # Fallback: assume running from source
+    orka_path = Path(__file__).parent.parent.parent / "orka"
+
+sys.path.insert(0, str(orka_path))
 
 from graph_manager import (
     initialize_graph,
