@@ -1,4 +1,3 @@
-import os
 from setuptools import find_packages, setup
 
 package_name = 'pel_ros2'
@@ -12,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools', 'rclpy', 'owlready2'],
+    install_requires=['setuptools', 'rclpy', 'owlready2', 'PyYAML'],
     zip_safe=True,
     maintainer='kai',
     maintainer_email='dorteel@gmail.com',
@@ -22,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'graph_manager_node = pel_ros2.graph_manager_node:main',
+            'main = pel_ros2.main:main',
             'simulator_test = pel_ros2.simulator_test:main',
         ],
     },

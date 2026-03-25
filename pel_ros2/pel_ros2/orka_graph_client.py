@@ -9,6 +9,7 @@ from pel_ros2.srv import (
     SaveGraph,
     InitializeGraph,
     ReasonGraph,
+    UpdateGraph,
 )
 
 
@@ -34,6 +35,9 @@ class OrkaGraphClient(Node):
         self.reason_graph_client = self.create_client(
             ReasonGraph, "reason_graph"
         )
+        self.update_graph_client = self.create_client(
+            UpdateGraph, "update_graph"
+        )
 
     def wait_for_services(self):
         """Wait for all services to be available."""
@@ -43,6 +47,7 @@ class OrkaGraphClient(Node):
         self.save_graph_client.wait_for_service()
         self.initialize_graph_client.wait_for_service()
         self.reason_graph_client.wait_for_service()
+        self.update_graph_client.wait_for_service()
         self.get_logger().info("All services available!")
 
     def load_graph(self, graph_path):
@@ -155,6 +160,25 @@ class OrkaGraphClient(Node):
         else:
             self.get_logger().error("Service call failed")
             return None
+
+    def update_graph(self, subject, predicate, object_value, object_is_literal=True):
+        """Insert one triple into the graph."""
+        request = UpdateGraph.Request()
+        request.subject = subject
+        request.predicate = predicate
+        request.object_value = object_value
+        request.object_is_literal = object_is_literal
+
+        future = self.update_graph_client.call_async(request)
+        rclpy.spin_until_future_complete(self, future)
+
+        if future.result() is not None:
+            response = future.result()
+            self.get_logger().info(f"Update result: {response.message}")
+            return response.success
+        else:
+            self.get_logger().error("Service call failed")
+            return False
 
 
 def main(args=None):

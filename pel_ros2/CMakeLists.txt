@@ -15,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SaveGraph.srv"
   "srv/InitializeGraph.srv"
   "srv/ReasonGraph.srv"
+  "srv/UpdateGraph.srv"
 )
 
 # Install data files
@@ -25,11 +26,22 @@ install(DIRECTORY
   PATTERN "__pycache__" EXCLUDE
 )
 
+install(DIRECTORY
+  mappings/
+  DESTINATION share/${PROJECT_NAME}/mappings
+)
+
 # Install Python executable entry points
 install(PROGRAMS
   pel_ros2/graph_manager_node.py
   DESTINATION lib/${PROJECT_NAME}
   RENAME graph_manager_node
+)
+
+install(PROGRAMS
+  pel_ros2/main.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME main
 )
 
 install(PROGRAMS

@@ -1,0 +1,7 @@
+string subject
+string predicate
+string object_value
+bool object_is_literal
+---
+bool success
+string message

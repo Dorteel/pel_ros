@@ -5,20 +5,27 @@ import os
 import sys
 from pathlib import Path
 
+from ament_index_python.packages import get_package_share_directory
 import rclpy
 from rclpy.node import Node
 
-# Add orka to path so we can import graph_manager
-# Try to find orka from the colcon workspace
-colcon_prefix = os.getenv('COLCON_PREFIX_PATH', '').split(':')[0]
-if colcon_prefix:
-    # Go up from install directory to get the workspace root
-    workspace_root = Path(colcon_prefix).parent
-    orka_path = workspace_root / "pel_ros2" / "orka"
-else:
-    # Fallback: assume running from source
-    orka_path = Path(__file__).parent.parent.parent / "orka"
+def resolve_orka_path() -> Path:
+    """Resolve the ORKA source directory."""
+    colcon_prefix = os.getenv("COLCON_PREFIX_PATH", "").split(":")[0]
+    if colcon_prefix:
+        workspace_root = Path(colcon_prefix).parent
+        source_path = workspace_root / "src" / "pel_ros" / "pel_ros2" / "orka"
+        if source_path.exists():
+            return source_path
 
+    package_share = Path(get_package_share_directory("pel_ros2"))
+    installed_path = package_share / "orka"
+    if installed_path.exists():
+        return installed_path
+
+    return Path(__file__).resolve().parents[2] / "orka"
+
+orka_path = resolve_orka_path()
 sys.path.insert(0, str(orka_path))
 
 from graph_manager import (
@@ -27,6 +34,7 @@ from graph_manager import (
     query_graph,
     reason_graph,
     save_graph,
+    update_graph,
 )
 from pel_ros2.srv import (
     LoadGraph,
@@ -34,6 +42,7 @@ from pel_ros2.srv import (
     SaveGraph,
     InitializeGraph,
     ReasonGraph,
+    UpdateGraph,
 )
 
 
@@ -59,6 +68,9 @@ class GraphManagerNode(Node):
         )
         self.reason_graph_srv = self.create_service(
             ReasonGraph, "reason_graph", self.handle_reason_graph
+        )
+        self.update_graph_srv = self.create_service(
+            UpdateGraph, "update_graph", self.handle_update_graph
         )
 
         self.get_logger().info("ORKA Graph Manager node started")
@@ -177,6 +189,30 @@ class GraphManagerNode(Node):
             response.used_reasoner = ""
             response.saved_path = ""
             response.message = f"Failed to reason graph: {str(e)}"
+            self.get_logger().error(response.message)
+
+        return response
+
+    def handle_update_graph(self, request, response):
+        """Insert one triple into the ontology graph."""
+        try:
+            if self.ontology is None:
+                raise RuntimeError("No graph loaded. Call load_graph first.")
+
+            triple = update_graph(
+                self.ontology,
+                subject=request.subject,
+                predicate=request.predicate,
+                object_value=request.object_value,
+                object_is_literal=request.object_is_literal,
+            )
+
+            response.success = True
+            response.message = f"Inserted triple: {triple}"
+            self.get_logger().info(response.message)
+        except Exception as e:
+            response.success = False
+            response.message = f"Failed to update graph: {str(e)}"
             self.get_logger().error(response.message)
 
         return response
