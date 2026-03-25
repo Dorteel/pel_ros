@@ -1,7 +1,0 @@
-string xacro_path
-string robot_instance_name
----
-bool success
-string robot_id
-string[] sensors
-string message

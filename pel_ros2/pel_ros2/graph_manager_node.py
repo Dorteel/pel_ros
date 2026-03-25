@@ -29,7 +29,6 @@ orka_path = resolve_orka_path()
 sys.path.insert(0, str(orka_path))
 
 from graph_manager import (
-    initialize_graph,
     load_graph,
     query_graph,
     reason_graph,
@@ -40,7 +39,6 @@ from pel_ros2.srv import (
     LoadGraph,
     QueryGraph,
     SaveGraph,
-    InitializeGraph,
     ReasonGraph,
     UpdateGraph,
 )
@@ -62,9 +60,6 @@ class GraphManagerNode(Node):
         )
         self.save_graph_srv = self.create_service(
             SaveGraph, "save_graph", self.handle_save_graph
-        )
-        self.initialize_graph_srv = self.create_service(
-            InitializeGraph, "initialize_graph", self.handle_initialize_graph
         )
         self.reason_graph_srv = self.create_service(
             ReasonGraph, "reason_graph", self.handle_reason_graph
@@ -124,34 +119,6 @@ class GraphManagerNode(Node):
             response.success = False
             response.saved_path = ""
             response.message = f"Failed to save graph: {str(e)}"
-            self.get_logger().error(response.message)
-
-        return response
-
-    def handle_initialize_graph(self, request, response):
-        """Add a robot and its sensors from xacro into the ontology graph."""
-        try:
-            if self.ontology is None:
-                raise RuntimeError("No graph loaded. Call load_graph first.")
-
-            result = initialize_graph(
-                self.ontology,
-                request.xacro_path,
-                robot_instance_name=request.robot_instance_name or None,
-            )
-
-            response.success = True
-            response.robot_id = result["robot_id"]
-            response.sensors = [str(sensor) for sensor in result["sensors"]]
-            response.message = (
-                f"Successfully initialized graph with robot {result['robot_id']}"
-            )
-            self.get_logger().info(response.message)
-        except Exception as e:
-            response.success = False
-            response.robot_id = ""
-            response.sensors = []
-            response.message = f"Failed to initialize graph: {str(e)}"
             self.get_logger().error(response.message)
 
         return response

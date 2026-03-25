@@ -7,7 +7,6 @@ from pel_ros2.srv import (
     LoadGraph,
     QueryGraph,
     SaveGraph,
-    InitializeGraph,
     ReasonGraph,
     UpdateGraph,
 )
@@ -29,9 +28,6 @@ class OrkaGraphClient(Node):
         self.save_graph_client = self.create_client(
             SaveGraph, "save_graph"
         )
-        self.initialize_graph_client = self.create_client(
-            InitializeGraph, "initialize_graph"
-        )
         self.reason_graph_client = self.create_client(
             ReasonGraph, "reason_graph"
         )
@@ -45,7 +41,6 @@ class OrkaGraphClient(Node):
         self.load_graph_client.wait_for_service()
         self.query_graph_client.wait_for_service()
         self.save_graph_client.wait_for_service()
-        self.initialize_graph_client.wait_for_service()
         self.reason_graph_client.wait_for_service()
         self.update_graph_client.wait_for_service()
         self.get_logger().info("All services available!")
@@ -102,32 +97,6 @@ class OrkaGraphClient(Node):
         else:
             self.get_logger().error("Service call failed")
             return False
-
-    def initialize_graph(self, xacro_path, robot_instance_name=""):
-        """Initialize the graph with a robot."""
-        request = InitializeGraph.Request()
-        request.xacro_path = xacro_path
-        request.robot_instance_name = robot_instance_name
-
-        future = self.initialize_graph_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
-
-        if future.result() is not None:
-            response = future.result()
-            if response.success:
-                self.get_logger().info(
-                    f"Initialized robot {response.robot_id} with sensors: {response.sensors}"
-                )
-                return {
-                    "robot_id": response.robot_id,
-                    "sensors": response.sensors,
-                }
-            else:
-                self.get_logger().error(f"Initialization failed: {response.message}")
-                return None
-        else:
-            self.get_logger().error("Service call failed")
-            return None
 
     def reason_graph(
         self,
@@ -194,16 +163,13 @@ def main(args=None):
         # 1. Load a graph
         # client.load_graph("/path/to/ontology.owl")
 
-        # 2. Initialize with a robot
-        # client.initialize_graph("/path/to/robot.xacro", "my_robot")
-
-        # 3. Perform reasoning
+        # 2. Perform reasoning
         # client.reason_graph(reasoner="hermit", save_path="/tmp/materialized.owl")
 
-        # 4. Query the graph
+        # 3. Query the graph
         # results = client.query_graph("SELECT ?sensor WHERE { ?sensor a Sensor. }")
 
-        # 5. Save the graph
+        # 4. Save the graph
         # client.save_graph("/tmp/output.owl")
 
         print("OrkaGraphClient initialized. Services are ready to use.")

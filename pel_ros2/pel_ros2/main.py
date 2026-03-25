@@ -36,7 +36,7 @@ ORKA_PATH = resolve_orka_path()
 if str(ORKA_PATH) not in sys.path:
     sys.path.insert(0, str(ORKA_PATH))
 
-from graph_manager import build_base_graph_triples  # noqa: E402
+from graph_manager import build_graph  # noqa: E402
 
 
 def default_mapping_path() -> Path:
@@ -134,7 +134,7 @@ class PelRuntimeNode(Node):
 
     def initialize_graph(self) -> None:
         """Initialize the graph state we need before observing."""
-        base_triples = build_base_graph_triples(
+        base_graph = build_graph(
             mapping_path=self.mapping_path,
             base_iri=ORKA_BASE_IRI,
             robot_name="tiago",
@@ -144,7 +144,7 @@ class PelRuntimeNode(Node):
         self.load_graph(ontology_path)
 
         # Load graph if given
-        for triple in base_triples["triples"]:
+        for triple in base_graph["triples"]:
             self.update_graph(
                 subject=triple["subject"],
                 predicate=triple["predicate"],
@@ -157,7 +157,9 @@ class PelRuntimeNode(Node):
         self.get_logger().info(
             f"Mapped raw observation topic: {self.webots_recognition_topic}"
         )
-        self.get_logger().info(f"Initialized base graph with {len(base_triples['triples'])} triples")
+        self.get_logger().info(
+            f"Initialized base graph with {len(base_graph['triples'])} triples"
+        )
 
         self.save_graph(str(self.base_graph_path))
         self.get_logger().info(f"Saved base graph to {self.base_graph_path}")

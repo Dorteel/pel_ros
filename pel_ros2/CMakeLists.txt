@@ -13,7 +13,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/LoadGraph.srv"
   "srv/QueryGraph.srv"
   "srv/SaveGraph.srv"
-  "srv/InitializeGraph.srv"
   "srv/ReasonGraph.srv"
   "srv/UpdateGraph.srv"
 )

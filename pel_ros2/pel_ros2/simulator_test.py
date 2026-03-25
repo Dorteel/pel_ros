@@ -4,8 +4,8 @@ Simulator Test Node - Tests the ORKA Graph Manager services
 
 This node demonstrates a simple workflow:
 1. Load an ontology graph
-2. Initialize it with a robot from XACRO
-3. Query the graph to verify robot was added
+2. Insert one example triple
+3. Query the graph
 4. Run reasoning over the graph
 5. Save the materialized graph
 """
@@ -65,35 +65,34 @@ class SimulatorTestNode(Node):
                 return False
             self.get_logger().info(f"✓ Loaded: {ontology_path}")
             
-            # Step 2: Initialize graph with robot
-            self.get_logger().info("\n[3/5] Initializing graph with robot from XACRO...")
-            orka_path = get_orka_path()
-            xacro_path = str(orka_path / "urdfs" / "turtlebot3" / "turtlebot3_gazebo.xacro")
-            result = self.client.initialize_graph(
-                xacro_path=xacro_path,
-                robot_instance_name="test_robot"
+            # Step 2: Insert one example triple
+            self.get_logger().info("\n[3/5] Inserting one example triple...")
+            success = self.client.update_graph(
+                "https://w3id.org/def/orka#example_observation",
+                "https://w3id.org/def/orka#hasRawObservation",
+                "example payload",
+                True,
             )
-            
-            if not result:
-                self.get_logger().error("✗ Failed to initialize graph")
+
+            if not success:
+                self.get_logger().error("✗ Failed to update graph")
                 return False
-            
-            robot_id = result["robot_id"]
-            sensors = result["sensors"]
-            self.get_logger().info(f"✓ Robot initialized with ID: {robot_id}")
-            self.get_logger().info(f"  Created {len(sensors)} sensors")
-            for sensor in sensors:
-                self.get_logger().info(f"    - {sensor}")
-            
+
+            self.get_logger().info("✓ Example triple inserted")
+
             # Step 3: Query the graph
-            self.get_logger().info("\n[4/5] Querying graph for robots...")
-            query = "SELECT ?robot WHERE { ?robot a <http://example.org/Robot> . }"
+            self.get_logger().info("\n[4/5] Querying graph for example observations...")
+            query = (
+                "SELECT ?observation WHERE { "
+                "?observation <https://w3id.org/def/orka#hasRawObservation> ?value . "
+                "}"
+            )
             results = self.client.query_graph(query)
             
             if results is None:
                 self.get_logger().warn("⚠ Query failed or returned no results")
             else:
-                self.get_logger().info(f"✓ Found {len(results)} robot(s) in graph")
+                self.get_logger().info(f"✓ Found {len(results)} observation(s) in graph")
                 for result in results:
                     self.get_logger().info(f"    - {result}")
             

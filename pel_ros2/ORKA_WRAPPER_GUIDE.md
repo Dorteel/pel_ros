@@ -60,22 +60,22 @@ ros2 service call /save_graph pel_ros2/srv/SaveGraph "{output_path: '/tmp/ontolo
 
 ---
 
-### 4. `initialize_graph` (InitializeGraph)
-Add a robot and its sensors from a XACRO file into the ontology graph.
+### 4. `update_graph` (UpdateGraph)
+Insert one triple into the loaded ontology graph.
 
 **Request:**
-- `string xacro_path` - Path to the XACRO robot specification file
-- `string robot_instance_name` - Custom name for the robot instance (optional)
+- `string subject` - Triple subject URI
+- `string predicate` - Triple predicate URI
+- `string object_value` - Triple object value
+- `bool object_is_literal` - Whether the object is a literal or a URI
 
 **Response:**
 - `bool success` - Whether the operation succeeded
-- `string robot_id` - Generated robot ID
-- `string[] sensors` - List of created sensor instances
 - `string message` - Status message
 
 **Example:**
 ```bash
-ros2 service call /initialize_graph pel_ros2/srv/InitializeGraph "{xacro_path: '/path/to/robot.xacro', robot_instance_name: 'tiago_1'}"
+ros2 service call /update_graph pel_ros2/srv/UpdateGraph "{subject: 'https://w3id.org/def/orka#obs1', predicate: 'https://w3id.org/def/orka#hasRawObservation', object_value: 'raw payload', object_is_literal: true}"
 ```
 
 ---
@@ -118,9 +118,9 @@ Here's a typical workflow:
    ros2 service call /load_graph pel_ros2/srv/LoadGraph "{graph_path: '/path/to/ontology.owl'}"
    ```
 
-3. **Initialize the graph with robot data:**
+3. **Insert or update graph triples:**
    ```bash
-   ros2 service call /initialize_graph pel_ros2/srv/InitializeGraph "{xacro_path: '/path/to/robot.xacro'}"
+   ros2 service call /update_graph pel_ros2/srv/UpdateGraph "{subject: 'https://w3id.org/def/orka#obs1', predicate: 'https://w3id.org/def/orka#hasRawObservation', object_value: 'raw payload', object_is_literal: true}"
    ```
 
 4. **Perform reasoning:**
@@ -142,10 +142,9 @@ Here's a typical workflow:
 
 ## Important Notes
 
-- A graph must be loaded via `load_graph` before calling any other service (query, save, initialize, or reason).
+- A graph must be loaded via `load_graph` before calling any other service (query, save, update, or reason).
 - The node maintains a single loaded ontology in memory. Calling `load_graph` will replace any previously loaded graph.
 - All file paths should be absolute paths or properly resolvable relative paths.
-- The XACRO file format should follow the ROS robot description format.
 - Reasoning can be computationally expensive; allow appropriate time for large ontologies.
 
 ---
