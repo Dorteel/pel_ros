@@ -10,6 +10,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 # Generate service interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/BuildRobotBaseGraph.srv"
   "srv/LoadGraph.srv"
   "srv/QueryGraph.srv"
   "srv/SaveGraph.srv"
@@ -28,6 +29,12 @@ install(DIRECTORY
 install(DIRECTORY
   launch/
   DESTINATION share/${PROJECT_NAME}/launch
+)
+
+install(PROGRAMS
+  pel_ros2/base_graph_service.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME base_graph_service
 )
 
 install(PROGRAMS

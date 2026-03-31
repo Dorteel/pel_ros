@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools', 'rclpy'],
+    install_requires=['setuptools', 'rclpy', 'owlready2'],
     zip_safe=True,
     maintainer='kai',
     maintainer_email='dorteel@gmail.com',
@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'base_graph_service = pel_ros2.base_graph_service:main',
             'main = pel_ros2.main:main',
         ],
     },
