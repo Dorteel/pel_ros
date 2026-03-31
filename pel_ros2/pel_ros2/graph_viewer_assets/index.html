@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Observation Graph Viewer</title>
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --panel: rgba(255, 252, 245, 0.96);
+      --ink: #1e2430;
+      --muted: #6f7887;
+      --accent: #d7643f;
+      --accent-soft: #f3c9b9;
+      --resource: #2f6c8f;
+      --instance: #d7643f;
+      --class: #2f6c8f;
+      --other-resource: #7a8798;
+      --literal: #cc8b2c;
+      --blank: #6d5ca8;
+      --edge: rgba(79, 92, 112, 0.32);
+      --grid: rgba(80, 60, 40, 0.06);
+      --shadow: 0 20px 45px rgba(55, 35, 25, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(215, 100, 63, 0.18), transparent 24%),
+        radial-gradient(circle at top right, rgba(47, 108, 143, 0.14), transparent 26%),
+        linear-gradient(180deg, #faf6ef 0%, var(--bg) 100%);
+      min-height: 100vh;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      border-right: 1px solid rgba(30, 36, 48, 0.08);
+      box-shadow: var(--shadow);
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 1.9rem;
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(30, 36, 48, 0.08);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .stat {
+      padding: 12px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(244,240,232,0.9));
+      border: 1px solid rgba(30, 36, 48, 0.06);
+    }
+
+    .stat .label {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .stat .value {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+    }
+
+    .search {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(30, 36, 48, 0.12);
+      font: inherit;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+    }
+
+    .meta, .details {
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .details strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 38vh;
+      overflow: auto;
+      padding-right: 6px;
+    }
+
+    .details-item {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(30, 36, 48, 0.08);
+    }
+
+    .canvas-wrap {
+      position: relative;
+      overflow: hidden;
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .hud {
+      position: absolute;
+      right: 22px;
+      top: 20px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 252, 245, 0.9);
+      border: 1px solid rgba(30, 36, 48, 0.08);
+      font-size: 0.88rem;
+      color: var(--muted);
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 960px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid rgba(30, 36, 48, 0.08);
+      }
+
+      canvas {
+        height: 68vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div>
+        <h1 class="title">Observation Graph</h1>
+        <p class="subtitle">Local RDF graph viewer for `pel_ros2/obs_graphs`.</p>
+      </div>
+
+      <section class="panel">
+        <input id="search" class="search" type="search" placeholder="Filter nodes, predicates, literals">
+      </section>
+
+      <section class="panel">
+        <div class="legend" style="margin-bottom: 12px;">
+          <label class="legend-item"><input id="toggle-instances" type="checkbox" checked> Instances</label>
+          <label class="legend-item"><input id="toggle-classes" type="checkbox" checked> Classes</label>
+          <label class="legend-item"><input id="toggle-literals" type="checkbox"> Literals</label>
+        </div>
+        <label for="depth" style="display:block; font-size:0.82rem; color:var(--muted); margin-bottom:8px;">Class depth up hierarchy</label>
+        <input id="depth" type="range" min="0" max="6" value="1" style="width:100%;">
+        <div id="depth-value" style="margin-top:8px; font-size:0.9rem; color:var(--muted);">Showing direct classes + 1 parent level</div>
+      </section>
+
+      <section class="panel stats" id="stats"></section>
+
+      <section class="panel">
+        <div class="legend">
+          <span class="legend-item"><span class="swatch" style="background: var(--instance)"></span>Instance</span>
+          <span class="legend-item"><span class="swatch" style="background: var(--class)"></span>Class</span>
+          <span class="legend-item"><span class="swatch" style="background: var(--other-resource)"></span>Other resource</span>
+          <span class="legend-item"><span class="swatch" style="background: var(--literal)"></span>Literal</span>
+          <span class="legend-item"><span class="swatch" style="background: var(--blank)"></span>Blank node</span>
+        </div>
+      </section>
+
+      <section class="panel meta" id="meta"></section>
+
+      <section class="panel details">
+        <strong>Selection</strong>
+        <div id="selection">Click a node to inspect its connections.</div>
+        <div class="details-list" id="details"></div>
+      </section>
+    </aside>
+
+    <main class="canvas-wrap">
+      <div class="hud">Drag nodes. Scroll to zoom. Drag the background to pan.</div>
+      <canvas id="graph"></canvas>
+    </main>
+  </div>
+
+  <script>
+    const palette = {
+      resource: getComputedStyle(document.documentElement).getPropertyValue("--resource").trim(),
+      instance: getComputedStyle(document.documentElement).getPropertyValue("--instance").trim(),
+      class: getComputedStyle(document.documentElement).getPropertyValue("--class").trim(),
+      otherResource: getComputedStyle(document.documentElement).getPropertyValue("--other-resource").trim(),
+      literal: getComputedStyle(document.documentElement).getPropertyValue("--literal").trim(),
+      blank: getComputedStyle(document.documentElement).getPropertyValue("--blank").trim(),
+      edge: getComputedStyle(document.documentElement).getPropertyValue("--edge").trim(),
+      ink: getComputedStyle(document.documentElement).getPropertyValue("--ink").trim(),
+      muted: getComputedStyle(document.documentElement).getPropertyValue("--muted").trim(),
+      accent: getComputedStyle(document.documentElement).getPropertyValue("--accent").trim()
+    };
+
+    const canvas = document.getElementById("graph");
+    const ctx = canvas.getContext("2d");
+    const statsEl = document.getElementById("stats");
+    const metaEl = document.getElementById("meta");
+    const searchEl = document.getElementById("search");
+    const toggleInstancesEl = document.getElementById("toggle-instances");
+    const toggleClassesEl = document.getElementById("toggle-classes");
+    const toggleLiteralsEl = document.getElementById("toggle-literals");
+    const depthEl = document.getElementById("depth");
+    const depthValueEl = document.getElementById("depth-value");
+    const selectionEl = document.getElementById("selection");
+    const detailsEl = document.getElementById("details");
+
+    const RDF_TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
+    const RDFS_SUBCLASS = "http://www.w3.org/2000/01/rdf-schema#subClassOf";
+    const OWL_CLASS = "http://www.w3.org/2002/07/owl#Class";
+    const RDFS_CLASS = "http://www.w3.org/2000/01/rdf-schema#Class";
+
+    let state = {
+      nodes: [],
+      edges: [],
+      nodeMap: new Map(),
+      selectedNodeId: null,
+      hoveredNodeId: null,
+      filter: "",
+      showInstances: true,
+      showClasses: true,
+      showLiterals: false,
+      classDepth: 1,
+      visibleNodeIds: new Set(),
+      camera: { x: 0, y: 0, zoom: 1 },
+      dragNode: null,
+      dragCanvas: false,
+      dragOffset: { x: 0, y: 0 },
+      previousPointer: null
+    };
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.floor(rect.width * ratio);
+      canvas.height = Math.floor(rect.height * ratio);
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function shorten(text, limit = 52) {
+      return text.length > limit ? `${text.slice(0, limit - 1)}…` : text;
+    }
+
+    function kindColor(kind) {
+      if (kind === "literal") return palette.literal;
+      if (kind === "blank") return palette.blank;
+      return palette.resource;
+    }
+
+    function semanticColor(node) {
+      if (node.kind === "literal") return palette.literal;
+      if (node.kind === "blank") return palette.blank;
+      if (node.semanticRole === "instance") return palette.instance;
+      if (node.semanticRole === "class") return palette.class;
+      return palette.otherResource;
+    }
+
+    function computeRadius(node) {
+      return Math.max(8, Math.min(26, 7 + Math.sqrt((node.degree || 1) * 2.6)));
+    }
+
+    function buildStats(payload) {
+      statsEl.innerHTML = "";
+      const items = [
+        ["Triples", payload.triple_count],
+        ["Nodes", payload.node_count],
+        ["Edges", payload.edge_count],
+        ["File", shorten(payload.file.split("/").pop(), 22)]
+      ];
+      for (const [label, value] of items) {
+        const div = document.createElement("div");
+        div.className = "stat";
+        div.innerHTML = `<span class="label">${label}</span><span class="value">${value}</span>`;
+        statsEl.appendChild(div);
+      }
+      metaEl.textContent = payload.file;
+    }
+
+    function classifyGraph(nodes, edges) {
+      const classIds = new Set();
+      const subclassParents = new Map();
+      const directTypes = new Map();
+
+      function addToMapSet(map, key, value) {
+        if (!map.has(key)) {
+          map.set(key, new Set());
+        }
+        map.get(key).add(value);
+      }
+
+      for (const edge of edges) {
+        if (edge.full === RDFS_SUBCLASS) {
+          classIds.add(edge.source);
+          classIds.add(edge.target);
+          addToMapSet(subclassParents, edge.source, edge.target);
+        }
+        if (edge.full === RDF_TYPE) {
+          addToMapSet(directTypes, edge.source, edge.target);
+          if (edge.targetNode.full === OWL_CLASS || edge.targetNode.full === RDFS_CLASS) {
+            classIds.add(edge.source);
+          } else {
+            classIds.add(edge.target);
+          }
+        }
+      }
+
+      for (const node of nodes) {
+        node.semanticRole = "other";
+        node.directClassIds = [];
+        node.ancestorClassIds = [];
+      }
+
+      for (const node of nodes) {
+        if (classIds.has(node.id)) {
+          node.semanticRole = "class";
+        }
+      }
+
+      for (const [sourceId, targetIds] of directTypes.entries()) {
+        const sourceNode = state.nodeMap.get(sourceId);
+        if (!sourceNode) {
+          continue;
+        }
+        sourceNode.directClassIds = [...targetIds].filter((id) => classIds.has(id));
+        if (sourceNode.semanticRole !== "class" && sourceNode.directClassIds.length > 0) {
+          sourceNode.semanticRole = "instance";
+        }
+      }
+
+      for (const node of nodes) {
+        if (node.semanticRole !== "instance") {
+          continue;
+        }
+        const seen = new Set();
+        const queue = node.directClassIds.map((id) => ({ id, depth: 0 }));
+        while (queue.length > 0) {
+          const current = queue.shift();
+          if (seen.has(current.id)) {
+            continue;
+          }
+          seen.add(current.id);
+          node.ancestorClassIds.push({ id: current.id, depth: current.depth });
+          const parents = subclassParents.get(current.id) || [];
+          for (const parentId of parents) {
+            queue.push({ id: parentId, depth: current.depth + 1 });
+          }
+        }
+      }
+    }
+
+    function updateVisibility() {
+      const visible = new Set();
+      for (const node of state.nodes) {
+        if (node.semanticRole === "instance" && state.showInstances) {
+          visible.add(node.id);
+          continue;
+        }
+
+        if (node.semanticRole === "class" && state.showClasses) {
+          if (state.showInstances) {
+            const relevant = state.nodes.some((candidate) =>
+              candidate.semanticRole === "instance" &&
+              candidate.ancestorClassIds.some((entry) => entry.id === node.id && entry.depth <= state.classDepth)
+            );
+            if (relevant) {
+              visible.add(node.id);
+            }
+          } else {
+            visible.add(node.id);
+          }
+          continue;
+        }
+
+        if ((node.kind === "literal" || node.kind === "blank") && state.showLiterals) {
+          visible.add(node.id);
+          continue;
+        }
+
+        if (node.semanticRole === "other" && !state.showInstances && !state.showClasses) {
+          visible.add(node.id);
+        }
+      }
+      state.visibleNodeIds = visible;
+    }
+
+    function prepareGraph(payload) {
+      const width = canvas.getBoundingClientRect().width || 1200;
+      const height = canvas.getBoundingClientRect().height || 800;
+      const nodes = payload.nodes.map((node, index) => ({
+        ...node,
+        x: Math.cos(index * 0.45) * 180 + (index % 5) * 50,
+        y: Math.sin(index * 0.45) * 180 + Math.floor(index / 5) * 16,
+        vx: 0,
+        vy: 0,
+        radius: 10,
+        degree: 0,
+        fx: null,
+        fy: null
+      }));
+      const nodeMap = new Map(nodes.map((node) => [node.id, node]));
+      state.nodeMap = nodeMap;
+      const edges = payload.edges.map((edge) => ({
+        ...edge,
+        sourceNode: nodeMap.get(edge.source),
+        targetNode: nodeMap.get(edge.target)
+      }));
+      for (const edge of edges) {
+        edge.sourceNode.degree += 1;
+        edge.targetNode.degree += 1;
+      }
+      for (const node of nodes) {
+        node.radius = computeRadius(node);
+      }
+      classifyGraph(nodes, edges);
+      state.nodes = nodes;
+      state.edges = edges;
+      state.camera = { x: width / 2, y: height / 2, zoom: 1 };
+      updateVisibility();
+      buildStats(payload);
+    }
+
+    function isVisible(node) {
+      if (!state.visibleNodeIds.has(node.id)) return false;
+      if (!state.filter) return true;
+      const haystack = `${node.label} ${node.full}`.toLowerCase();
+      return haystack.includes(state.filter);
+    }
+
+    function edgeVisible(edge) {
+      if (!state.filter) return true;
+      return isVisible(edge.sourceNode) || isVisible(edge.targetNode) || edge.label.toLowerCase().includes(state.filter);
+    }
+
+    function screenToWorld(x, y) {
+      return {
+        x: (x - state.camera.x) / state.camera.zoom,
+        y: (y - state.camera.y) / state.camera.zoom
+      };
+    }
+
+    function worldToScreen(x, y) {
+      return {
+        x: x * state.camera.zoom + state.camera.x,
+        y: y * state.camera.zoom + state.camera.y
+      };
+    }
+
+    function findNodeAt(pointerX, pointerY) {
+      const world = screenToWorld(pointerX, pointerY);
+      for (let i = state.nodes.length - 1; i >= 0; i -= 1) {
+        const node = state.nodes[i];
+        const dx = world.x - node.x;
+        const dy = world.y - node.y;
+        if (Math.sqrt(dx * dx + dy * dy) <= node.radius + 4) {
+          return node;
+        }
+      }
+      return null;
+    }
+
+    function updateDetails() {
+      const selected = state.nodes.find((node) => node.id === state.selectedNodeId);
+      detailsEl.innerHTML = "";
+      if (!selected) {
+        selectionEl.textContent = "Click a node to inspect its connections.";
+        return;
+      }
+
+      selectionEl.textContent = selected.full;
+      const connected = state.edges.filter((edge) => edge.source === selected.id || edge.target === selected.id);
+      for (const edge of connected.slice(0, 24)) {
+        const other = edge.source === selected.id ? edge.targetNode : edge.sourceNode;
+        const div = document.createElement("div");
+        div.className = "details-item";
+        const direction = edge.source === selected.id ? "outgoing" : "incoming";
+        div.innerHTML = `<div><strong>${edge.label}</strong></div><div>${direction}: ${shorten(other.label, 90)}</div>`;
+        detailsEl.appendChild(div);
+      }
+    }
+
+    function tick() {
+      const visibleNodes = state.nodes.filter(isVisible);
+      const visibleSet = new Set(visibleNodes.map((node) => node.id));
+      const visibleEdges = state.edges.filter((edge) => visibleSet.has(edge.source) && visibleSet.has(edge.target));
+
+      for (const node of visibleNodes) {
+        node.vx *= 0.86;
+        node.vy *= 0.86;
+      }
+
+      for (let i = 0; i < visibleNodes.length; i += 1) {
+        const a = visibleNodes[i];
+        for (let j = i + 1; j < visibleNodes.length; j += 1) {
+          const b = visibleNodes[j];
+          const dx = b.x - a.x;
+          const dy = b.y - a.y;
+          const distSq = dx * dx + dy * dy + 0.01;
+          const force = 1100 / distSq;
+          const fx = (dx / Math.sqrt(distSq)) * force;
+          const fy = (dy / Math.sqrt(distSq)) * force;
+          a.vx -= fx;
+          a.vy -= fy;
+          b.vx += fx;
+          b.vy += fy;
+        }
+      }
+
+      for (const edge of visibleEdges) {
+        const { sourceNode, targetNode } = edge;
+        const dx = targetNode.x - sourceNode.x;
+        const dy = targetNode.y - sourceNode.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const targetLength = 120;
+        const stretch = (dist - targetLength) * 0.0018;
+        const fx = (dx / dist) * stretch;
+        const fy = (dy / dist) * stretch;
+        sourceNode.vx += fx;
+        sourceNode.vy += fy;
+        targetNode.vx -= fx;
+        targetNode.vy -= fy;
+      }
+
+      for (const node of visibleNodes) {
+        if (node.fx !== null && node.fy !== null) {
+          node.x = node.fx;
+          node.y = node.fy;
+          continue;
+        }
+        node.x += node.vx;
+        node.y += node.vy;
+      }
+    }
+
+    function draw() {
+      const width = canvas.getBoundingClientRect().width;
+      const height = canvas.getBoundingClientRect().height;
+      ctx.clearRect(0, 0, width, height);
+
+      ctx.save();
+      ctx.translate(state.camera.x, state.camera.y);
+      ctx.scale(state.camera.zoom, state.camera.zoom);
+
+      for (const edge of state.edges) {
+        if (!edgeVisible(edge)) continue;
+        const selected = state.selectedNodeId && (edge.source === state.selectedNodeId || edge.target === state.selectedNodeId);
+        ctx.strokeStyle = selected ? "rgba(215, 100, 63, 0.58)" : palette.edge;
+        ctx.lineWidth = selected ? 2 : 1;
+        ctx.beginPath();
+        ctx.moveTo(edge.sourceNode.x, edge.sourceNode.y);
+        ctx.lineTo(edge.targetNode.x, edge.targetNode.y);
+        ctx.stroke();
+      }
+
+      for (const node of state.nodes) {
+        if (!isVisible(node)) continue;
+        const selected = node.id === state.selectedNodeId;
+        const hovered = node.id === state.hoveredNodeId;
+        ctx.fillStyle = semanticColor(node);
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        if (selected || hovered) {
+          ctx.strokeStyle = selected ? palette.accent : "rgba(30, 36, 48, 0.35)";
+          ctx.lineWidth = selected ? 3 : 2;
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, node.radius + 3.5, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        if (state.camera.zoom > 0.72 || selected || hovered) {
+          ctx.fillStyle = palette.ink;
+          ctx.font = `${selected ? "700" : "500"} 12px IBM Plex Sans, Segoe UI, sans-serif`;
+          ctx.fillText(shorten(node.label, 28), node.x + node.radius + 8, node.y + 4);
+        }
+      }
+
+      ctx.restore();
+    }
+
+    function animate() {
+      tick();
+      draw();
+      requestAnimationFrame(animate);
+    }
+
+    function onPointerMove(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      state.hoveredNodeId = (findNodeAt(x, y) || {}).id || null;
+
+      if (state.dragNode) {
+        const world = screenToWorld(x, y);
+        state.dragNode.fx = world.x - state.dragOffset.x;
+        state.dragNode.fy = world.y - state.dragOffset.y;
+      } else if (state.dragCanvas && state.previousPointer) {
+        state.camera.x += x - state.previousPointer.x;
+        state.camera.y += y - state.previousPointer.y;
+      }
+
+      state.previousPointer = { x, y };
+    }
+
+    function onPointerDown(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const node = findNodeAt(x, y);
+      if (node) {
+        const world = screenToWorld(x, y);
+        state.dragNode = node;
+        state.dragOffset.x = world.x - node.x;
+        state.dragOffset.y = world.y - node.y;
+        node.fx = node.x;
+        node.fy = node.y;
+      } else {
+        state.dragCanvas = true;
+      }
+      state.previousPointer = { x, y };
+    }
+
+    function onPointerUp(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const node = findNodeAt(x, y);
+      if (!state.dragCanvas && node && node === state.dragNode) {
+        state.selectedNodeId = node.id;
+        updateDetails();
+      } else if (!state.dragCanvas && node) {
+        state.selectedNodeId = node.id;
+        updateDetails();
+      } else if (!state.dragCanvas) {
+        state.selectedNodeId = null;
+        updateDetails();
+      }
+
+      if (state.dragNode) {
+        state.dragNode.fx = null;
+        state.dragNode.fy = null;
+      }
+      state.dragNode = null;
+      state.dragCanvas = false;
+      state.previousPointer = null;
+    }
+
+    function onWheel(event) {
+      event.preventDefault();
+      const rect = canvas.getBoundingClientRect();
+      const pointerX = event.clientX - rect.left;
+      const pointerY = event.clientY - rect.top;
+      const beforeZoom = screenToWorld(pointerX, pointerY);
+      const zoomFactor = Math.exp(-event.deltaY * 0.001);
+      state.camera.zoom = Math.max(0.18, Math.min(2.8, state.camera.zoom * zoomFactor));
+      const afterZoom = screenToWorld(pointerX, pointerY);
+      state.camera.x += (afterZoom.x - beforeZoom.x) * state.camera.zoom;
+      state.camera.y += (afterZoom.y - beforeZoom.y) * state.camera.zoom;
+    }
+
+    searchEl.addEventListener("input", (event) => {
+      state.filter = event.target.value.trim().toLowerCase();
+    });
+
+    toggleInstancesEl.addEventListener("change", (event) => {
+      state.showInstances = event.target.checked;
+      updateVisibility();
+      updateDetails();
+    });
+
+    toggleClassesEl.addEventListener("change", (event) => {
+      state.showClasses = event.target.checked;
+      updateVisibility();
+      updateDetails();
+    });
+
+    toggleLiteralsEl.addEventListener("change", (event) => {
+      state.showLiterals = event.target.checked;
+      updateVisibility();
+      updateDetails();
+    });
+
+    depthEl.addEventListener("input", (event) => {
+      state.classDepth = Number(event.target.value);
+      depthValueEl.textContent = state.classDepth === 0
+        ? "Showing only direct classes"
+        : `Showing direct classes + ${state.classDepth} parent level${state.classDepth === 1 ? "" : "s"}`;
+      updateVisibility();
+      updateDetails();
+    });
+
+    canvas.addEventListener("pointermove", onPointerMove);
+    canvas.addEventListener("pointerdown", onPointerDown);
+    window.addEventListener("pointerup", onPointerUp);
+    canvas.addEventListener("wheel", onWheel, { passive: false });
+    window.addEventListener("resize", resizeCanvas);
+
+    async function init() {
+      resizeCanvas();
+      const response = await fetch("/api/graph");
+      const payload = await response.json();
+      prepareGraph(payload);
+      updateDetails();
+      animate();
+    }
+
+    init().catch((error) => {
+      selectionEl.textContent = `Failed to load graph: ${error}`;
+    });
+  </script>
+</body>
+</html>
