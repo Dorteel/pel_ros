@@ -120,6 +120,13 @@ class BaseGraphServiceNode(Node):
 
         return response
 
+    def convention_based_filling(self):
+        """
+        Fill in the base graph based on namespace-based topic naming convention: 
+        robot_ns / sensor_ns / data
+        """
+        pass
+
 
 def main(args: list[str] | None = None) -> None:
     """Run the ORKA base-graph service node."""
