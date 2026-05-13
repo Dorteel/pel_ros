@@ -16,6 +16,18 @@ def generate_launch_description():
             ),
             Node(
                 package="pel_ros2",
+                executable="observer",
+                name="observer",
+                output="screen",
+            ),
+            Node(
+                package="pel_ros2",
+                executable="observation_graph_manager",
+                name="observation_graph_manager",
+                output="screen",
+            ),
+            Node(
+                package="pel_ros2",
                 executable="main",
                 name="pel_ros2",
                 output="screen",

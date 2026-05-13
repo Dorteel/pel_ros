@@ -1,0 +1,5 @@
+# srv/Observe.srv
+string[] sensors
+---
+bool success
+string message

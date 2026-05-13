@@ -1,0 +1,49 @@
+# ROS/Colcon build outputs
+build/
+install/
+log/
+COLCON_IGNORE
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Data and observations
+observations/
+*.npy
+*.png
+*.jpg
+*.jpeg
+
+# Generated ontology files (keep base definitions, ignore generated ones)
+orka/owl/orka-reasoner.owl
+orka/owl/orka-test.owl
+orka/owl/orka-all.owl
+
+# Misc
+.pytest_cache/
+.coverage
+htmlcov/
+*.log

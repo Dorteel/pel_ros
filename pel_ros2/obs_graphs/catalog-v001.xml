@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_201019.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_194934.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="base_graph.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_201727.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_195204.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_200536.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka" uri="observation_graph_20260416_200627.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka/core" uri="pel_runtime_graph_20260319_132715.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1776363468196" name="duplicate:https://w3id.org/def/orka/core" uri="observation_graph_27_03_2026.owl"/>
+    </group>
+</catalog>
