@@ -3,3 +3,5 @@ string[] sensors
 ---
 bool success
 string message
+string[] sensor_names
+string[] file_paths

@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'base_graph_service = pel_ros2.base_graph_service:main',
             'observer = pel_ros2.observer:main',
+            'first_symbolic_frame = pel_ros2.first_symbolic_frame:main',
             'observation_graph_manager = pel_ros2.observation_graph_manager:main',
             'main = pel_ros2.main:main',
         ],

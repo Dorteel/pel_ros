@@ -61,9 +61,9 @@ class Observer(Node):
         self.sensors = SensorAggregation(self)
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.data_dir = Path("/home/kai/ros2_phd/src/pel_ros/pel_ros2/observations") / timestamp
+        self.data_dir = Path(__file__).resolve().parent / "observations" / timestamp
         self.data_dir.mkdir(parents=True, exist_ok=True)
-        
+
         self.observation_count = 0
 
         self.create_service(
@@ -79,11 +79,18 @@ class Observer(Node):
     def observe_callback(self, request, response):
         self.get_logger().info(f"Observe request received: {list(request.sensors)}")
 
-        snapshot = self.sensors.snapshot(request.sensors)
+        selected_sensors = list(request.sensors) or list(self.sensors.latest.keys())
+        snapshot = self.sensors.snapshot(selected_sensors)
+        response.sensor_names = []
+        response.file_paths = []
 
-        if request.sensors and len(snapshot) != len(request.sensors):
+        if len(snapshot) != len(selected_sensors):
             response.success = False
-            response.message = "Unknown sensor requested"
+            unknown = [
+                name for name in selected_sensors
+                if name not in self.sensors.latest
+            ]
+            response.message = f"Unknown sensor requested: {unknown}"
             self.get_logger().warn(response.message)
             return response
 
@@ -103,6 +110,8 @@ class Observer(Node):
         for name, msg in snapshot.items():
             path = self.save_raw_data(observation_id, name, msg)
             saved_paths[name] = path
+            response.sensor_names.append(name)
+            response.file_paths.append(path)
             self.get_logger().info(f"Saved {name}: {path}")
 
         response.success = True

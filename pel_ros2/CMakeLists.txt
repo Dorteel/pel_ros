@@ -51,6 +51,12 @@ install(PROGRAMS
 )
 
 install(PROGRAMS
+  pel_ros2/first_symbolic_frame.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME first_symbolic_frame
+)
+
+install(PROGRAMS
   pel_ros2/main.py
   DESTINATION lib/${PROJECT_NAME}
   RENAME main
