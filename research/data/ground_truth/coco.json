@@ -1,0 +1,1182 @@
+{
+ "summary": {
+  "labels": 80,
+  "with_wikidata": 80,
+  "with_dbpedia": 80,
+  "with_yago": 59
+ },
+ "entries": [
+  {
+   "label": "person",
+   "synset": "person.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q215627",
+     "http://www.wikidata.org/entity/Q5"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Person",
+     "http://dbpedia.org/resource/Human"
+    ],
+    "yago": [
+     "http://schema.org/Person"
+    ]
+   }
+  },
+  {
+   "label": "bicycle",
+   "synset": "bicycle.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q11442"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bicycle"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bicycle"
+    ]
+   }
+  },
+  {
+   "label": "car",
+   "synset": "car.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q1420"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Car"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "motorcycle",
+   "synset": "motorcycle.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q34493"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Motorcycle"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "airplane",
+   "synset": "airplane.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q197"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Airplane"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Airplane"
+    ]
+   }
+  },
+  {
+   "label": "bus",
+   "synset": "bus.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q5638"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bus"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bus_Q5638"
+    ]
+   }
+  },
+  {
+   "label": "train",
+   "synset": "train.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q870"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Train"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "truck",
+   "synset": "truck.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q43193"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Truck"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Truck"
+    ]
+   }
+  },
+  {
+   "label": "boat",
+   "synset": "boat.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q35872"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Boat"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Boat"
+    ]
+   }
+  },
+  {
+   "label": "traffic light",
+   "synset": "traffic_light.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q8004"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Traffic_light"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Traffic_light"
+    ]
+   }
+  },
+  {
+   "label": "fire hydrant",
+   "synset": "fireplug.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q634299"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Fire_hydrant"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Fire_hydrant"
+    ]
+   }
+  },
+  {
+   "label": "stop sign",
+   "synset": null,
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q250429"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Stop_sign"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "parking meter",
+   "synset": "parking_meter.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q953960"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Parking_meter"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "bench",
+   "synset": "bench.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q204776"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bench_(furniture)"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bench_furniture"
+    ]
+   }
+  },
+  {
+   "label": "bird",
+   "synset": "bird.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q5113"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bird"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bird"
+    ]
+   }
+  },
+  {
+   "label": "cat",
+   "synset": "cat.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q146"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Cat"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "dog",
+   "synset": "dog.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q144"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Dog"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "horse",
+   "synset": "horse.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q726"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Horse",
+     "http://dbpedia.org/resource/Wild_horse"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Horse"
+    ]
+   }
+  },
+  {
+   "label": "sheep",
+   "synset": "sheep.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q7368"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Sheep"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Ovis"
+    ]
+   }
+  },
+  {
+   "label": "cow",
+   "synset": "cattle.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q19610691",
+     "http://www.wikidata.org/entity/Q830"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Cattle",
+     "http://dbpedia.org/resource/Livestock_(domesticated_bovines)"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bos_Taurus",
+     "http://yago-knowledge.org/resource/Cattle"
+    ]
+   }
+  },
+  {
+   "label": "elephant",
+   "synset": "elephant.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q7378"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Elephant"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "bear",
+   "synset": "bear.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q30090244",
+     "http://www.wikidata.org/entity/Q11788"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bear"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bear"
+    ]
+   }
+  },
+  {
+   "label": "zebra",
+   "synset": "zebra.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q32789"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Mountain_zebra",
+     "http://dbpedia.org/resource/Zebra"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Zebra"
+    ]
+   }
+  },
+  {
+   "label": "giraffe",
+   "synset": "giraffe.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q15083",
+     "http://www.wikidata.org/entity/Q862089"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Giraffe",
+     "http://dbpedia.org/resource/Northern_giraffe"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Giraffe",
+     "http://yago-knowledge.org/resource/Northern_giraffe"
+    ]
+   }
+  },
+  {
+   "label": "backpack",
+   "synset": "backpack.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q5843"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Backpack"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Backpack"
+    ]
+   }
+  },
+  {
+   "label": "umbrella",
+   "synset": "umbrella.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q41607"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Umbrella"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Umbrella"
+    ]
+   }
+  },
+  {
+   "label": "handbag",
+   "synset": "bag.n.04",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q467505"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Handbag"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Handbag"
+    ]
+   }
+  },
+  {
+   "label": "tie",
+   "synset": "necktie.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q44416"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Necktie"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Necktie"
+    ]
+   }
+  },
+  {
+   "label": "suitcase",
+   "synset": "bag.n.06",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q200814"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Suitcase"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Suitcase"
+    ]
+   }
+  },
+  {
+   "label": "frisbee",
+   "synset": "frisbee.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q131689"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Frisbee"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "skis",
+   "synset": "ski.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q172226"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Ski"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Ski"
+    ]
+   }
+  },
+  {
+   "label": "snowboard",
+   "synset": "snowboard.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q2000617"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Snowboard"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "sports ball",
+   "synset": "ball.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q18545"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Ball"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Ball"
+    ]
+   }
+  },
+  {
+   "label": "kite",
+   "synset": "kite.n.03",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q42861"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Kite"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Kite"
+    ]
+   }
+  },
+  {
+   "label": "baseball bat",
+   "synset": "baseball_bat.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q809910"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Baseball_bat"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "baseball glove",
+   "synset": "baseball_glove.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q809894"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Baseball_glove"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "skateboard",
+   "synset": "skateboard.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q15783"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Skateboard"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Skateboard"
+    ]
+   }
+  },
+  {
+   "label": "surfboard",
+   "synset": "surfboard.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q457689"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Surfboard"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Surfboard"
+    ]
+   }
+  },
+  {
+   "label": "tennis racket",
+   "synset": "tennis_racket.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q153362"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Racket_(sports_equipment)"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "bottle",
+   "synset": "bottle.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q80228"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bottle"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bottle"
+    ]
+   }
+  },
+  {
+   "label": "wine glass",
+   "synset": "wineglass.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q1531435"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Wine_glass"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Wine_glass"
+    ]
+   }
+  },
+  {
+   "label": "cup",
+   "synset": "cup.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q81727"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Cup"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Cup"
+    ]
+   }
+  },
+  {
+   "label": "fork",
+   "synset": "fork.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q81881"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Fork"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Fork"
+    ]
+   }
+  },
+  {
+   "label": "knife",
+   "synset": "knife.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q32489"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Knife"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Knife"
+    ]
+   }
+  },
+  {
+   "label": "spoon",
+   "synset": "spoon.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q81895"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Spoon"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Spoon"
+    ]
+   }
+  },
+  {
+   "label": "bowl",
+   "synset": "bowl.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q153988"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bowl"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Bowl"
+    ]
+   }
+  },
+  {
+   "label": "banana",
+   "synset": "banana.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q503"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Banana"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Banana"
+    ]
+   }
+  },
+  {
+   "label": "apple",
+   "synset": "apple.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q89"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Apple"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Apple"
+    ]
+   }
+  },
+  {
+   "label": "sandwich",
+   "synset": "sandwich.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q28803"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Sandwich"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Sandwich"
+    ]
+   }
+  },
+  {
+   "label": "orange",
+   "synset": "orange.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q13191"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Orange_(fruit)"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Orange_fruit"
+    ]
+   }
+  },
+  {
+   "label": "broccoli",
+   "synset": "broccoli.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q47722"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Broccoli"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Broccoli"
+    ]
+   }
+  },
+  {
+   "label": "carrot",
+   "synset": "carrot.n.03",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q81"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Carrot",
+     "http://dbpedia.org/resource/Daucus_carota"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Carrot"
+    ]
+   }
+  },
+  {
+   "label": "hot dog",
+   "synset": "hotdog.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q181055"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Hot_dog"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Hot_dog"
+    ]
+   }
+  },
+  {
+   "label": "pizza",
+   "synset": "pizza.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q177"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Pizza"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Pizza"
+    ]
+   }
+  },
+  {
+   "label": "donut",
+   "synset": "doughnut.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q192783"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Doughnut"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Doughnut"
+    ]
+   }
+  },
+  {
+   "label": "cake",
+   "synset": "cake.n.03",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q13276"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Cake"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Cake"
+    ]
+   }
+  },
+  {
+   "label": "chair",
+   "synset": "chair.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q15026"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Chair"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "couch",
+   "synset": "sofa.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q131514"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Couch"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "potted plant",
+   "synset": "pot_plant.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q27993793",
+     "http://www.wikidata.org/entity/Q203834"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Houseplant"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Potted_Plant",
+     "http://yago-knowledge.org/resource/Houseplant"
+    ]
+   }
+  },
+  {
+   "label": "bed",
+   "synset": "bed.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q42177"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Bed"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "dining table",
+   "synset": "dining_table.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q14748"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Table_(furniture)"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "toilet",
+   "synset": "toilet.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q7857"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Toilet"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Toilet"
+    ]
+   }
+  },
+  {
+   "label": "tv",
+   "synset": "television_receiver.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q8075"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Television_set"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Television_set"
+    ]
+   }
+  },
+  {
+   "label": "laptop",
+   "synset": "laptop.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q3962"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Laptop"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Laptop"
+    ]
+   }
+  },
+  {
+   "label": "mouse",
+   "synset": "mouse.n.04",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q7987"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Computer_mouse"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Computer_mouse"
+    ]
+   }
+  },
+  {
+   "label": "remote",
+   "synset": "remote_control.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q185091"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Remote_control"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Remote_control"
+    ]
+   }
+  },
+  {
+   "label": "keyboard",
+   "synset": "keyboard.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q250"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Computer_keyboard"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Computer_keyboard"
+    ]
+   }
+  },
+  {
+   "label": "cell phone",
+   "synset": "cellular_telephone.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q17517"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Mobile_phone"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "microwave",
+   "synset": "microwave.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q127956"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Microwave_oven"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Microwave_oven"
+    ]
+   }
+  },
+  {
+   "label": "oven",
+   "synset": "oven.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q36539"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Oven"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "toaster",
+   "synset": "toaster.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q14890"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Toaster"
+    ],
+    "yago": []
+   }
+  },
+  {
+   "label": "sink",
+   "synset": "sink.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q140565"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Sink"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Sink"
+    ]
+   }
+  },
+  {
+   "label": "refrigerator",
+   "synset": "refrigerator.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q37828"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Refrigerator"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Refrigerator"
+    ]
+   }
+  },
+  {
+   "label": "book",
+   "synset": "book.n.02",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q571"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Book"
+    ],
+    "yago": [
+     "http://schema.org/Book"
+    ]
+   }
+  },
+  {
+   "label": "clock",
+   "synset": "clock.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q376"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Clock"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Clock"
+    ]
+   }
+  },
+  {
+   "label": "vase",
+   "synset": "vase.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q191851"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Vase"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Vase"
+    ]
+   }
+  },
+  {
+   "label": "scissors",
+   "synset": "scissors.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q40847"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Scissors"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Scissors"
+    ]
+   }
+  },
+  {
+   "label": "teddy bear",
+   "synset": "teddy.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q213477"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Teddy_bear"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Teddy_bear"
+    ]
+   }
+  },
+  {
+   "label": "hair drier",
+   "synset": "hand_blower.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q15004"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Hair_dryer"
+    ],
+    "yago": [
+     "http://yago-knowledge.org/resource/Hair_dryer"
+    ]
+   }
+  },
+  {
+   "label": "toothbrush",
+   "synset": "toothbrush.n.01",
+   "ground_truth": {
+    "wikidata": [
+     "http://www.wikidata.org/entity/Q134205"
+    ],
+    "dbpedia": [
+     "http://dbpedia.org/resource/Toothbrush"
+    ],
+    "yago": []
+   }
+  }
+ ]
+}

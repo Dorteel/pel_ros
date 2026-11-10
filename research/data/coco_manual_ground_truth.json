@@ -1,0 +1,231 @@
+{
+ "_comment": "Manual corrections applied on top of the automatic WordNet->WikiData(P8814)->owl:sameAs chain for MS COCO. Curated by the reproducers on 2026-11-10/11 and checked against the live English labels and descriptions of each entity. This is NOT the ground-truth file of the original paper (unavailable). An empty list means: no adequate entity found in that graph. Viable alternatives follow the paper's rule (e.g. 'sports ball' -> ball; 'dining table' -> table; 'sheep' -> genus Ovis in YAGO).",
+ "corrections": {
+  "stop sign": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q250429"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Stop_sign"
+   ],
+   "yago": []
+  },
+  "cat": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q146"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Cat"
+   ],
+   "yago": []
+  },
+  "bowl": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q153988"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Bowl"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Bowl"
+   ]
+  },
+  "banana": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q503"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Banana"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Banana"
+   ]
+  },
+  "potted plant": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q27993793",
+    "http://www.wikidata.org/entity/Q203834"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Houseplant"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Potted_Plant",
+    "http://yago-knowledge.org/resource/Houseplant"
+   ]
+  },
+  "tv": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q8075"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Television_set"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Television_set"
+   ]
+  },
+  "refrigerator": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q37828"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Refrigerator"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Refrigerator"
+   ]
+  },
+  "book": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q571"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Book"
+   ],
+   "yago": [
+    "http://schema.org/Book"
+   ]
+  },
+  "sports ball": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q18545"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Ball"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Ball"
+   ]
+  },
+  "sheep": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q7368"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Sheep"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Ovis"
+   ]
+  },
+  "bear": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q30090244",
+    "http://www.wikidata.org/entity/Q11788"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Bear"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Bear"
+   ]
+  },
+  "keyboard": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q250"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Computer_keyboard"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Computer_keyboard"
+   ]
+  },
+  "bus": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q5638"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Bus"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Bus_Q5638"
+   ]
+  },
+  "handbag": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q467505"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Handbag"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Handbag"
+   ]
+  },
+  "suitcase": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q200814"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Suitcase"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Suitcase"
+   ]
+  },
+  "backpack": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q5843"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Backpack"
+   ],
+   "yago": [
+    "http://yago-knowledge.org/resource/Backpack"
+   ]
+  },
+  "couch": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q131514"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Couch"
+   ],
+   "yago": []
+  },
+  "motorcycle": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q34493"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Motorcycle"
+   ],
+   "yago": []
+  },
+  "person": {
+   "wikidata": [
+    "http://www.wikidata.org/entity/Q215627",
+    "http://www.wikidata.org/entity/Q5"
+   ],
+   "dbpedia": [
+    "http://dbpedia.org/resource/Person",
+    "http://dbpedia.org/resource/Human"
+   ],
+   "yago": [
+    "http://schema.org/Person"
+   ]
+  },
+  "car": {
+   "dbpedia": [
+    "http://dbpedia.org/resource/Car"
+   ]
+  },
+  "cup": {
+   "dbpedia": [
+    "http://dbpedia.org/resource/Cup"
+   ]
+  },
+  "elephant": {
+   "dbpedia": [
+    "http://dbpedia.org/resource/Elephant"
+   ]
+  },
+  "tennis racket": {
+   "dbpedia": [
+    "http://dbpedia.org/resource/Racket_(sports_equipment)"
+   ]
+  }
+ }
+}

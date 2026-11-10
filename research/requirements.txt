@@ -1,0 +1,10 @@
+# Research code for the Perceived-Entity Linking reproduction (Python 3.12).
+nltk==3.10.4          # WordNet 3.0 (method) and WordNet 3.1 (ground-truth IDs)
+requests==2.31.0      # SPARQL over HTTP
+numpy==1.26.4         # statistics, figures
+scipy==1.11.4         # rank correlation, exact tests
+matplotlib==3.6.3     # figures
+pytest==7.4.4         # tests
+nbformat==5.11.1      # tutorial notebooks
+nbclient==0.11.0      # executing tutorial notebooks
+ipykernel==7.4.0      # notebook kernel
