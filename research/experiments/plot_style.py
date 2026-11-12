@@ -23,12 +23,14 @@ plt.rcParams.update({
     "xtick.color": INK_SOFT, "ytick.color": INK_SOFT, "axes.spines.top": False,
     "axes.spines.right": False, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6,
     "axes.axisbelow": True, "legend.frameon": False, "svg.fonttype": "none",
+    "svg.hashsalt": "pel-research",      # deterministic SVG output
 })
 
 
 def save(figure, directory: Path, name: str) -> None:
     directory.mkdir(parents=True, exist_ok=True)
     for extension in ("png", "svg"):
-        figure.savefig(directory / f"{name}.{extension}", dpi=200, bbox_inches="tight")
+        figure.savefig(directory / f"{name}.{extension}", dpi=200, bbox_inches="tight",
+                       metadata={"Date": None} if extension == "svg" else None)
     plt.close(figure)
     print("wrote", directory / f"{name}.png")

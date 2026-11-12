@@ -1,0 +1,844 @@
+{
+ "wikidata": {
+  "entries": 600,
+  "not_retrieved": 124,
+  "categories": {
+   "case differs only": 10,
+   "label has a parenthesised qualifier": 1,
+   "name is part of a longer label (or vice versa)": 32,
+   "different word": 77,
+   "ground-truth entity has no English label": 4
+  },
+  "examples": {
+   "case differs only": [
+    {
+     "label": "alocasia",
+     "synset": "alocasia.n.01",
+     "ground_truth_labels": [
+      "Alocasia"
+     ]
+    },
+    {
+     "label": "bacillus",
+     "synset": "bacillus.n.01",
+     "ground_truth_labels": [
+      "Bacillus"
+     ]
+    },
+    {
+     "label": "cashew",
+     "synset": "cashew.n.01",
+     "ground_truth_labels": [
+      "Anacardium",
+      "Cashew"
+     ]
+    },
+    {
+     "label": "hallmark",
+     "synset": "hallmark.n.01",
+     "ground_truth_labels": [
+      "TradeMark"
+     ]
+    },
+    {
+     "label": "hamster",
+     "synset": "hamster.n.01",
+     "ground_truth_labels": [
+      "Hamster"
+     ]
+    },
+    {
+     "label": "loofa",
+     "synset": "loofa.n.01",
+     "ground_truth_labels": [
+      "Luffa"
+     ]
+    },
+    {
+     "label": "macintosh",
+     "synset": "macintosh.n.02",
+     "ground_truth_labels": [
+      "Mackintosh"
+     ]
+    },
+    {
+     "label": "playhouse",
+     "synset": "playhouse.n.01",
+     "ground_truth_labels": [
+      "Wendy house"
+     ]
+    },
+    {
+     "label": "priest",
+     "synset": "priest.n.01",
+     "ground_truth_labels": [
+      "Priest"
+     ]
+    },
+    {
+     "label": "space shuttle",
+     "synset": "space_shuttle.n.01",
+     "ground_truth_labels": [
+      "Space Shuttle"
+     ]
+    }
+   ],
+   "label has a parenthesised qualifier": [
+    {
+     "label": "salsa",
+     "synset": "salsa.n.01",
+     "ground_truth_labels": [
+      "salsa (food)"
+     ]
+    }
+   ],
+   "name is part of a longer label (or vice versa)": [
+    {
+     "label": "accessory",
+     "synset": "accessory.n.01",
+     "ground_truth_labels": [
+      "fashion accessory"
+     ]
+    },
+    {
+     "label": "base",
+     "synset": "base.n.01",
+     "ground_truth_labels": [
+      "military base"
+     ]
+    },
+    {
+     "label": "Burton",
+     "synset": "burton.n.01",
+     "ground_truth_labels": [
+      "Richard Francis Burton"
+     ]
+    },
+    {
+     "label": "Cambridge University",
+     "synset": "cambridge_university.n.01",
+     "ground_truth_labels": [
+      "University of Cambridge"
+     ]
+    },
+    {
+     "label": "can",
+     "synset": "can.n.01",
+     "ground_truth_labels": [
+      "beverage can",
+      "canning"
+     ]
+    },
+    {
+     "label": "chock",
+     "synset": "chock.n.01",
+     "ground_truth_labels": [
+      "wheel chock"
+     ]
+    },
+    {
+     "label": "cisterna",
+     "synset": "cisterna.n.01",
+     "ground_truth_labels": [
+      "subarachnoid cistern"
+     ]
+    },
+    {
+     "label": "cleft",
+     "synset": "cleft.n.01",
+     "ground_truth_labels": [
+      "cleft lip and cleft palate"
+     ]
+    },
+    {
+     "label": "computer user",
+     "synset": "computer_user.n.01",
+     "ground_truth_labels": [
+      "user"
+     ]
+    },
+    {
+     "label": "flamingo",
+     "synset": "flamingo.n.01",
+     "ground_truth_labels": [
+      "American Flamingo"
+     ]
+    },
+    {
+     "label": "freshener",
+     "synset": "freshener.n.01",
+     "ground_truth_labels": [
+      "air freshener"
+     ]
+    },
+    {
+     "label": "gun enclosure",
+     "synset": "gun_enclosure.n.01",
+     "ground_truth_labels": [
+      "weapon turret"
+     ]
+    }
+   ],
+   "different word": [
+    {
+     "label": "acetaminophen",
+     "synset": "acetaminophen.n.01",
+     "ground_truth_labels": [
+      "paracetamol"
+     ]
+    },
+    {
+     "label": "airplane propeller",
+     "synset": "airplane_propeller.n.01",
+     "ground_truth_labels": [
+      "aircraft propeller"
+     ]
+    },
+    {
+     "label": "alfalfa",
+     "synset": "alfalfa.n.01",
+     "ground_truth_labels": [
+      "hay"
+     ]
+    },
+    {
+     "label": "ape",
+     "synset": "ape.n.01",
+     "ground_truth_labels": [
+      "Hominoidea"
+     ]
+    },
+    {
+     "label": "armlet",
+     "synset": "armlet.n.01",
+     "ground_truth_labels": [
+      "armband"
+     ]
+    },
+    {
+     "label": "ashcan",
+     "synset": "ashcan.n.01",
+     "ground_truth_labels": [
+      "waste container"
+     ]
+    },
+    {
+     "label": "basil",
+     "synset": "basil.n.01",
+     "ground_truth_labels": [
+      "Ocimum"
+     ]
+    },
+    {
+     "label": "birdbath",
+     "synset": "birdbath.n.01",
+     "ground_truth_labels": [
+      "bird bath"
+     ]
+    },
+    {
+     "label": "blacktop",
+     "synset": "blacktop.n.01",
+     "ground_truth_labels": [
+      "rock asphalt"
+     ]
+    },
+    {
+     "label": "bluff",
+     "synset": "bluff.n.01",
+     "ground_truth_labels": [
+      "cliff"
+     ]
+    },
+    {
+     "label": "Brasilia",
+     "synset": "brasilia.n.01",
+     "ground_truth_labels": [
+      "Brasília"
+     ]
+    },
+    {
+     "label": "business district",
+     "synset": "business_district.n.01",
+     "ground_truth_labels": [
+      "central business district"
+     ]
+    }
+   ],
+   "ground-truth entity has no English label": [
+    {
+     "label": "angiosperm",
+     "synset": "angiosperm.n.01",
+     "ground_truth_labels": []
+    },
+    {
+     "label": "baguet",
+     "synset": "baguet.n.01",
+     "ground_truth_labels": []
+    },
+    {
+     "label": "fly",
+     "synset": "fly.n.01",
+     "ground_truth_labels": []
+    },
+    {
+     "label": "pheasant",
+     "synset": "pheasant.n.01",
+     "ground_truth_labels": []
+    }
+   ]
+  }
+ },
+ "dbpedia": {
+  "entries": 150,
+  "not_retrieved": 32,
+  "categories": {
+   "case differs only": 1,
+   "label has a parenthesised qualifier": 4,
+   "name is part of a longer label (or vice versa)": 8,
+   "different word": 17,
+   "ground-truth entity has no English label": 2
+  },
+  "examples": {
+   "case differs only": [
+    {
+     "label": "space shuttle",
+     "synset": "space_shuttle.n.01",
+     "ground_truth_labels": [
+      "Space Shuttle"
+     ]
+    }
+   ],
+   "label has a parenthesised qualifier": [
+    {
+     "label": "collar",
+     "synset": "collar.n.01",
+     "ground_truth_labels": [
+      "Collar (clothing)"
+     ]
+    },
+    {
+     "label": "Rhea",
+     "synset": "rhea.n.01",
+     "ground_truth_labels": [
+      "Rhea (mythology)"
+     ]
+    },
+    {
+     "label": "Ross",
+     "synset": "ross.n.01",
+     "ground_truth_labels": [
+      "John Ross (Royal Navy officer)"
+     ]
+    },
+    {
+     "label": "sconce",
+     "synset": "sconce.n.01",
+     "ground_truth_labels": [
+      "Sconce (fortification)"
+     ]
+    }
+   ],
+   "name is part of a longer label (or vice versa)": [
+    {
+     "label": "Burton",
+     "synset": "burton.n.01",
+     "ground_truth_labels": [
+      "Richard Francis Burton"
+     ]
+    },
+    {
+     "label": "can",
+     "synset": "can.n.01",
+     "ground_truth_labels": [
+      "Canning",
+      "Drink can"
+     ]
+    },
+    {
+     "label": "freshener",
+     "synset": "freshener.n.01",
+     "ground_truth_labels": [
+      "Air freshener"
+     ]
+    },
+    {
+     "label": "marlin",
+     "synset": "marlin.n.01",
+     "ground_truth_labels": [
+      "Black marlin"
+     ]
+    },
+    {
+     "label": "shooting",
+     "synset": "shooting.n.01",
+     "ground_truth_labels": [
+      "Gunshot",
+      "Shooting sports"
+     ]
+    },
+    {
+     "label": "squirrel",
+     "synset": "squirrel.n.01",
+     "ground_truth_labels": [
+      "Red squirrel"
+     ]
+    },
+    {
+     "label": "turkey",
+     "synset": "turkey.n.01",
+     "ground_truth_labels": [
+      "Chicken",
+      "Chicken as food",
+      "Domestic duck"
+     ]
+    },
+    {
+     "label": "water chestnut",
+     "synset": "water_chestnut.n.01",
+     "ground_truth_labels": [
+      "Trapa natans",
+      "Trapaceae",
+      "Water caltrop"
+     ]
+    }
+   ],
+   "different word": [
+    {
+     "label": "alfalfa",
+     "synset": "alfalfa.n.01",
+     "ground_truth_labels": [
+      "Fodder",
+      "Haystack",
+      "Hay"
+     ]
+    },
+    {
+     "label": "ashcan",
+     "synset": "ashcan.n.01",
+     "ground_truth_labels": [
+      "Waste container"
+     ]
+    },
+    {
+     "label": "Austin",
+     "synset": "austin.n.01",
+     "ground_truth_labels": [
+      "Austin, Texas"
+     ]
+    },
+    {
+     "label": "Beacon Hill",
+     "synset": "beacon_hill.n.01",
+     "ground_truth_labels": [
+      "Beacon Hill, Boston"
+     ]
+    },
+    {
+     "label": "Birmingham",
+     "synset": "birmingham.n.01",
+     "ground_truth_labels": [
+      "Birmingham, Alabama"
+     ]
+    },
+    {
+     "label": "computer user",
+     "synset": "computer_user.n.01",
+     "ground_truth_labels": [
+      "User (computing)"
+     ]
+    },
+    {
+     "label": "credit card",
+     "synset": "credit_card.n.01",
+     "ground_truth_labels": [
+      "Payment card"
+     ]
+    },
+    {
+     "label": "giant",
+     "synset": "giant.n.04",
+     "ground_truth_labels": [
+      "Giants (Greek mythology)"
+     ]
+    },
+    {
+     "label": "hag",
+     "synset": "hag.n.01",
+     "ground_truth_labels": [
+      "Befana"
+     ]
+    },
+    {
+     "label": "hillside",
+     "synset": "hillside.n.01",
+     "ground_truth_labels": [
+      "Backen"
+     ]
+    },
+    {
+     "label": "kangaroo",
+     "synset": "kangaroo.n.01",
+     "ground_truth_labels": [
+      "Macropodidae"
+     ]
+    },
+    {
+     "label": "keyhole",
+     "synset": "keyhole.n.01",
+     "ground_truth_labels": [
+      "Key (lock)",
+      "Lock and key"
+     ]
+    }
+   ],
+   "ground-truth entity has no English label": [
+    {
+     "label": "salsa",
+     "synset": "salsa.n.01",
+     "ground_truth_labels": []
+    },
+    {
+     "label": "stevedore",
+     "synset": "stevedore.n.01",
+     "ground_truth_labels": []
+    }
+   ]
+  }
+ },
+ "yago": {
+  "entries": 600,
+  "not_retrieved": 178,
+  "categories": {
+   "case differs only": 8,
+   "label has a parenthesised qualifier": 34,
+   "name is part of a longer label (or vice versa)": 37,
+   "different word": 99,
+   "ground-truth entity has no English label": 0
+  },
+  "examples": {
+   "case differs only": [
+    {
+     "label": "bismuth",
+     "synset": "bismuth.n.01",
+     "ground_truth_labels": [
+      "bismuth"
+     ]
+    },
+    {
+     "label": "bus",
+     "synset": "bus.n.01",
+     "ground_truth_labels": [
+      "bus",
+      "Double-decker bus"
+     ]
+    },
+    {
+     "label": "decoration",
+     "synset": "decoration.n.02",
+     "ground_truth_labels": [
+      "medallion"
+     ]
+    },
+    {
+     "label": "hallmark",
+     "synset": "hallmark.n.01",
+     "ground_truth_labels": [
+      "TradeMark"
+     ]
+    },
+    {
+     "label": "national",
+     "synset": "national.n.01",
+     "ground_truth_labels": [
+      "subject"
+     ]
+    },
+    {
+     "label": "railway station",
+     "synset": "railway_station.n.01",
+     "ground_truth_labels": [
+      "railway station"
+     ]
+    },
+    {
+     "label": "space shuttle",
+     "synset": "space_shuttle.n.01",
+     "ground_truth_labels": [
+      "Space Shuttle"
+     ]
+    },
+    {
+     "label": "terminal",
+     "synset": "terminal.n.01",
+     "ground_truth_labels": [
+      "Bus garage",
+      "terminal",
+      "terminus"
+     ]
+    }
+   ],
+   "label has a parenthesised qualifier": [
+    {
+     "label": "batman",
+     "synset": "batman.n.01",
+     "ground_truth_labels": [
+      "Batman (military)"
+     ]
+    },
+    {
+     "label": "bill",
+     "synset": "bill.n.01",
+     "ground_truth_labels": [
+      "Bill (law)"
+     ]
+    },
+    {
+     "label": "cameo",
+     "synset": "cameo.n.01",
+     "ground_truth_labels": [
+      "Cameo (carving)"
+     ]
+    },
+    {
+     "label": "cape",
+     "synset": "cape.n.01",
+     "ground_truth_labels": [
+      "Cape (geography)"
+     ]
+    },
+    {
+     "label": "cartridge holder",
+     "synset": "cartridge_holder.n.01",
+     "ground_truth_labels": [
+      "Magazine (firearms)"
+     ]
+    },
+    {
+     "label": "collar",
+     "synset": "collar.n.01",
+     "ground_truth_labels": [
+      "Collar (clothing)"
+     ]
+    },
+    {
+     "label": "depression",
+     "synset": "depression.n.01",
+     "ground_truth_labels": [
+      "Depression (mood)"
+     ]
+    },
+    {
+     "label": "drag",
+     "synset": "drag.n.01",
+     "ground_truth_labels": [
+      "Drag (entertainment)"
+     ]
+    },
+    {
+     "label": "draw",
+     "synset": "draw.n.01",
+     "ground_truth_labels": [
+      "Draw (terrain)"
+     ]
+    },
+    {
+     "label": "Ea",
+     "synset": "ea.n.01",
+     "ground_truth_labels": [
+      "Ea (Babylonian god)",
+      "Enki"
+     ]
+    },
+    {
+     "label": "Epirus",
+     "synset": "epirus.n.01",
+     "ground_truth_labels": [
+      "Epirus (mythology)"
+     ]
+    },
+    {
+     "label": "foil",
+     "synset": "foil.n.01",
+     "ground_truth_labels": [
+      "Foil (metal)"
+     ]
+    }
+   ],
+   "name is part of a longer label (or vice versa)": [
+    {
+     "label": "accessory",
+     "synset": "accessory.n.01",
+     "ground_truth_labels": [
+      "Fashion accessory"
+     ]
+    },
+    {
+     "label": "atomizer",
+     "synset": "atomizer.n.01",
+     "ground_truth_labels": [
+      "Aerosol spray dispenser",
+      "aerosol paint"
+     ]
+    },
+    {
+     "label": "base",
+     "synset": "base.n.01",
+     "ground_truth_labels": [
+      "Military base"
+     ]
+    },
+    {
+     "label": "Burton",
+     "synset": "burton.n.01",
+     "ground_truth_labels": [
+      "Richard Francis Burton"
+     ]
+    },
+    {
+     "label": "Cambridge University",
+     "synset": "cambridge_university.n.01",
+     "ground_truth_labels": [
+      "University of Cambridge"
+     ]
+    },
+    {
+     "label": "can",
+     "synset": "can.n.01",
+     "ground_truth_labels": [
+      "beverage can"
+     ]
+    },
+    {
+     "label": "chock",
+     "synset": "chock.n.01",
+     "ground_truth_labels": [
+      "Wheel chock"
+     ]
+    },
+    {
+     "label": "cleft",
+     "synset": "cleft.n.01",
+     "ground_truth_labels": [
+      "Cleft lip and cleft palate"
+     ]
+    },
+    {
+     "label": "Fang",
+     "synset": "fang.n.01",
+     "ground_truth_labels": [
+      "Fang language"
+     ]
+    },
+    {
+     "label": "flamingo",
+     "synset": "flamingo.n.01",
+     "ground_truth_labels": [
+      "American flamingo"
+     ]
+    },
+    {
+     "label": "freshener",
+     "synset": "freshener.n.01",
+     "ground_truth_labels": [
+      "Air freshener"
+     ]
+    },
+    {
+     "label": "gorilla",
+     "synset": "gorilla.n.01",
+     "ground_truth_labels": [
+      "Western gorilla"
+     ]
+    }
+   ],
+   "different word": [
+    {
+     "label": "accelerator",
+     "synset": "accelerator.n.02",
+     "ground_truth_labels": [
+      "Valvetrain"
+     ]
+    },
+    {
+     "label": "acetaminophen",
+     "synset": "acetaminophen.n.01",
+     "ground_truth_labels": [
+      "Paracetamol"
+     ]
+    },
+    {
+     "label": "airplane propeller",
+     "synset": "airplane_propeller.n.01",
+     "ground_truth_labels": [
+      "Propeller (aeronautics)"
+     ]
+    },
+    {
+     "label": "alfalfa",
+     "synset": "alfalfa.n.01",
+     "ground_truth_labels": [
+      "Hay"
+     ]
+    },
+    {
+     "label": "ape",
+     "synset": "ape.n.01",
+     "ground_truth_labels": [
+      "Hominoidea"
+     ]
+    },
+    {
+     "label": "armlet",
+     "synset": "armlet.n.01",
+     "ground_truth_labels": [
+      "Armband"
+     ]
+    },
+    {
+     "label": "ashcan",
+     "synset": "ashcan.n.01",
+     "ground_truth_labels": [
+      "Waste container"
+     ]
+    },
+    {
+     "label": "Austin",
+     "synset": "austin.n.01",
+     "ground_truth_labels": [
+      "Austin, Texas"
+     ]
+    },
+    {
+     "label": "awning",
+     "synset": "awning.n.01",
+     "ground_truth_labels": [
+      "Marquee (overhang)"
+     ]
+    },
+    {
+     "label": "baseball coach",
+     "synset": "baseball_coach.n.01",
+     "ground_truth_labels": [
+      "Coach (baseball)"
+     ]
+    },
+    {
+     "label": "basil",
+     "synset": "basil.n.01",
+     "ground_truth_labels": [
+      "Ocimum"
+     ]
+    },
+    {
+     "label": "Beacon Hill",
+     "synset": "beacon_hill.n.01",
+     "ground_truth_labels": [
+      "Beacon Hill, Boston"
+     ]
+    }
+   ],
+   "ground-truth entity has no English label": []
+  }
+ }
+}

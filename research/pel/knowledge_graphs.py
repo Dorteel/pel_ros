@@ -32,6 +32,9 @@ class KnowledgeGraph:
     # YAGO 4.5 labels are Wikipedia page titles ("Chair"); WikiData labels of
     # common nouns are lower case ("chair").  See specification I3.
     label_case: str            # "as_is" | "capitalize"
+    # Predicate holding a short English description of an entity (used only
+    # by the improved method, hypothesis H4).
+    description_predicate: str = "<http://www.w3.org/2000/01/rdf-schema#comment>"
     max_parallel_requests: int = 2
     min_seconds_between_requests: float = 0.2
 
@@ -46,6 +49,7 @@ WIKIDATA = KnowledgeGraph(
     name="wikidata", endpoint="https://query.wikidata.org/sparql",
     class_predicates=("<http://www.wikidata.org/prop/direct/P31>",
                       "<http://www.wikidata.org/prop/direct/P279>"),
+    description_predicate="<http://schema.org/description>",
     label_case="as_is", max_parallel_requests=4, min_seconds_between_requests=0.12)
 DBPEDIA = KnowledgeGraph(
     name="dbpedia", endpoint="https://dbpedia.org/sparql",
@@ -103,3 +107,11 @@ def build_class_query(kg: KnowledgeGraph, entity_iris: list[str]) -> str:
             f"OPTIONAL {{ ?class {RDFS_LABEL} ?classLabel . "
             'FILTER(LANG(?classLabel) = "en") } }')
 
+
+def build_description_query(kg: KnowledgeGraph, entity_iris: list[str]) -> str:
+    """SPARQL returning the English description of each entity (improved
+    method, H4)."""
+    values = " ".join(f"<{iri}>" for iri in entity_iris)
+    return ("SELECT ?entity ?description WHERE { "
+            f"VALUES ?entity {{ {values} }} ?entity {kg.description_predicate} ?description . "
+            'FILTER(LANG(?description) = "en") }')

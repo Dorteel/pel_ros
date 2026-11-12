@@ -15,7 +15,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 from .candidate_selection import Candidate, collect_candidates, select_candidate_names
 from .disambiguation import class_label_from_iri, disambiguate
-from .knowledge_graphs import KnowledgeGraph, build_class_query, build_retrieval_query
+from .knowledge_graphs import (KnowledgeGraph, build_class_query, build_description_query,
+                               build_retrieval_query)
 from .sparql_client import CachedSparqlClient, SparqlError
 
 PROCESSES = ("fq", "fc", "fc+fd")
@@ -63,6 +64,20 @@ class KnowledgeGraphAccess:
                 if label and label not in labels[row["entity"]]:
                     labels[row["entity"]].append(label)
         return labels
+
+
+    def descriptions(self, iris: list[str]) -> dict[str, str]:
+        """Short English description of each entity ('' if none).  Used only
+        by the improved method (H4)."""
+        found: dict[str, str] = {iri: "" for iri in iris}
+        fetchable = [iri for iri in dict.fromkeys(iris)
+                     if not any(char in iri for char in '<>"{}|^` \\')]
+        for start in range(0, len(fetchable), CLASS_QUERY_BATCH_SIZE):
+            batch = fetchable[start:start + CLASS_QUERY_BATCH_SIZE]
+            for row in self._select(build_description_query(self.kg, batch)):
+                if not found[row["entity"]]:
+                    found[row["entity"]] = row.get("description", "")
+        return found
 
 
 def query_only(label: str, access: KnowledgeGraphAccess, query_type: str) -> list[Candidate]:
