@@ -31,13 +31,19 @@ from pel.sparql_client import CachedSparqlClient               # noqa: E402
 STORED_TOP_K = 10
 
 
-def load_entries(dataset: str, max_entries: int | None = None, seed: int = 0) -> list[dict]:
+def load_entries(dataset: str, max_entries: int | None = None, seed: int = 0,
+                 subset_size: int | None = None) -> list[dict]:
     """Ground-truth entries; optionally a seeded simple random sample of them
-    (the same sample for every knowledge graph and every method)."""
+    (the same sample for every knowledge graph and every method), and
+    optionally a seeded random subset of that sample (for an endpoint that is
+    too slow for the whole sample; the subset is nested in the sample)."""
     path = RESEARCH / "data" / "ground_truth" / f"{dataset}.json"
     entries = json.loads(path.read_text())["entries"]
     if max_entries is not None and max_entries < len(entries):
         chosen = sorted(random.Random(seed).sample(range(len(entries)), max_entries))
+        entries = [entries[index] for index in chosen]
+    if subset_size is not None and subset_size < len(entries):
+        chosen = sorted(random.Random(seed + 1000).sample(range(len(entries)), subset_size))
         entries = [entries[index] for index in chosen]
     return entries
 
@@ -50,6 +56,8 @@ def main() -> None:
     parser.add_argument("--max-entries", type=int, default=None,
                         help="evaluate a seeded random sample of this many entries")
     parser.add_argument("--seed", type=int, default=0, help="seed of the entry sample")
+    parser.add_argument("--subset-size", type=int, default=None,
+                        help="evaluate only a seeded random subset of the sample")
     parser.add_argument("--label-case", choices=["as_is", "capitalize"], default=None,
                         help="override the graph's label casing (sensitivity analysis)")
     parser.add_argument("--offline", action="store_true", help="use cached responses only")
@@ -62,7 +70,7 @@ def main() -> None:
     client = CachedSparqlClient(RESEARCH / "data" / "cache" / f"{kg.name}.sqlite",
                                 offline=args.offline)
     access = KnowledgeGraphAccess(kg, client, args.result_limit)
-    entries = load_entries(args.dataset, args.max_entries, args.seed)
+    entries = load_entries(args.dataset, args.max_entries, args.seed, args.subset_size)
     labels = sorted({entry["label"] for entry in entries})
     conditions = [(query_type, process) for query_type in QUERY_TYPES for process in PROCESSES]
 
@@ -87,7 +95,7 @@ def main() -> None:
         reasons[reason] = reasons.get(reason, 0) + 1
     output = {"dataset": args.dataset, "knowledge_graph": kg.name, "endpoint": kg.endpoint,
               "result_limit": args.result_limit, "max_entries": args.max_entries,
-              "seed": args.seed, "label_case": kg.label_case,
+              "seed": args.seed, "subset_size": args.subset_size, "label_case": kg.label_case,
               "entries": len(records), "unique_labels": len(labels),
               "failed_queries": reasons, "records": records}
     out_dir = Path(args.output_dir)

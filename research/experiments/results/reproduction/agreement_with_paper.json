@@ -1,0 +1,32 @@
+{
+ "coco/wikidata": {
+  "spearman_rho": 0.7101000337472633,
+  "cells": 36,
+  "mean_abs_difference": 0.14250000000000002
+ },
+ "coco/dbpedia": {
+  "spearman_rho": 0.8896176517927322,
+  "cells": 36,
+  "mean_abs_difference": 0.09972222222222223
+ },
+ "coco/yago": {
+  "spearman_rho": 0.12366857941683852,
+  "cells": 36,
+  "mean_abs_difference": 0.23520833333333332
+ },
+ "visual_genome/wikidata": {
+  "spearman_rho": 0.5625000046609462,
+  "cells": 36,
+  "mean_abs_difference": 0.16824074074074077
+ },
+ "visual_genome/dbpedia": {
+  "spearman_rho": 0.8583220641695875,
+  "cells": 36,
+  "mean_abs_difference": 0.16870370370370372
+ },
+ "visual_genome/yago": {
+  "spearman_rho": 0.1981703454539687,
+  "cells": 36,
+  "mean_abs_difference": 0.132037037037037
+ }
+}

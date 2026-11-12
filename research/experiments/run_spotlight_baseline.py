@@ -5,8 +5,8 @@ context in the paper's setting).  A label is a hit if Spotlight returns the
 ground-truth DBpedia entity as its first annotation.  The paper does not state
 the confidence threshold; Spotlight's default (0.5) and 0.0 are both reported.
 
-AIDA, the paper's YAGO baseline, is not run: its public web service
-(mpi-inf.mpg.de/yago-naga/aida) was discontinued (see methodology.md).
+AIDA, the paper's YAGO baseline, is not run: the disambiguation service behind
+the URL given in the paper answered HTTP 404 on 2026-11-11 (methodology.md).
 
 Usage:  python research/experiments/run_spotlight_baseline.py --dataset coco
 """

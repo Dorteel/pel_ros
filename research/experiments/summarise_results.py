@@ -48,8 +48,9 @@ def markdown_table(summary: dict, paper: dict) -> str:
     for dataset in DATASETS:
         if dataset not in summary:
             continue
-        n = next(iter(next(iter(summary[dataset].values())).values()))["n"]
-        lines += [f"### {dataset} (n = {n} entries) — reproduced / (paper)", "",
+        first = next(v for c, v in summary[dataset].items() if not c.startswith("_"))
+        sizes = ", ".join(f"{kg} n = {first[kg]['n']}" for kg in KGS if kg in first)
+        lines += [f"### {dataset} ({sizes}) — reproduced / (paper)", "",
                   "| Query | Process | " + " | ".join(f"{kg} h@{k}" for kg in KGS for k in KS) + " |",
                   "|---|---|" + "---|" * 9]
         for condition, cells in summary[dataset].items():

@@ -1,0 +1,128 @@
+{
+ "coco/wikidata/fq": {
+  "rank 1": 0.7875,
+  "rank 2\u20135": 0.0125,
+  "rank > 5": 0.0,
+  "not retrieved": 0.1,
+  "nothing returned": 0.1
+ },
+ "coco/wikidata/fc": {
+  "rank 1": 0.75,
+  "rank 2\u20135": 0.1375,
+  "rank > 5": 0.025,
+  "not retrieved": 0.05,
+  "nothing returned": 0.0375
+ },
+ "coco/wikidata/fc+fd": {
+  "rank 1": 0.5125,
+  "rank 2\u20135": 0.2875,
+  "rank > 5": 0.1125,
+  "not retrieved": 0.05,
+  "nothing returned": 0.0375
+ },
+ "coco/dbpedia/fq": {
+  "rank 1": 0.7875,
+  "rank 2\u20135": 0.0,
+  "rank > 5": 0.0,
+  "not retrieved": 0.1,
+  "nothing returned": 0.1125
+ },
+ "coco/dbpedia/fc": {
+  "rank 1": 0.6625,
+  "rank 2\u20135": 0.2375,
+  "rank > 5": 0.0,
+  "not retrieved": 0.0625,
+  "nothing returned": 0.0375
+ },
+ "coco/dbpedia/fc+fd": {
+  "rank 1": 0.6375,
+  "rank 2\u20135": 0.2625,
+  "rank > 5": 0.0,
+  "not retrieved": 0.0625,
+  "nothing returned": 0.0375
+ },
+ "coco/yago/fq": {
+  "rank 1": 0.5125,
+  "rank 2\u20135": 0.0,
+  "rank > 5": 0.0,
+  "not retrieved": 0.325,
+  "nothing returned": 0.1625
+ },
+ "coco/yago/fc": {
+  "rank 1": 0.55,
+  "rank 2\u20135": 0.05,
+  "rank > 5": 0.0,
+  "not retrieved": 0.2875,
+  "nothing returned": 0.1125
+ },
+ "coco/yago/fc+fd": {
+  "rank 1": 0.1125,
+  "rank 2\u20135": 0.2625,
+  "rank > 5": 0.225,
+  "not retrieved": 0.2875,
+  "nothing returned": 0.1125
+ },
+ "visual_genome/wikidata/fq": {
+  "rank 1": 0.5633333333333334,
+  "rank 2\u20135": 0.035,
+  "rank > 5": 0.006666666666666667,
+  "not retrieved": 0.27,
+  "nothing returned": 0.125
+ },
+ "visual_genome/wikidata/fc": {
+  "rank 1": 0.5816666666666667,
+  "rank 2\u20135": 0.17333333333333334,
+  "rank > 5": 0.03833333333333333,
+  "not retrieved": 0.16666666666666666,
+  "nothing returned": 0.04
+ },
+ "visual_genome/wikidata/fc+fd": {
+  "rank 1": 0.41833333333333333,
+  "rank 2\u20135": 0.23,
+  "rank > 5": 0.145,
+  "not retrieved": 0.16666666666666666,
+  "nothing returned": 0.04
+ },
+ "visual_genome/dbpedia/fq": {
+  "rank 1": 0.6266666666666667,
+  "rank 2\u20135": 0.006666666666666667,
+  "rank > 5": 0.0,
+  "not retrieved": 0.3,
+  "nothing returned": 0.06666666666666667
+ },
+ "visual_genome/dbpedia/fc": {
+  "rank 1": 0.6466666666666666,
+  "rank 2\u20135": 0.12666666666666668,
+  "rank > 5": 0.013333333333333334,
+  "not retrieved": 0.18666666666666668,
+  "nothing returned": 0.02666666666666667
+ },
+ "visual_genome/dbpedia/fc+fd": {
+  "rank 1": 0.6466666666666666,
+  "rank 2\u20135": 0.12666666666666668,
+  "rank > 5": 0.013333333333333334,
+  "not retrieved": 0.18666666666666668,
+  "nothing returned": 0.02666666666666667
+ },
+ "visual_genome/yago/fq": {
+  "rank 1": 0.52,
+  "rank 2\u20135": 0.0016666666666666668,
+  "rank > 5": 0.0,
+  "not retrieved": 0.3466666666666667,
+  "nothing returned": 0.13166666666666665
+ },
+ "visual_genome/yago/fc": {
+  "rank 1": 0.6133333333333333,
+  "rank 2\u20135": 0.08666666666666667,
+  "rank > 5": 0.0033333333333333335,
+  "not retrieved": 0.25166666666666665,
+  "nothing returned": 0.045
+ },
+ "visual_genome/yago/fc+fd": {
+  "rank 1": 0.18666666666666668,
+  "rank 2\u20135": 0.37333333333333335,
+  "rank > 5": 0.14333333333333334,
+  "not retrieved": 0.25166666666666665,
+  "nothing returned": 0.045
+ }
+}

@@ -247,14 +247,15 @@ is the class's English `rdfs:label`, else derived from the IRI local name
   "in all three graphs" filter (YAGO 4.5 is the bottleneck: 2,037). Because
   one full pass needs ≈70k SPARQL requests per graph, the reproduction
   evaluates a seeded simple random sample of 600 entries (seed 0), identical
-  across graphs and methods.
+  across methods; WikiData and YAGO use all 600, DBpedia (whose endpoint
+  throttled us to about 30 requests per minute) a seeded subset of 150 of them.
 * **[D3] COCO ground truth** is ours, not the authors'.
 * **[D4] No reference code**; see [I1]–[I10].
 * **[D5] Recognition.** YOLO is not executed: the paper's evaluation feeds
   dataset *labels* to `f_m`, no image is involved. `from_detections` is the
   tested adapter from detector output to `G_o`.
-* **[D6] External baselines.** DBpedia Spotlight and AIDA (Sec. 5.2) are
-  treated in `methodology.md`.
+* **[D6] External baselines.** DBpedia Spotlight and AIDA (Sec. 5.2) could not
+  be re-run (services unreachable); see `methodology.md` and `results.md`.
 
 ## 7. Inconsistencies found in the paper (not "fixed", only recorded)
 

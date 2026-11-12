@@ -33,7 +33,7 @@ python3 -m venv --system-site-packages .venv && .venv/bin/pip install -r researc
 for kg in wikidata dbpedia yago; do                             # the experiment (network, hours)
   .venv/bin/python research/experiments/run_mapping_experiment.py --dataset coco --kg $kg
   .venv/bin/python research/experiments/run_mapping_experiment.py --dataset visual_genome --kg $kg --max-entries 600 --seed 0
-done
+done   # DBpedia (throttled endpoint): add --subset-size 150 to the Visual Genome line
 .venv/bin/python research/experiments/summarise_results.py      # Table 1 layout + Wilson CIs
 .venv/bin/python research/experiments/make_reproduction_figures.py
 ```
@@ -75,13 +75,14 @@ IRIs. `summary.json` / `table1.md` are derived from these files only;
 ## 5. External baselines of the paper (Sec. 5.2)
 
 * **DBpedia Spotlight** (`experiments/run_spotlight_baseline.py`): each label
-  is submitted alone to the public Spotlight web service; hit = first
+  would be submitted alone to the public Spotlight web service; hit = first
   annotation is a ground-truth entity. The paper reports 0.525 on COCO but not
-  the confidence threshold; we report the default 0.5 and 0.0.
+  the confidence threshold; the script reports the default 0.5 and 0.0. The
+  service refused connections on every attempt (10–12 November 2026), so no
+  result exists.
 * **AIDA**: the paper reports no hits. The service URL given in the paper
   still serves a project page, but the disambiguation service it points to
   answered HTTP 404 on 2026-11-11, so this baseline could not be re-run.
-  We do not reproduce or contradict that number.
 
 ## 6. Additional (non-paper) analyses run on the reproduction
 

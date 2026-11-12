@@ -15,6 +15,7 @@ from pathlib import Path
 
 import requests
 
+CONNECTION_BACKOFF_SECONDS = (3, 10, 30, 60, 120, 300, 600)
 USER_AGENT = "pel-reproduction-research/0.1 (academic paper reproduction; python-requests)"
 
 
@@ -24,12 +25,12 @@ class SparqlError(RuntimeError):
 
 class CachedSparqlClient:
     def __init__(self, cache_path: str | Path, offline: bool = False,
-                 timeout_seconds: float = 40.0, max_attempts: int = 4):
+                 timeout_seconds: float = 40.0, max_attempts: int = 8):
         self.offline = offline
         self.timeout_seconds = timeout_seconds
         self.max_attempts = max_attempts
         Path(cache_path).parent.mkdir(parents=True, exist_ok=True)
-        self._database = sqlite3.connect(str(cache_path), check_same_thread=False)
+        self._database = sqlite3.connect(str(cache_path), check_same_thread=False, timeout=120)
         self._database.execute(
             "CREATE TABLE IF NOT EXISTS responses (key TEXT PRIMARY KEY, endpoint TEXT,"
             " query TEXT, status TEXT, rows TEXT, fetched_at REAL)")
@@ -90,10 +91,10 @@ class CachedSparqlClient:
                     break
                 continue
             except requests.RequestException as error:
-                # Refused/reset connections are how public endpoints throttle a
-                # client: wait patiently (1, 2, 4, 8 min) instead of insisting.
+                # Refused/reset connections are how public endpoints shed load:
+                # retry soon, then back off for minutes rather than insisting.
                 payload = f"request failed: {type(error).__name__}"
-                time.sleep(min(60.0 * 2 ** attempt, 600.0))
+                time.sleep(CONNECTION_BACKOFF_SECONDS[min(attempt, len(CONNECTION_BACKOFF_SECONDS) - 1)])
                 continue
             if response.status_code == 200:
                 try:

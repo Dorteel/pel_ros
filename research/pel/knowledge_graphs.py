@@ -32,8 +32,8 @@ class KnowledgeGraph:
     # YAGO 4.5 labels are Wikipedia page titles ("Chair"); WikiData labels of
     # common nouns are lower case ("chair").  See specification I3.
     label_case: str            # "as_is" | "capitalize"
-    max_parallel_requests: int
-    min_seconds_between_requests: float
+    max_parallel_requests: int = 2
+    min_seconds_between_requests: float = 0.2
 
     def surface_form(self, name: str) -> str:
         """The exact literal that is matched against the graph."""
@@ -102,3 +102,4 @@ def build_class_query(kg: KnowledgeGraph, entity_iris: list[str]) -> str:
             "?entity ?classPredicate ?class . "
             f"OPTIONAL {{ ?class {RDFS_LABEL} ?classLabel . "
             'FILTER(LANG(?classLabel) = "en") } }')
+
